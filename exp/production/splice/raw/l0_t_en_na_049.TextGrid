@@ -1,0 +1,22 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.825875 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "mat_emb" 
+        xmin = 0 
+        xmax = 1.825875 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.1799488211077847 
+            text = "mat_049" 
+        intervals [2]:
+            xmin = 1.1799488211077847 
+            xmax = 1.825875 
+            text = "" 

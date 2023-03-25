@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.4">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': '', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[3008, 1692]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="pilot_production" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <TextComponent name="text_trial">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_trial" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$phr" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <MicrophoneComponent name="mic">
+        <Param val="auto" valType="str" updates="None" name="channels"/>
+        <Param val="default" valType="str" updates="None" name="device"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="24000" valType="num" updates="None" name="maxSize"/>
+        <Param val="mic" valType="code" updates="None" name="name"/>
+        <Param val="default" valType="code" updates="None" name="outputType"/>
+        <Param val="DVD Audio (48kHz)" valType="num" updates="None" name="sampleRate"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="True" valType="bool" updates="None" name="speakTimes"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="10.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="False" valType="bool" updates="None" name="transcribe"/>
+        <Param val="Google" valType="code" updates="None" name="transcribeBackend"/>
+        <Param val="en-US" valType="str" updates="None" name="transcribeLang"/>
+        <Param val="" valType="list" updates="None" name="transcribeWords"/>
+        <Param val="False" valType="bool" updates="None" name="trimSilent"/>
+      </MicrophoneComponent>
+    </Routine>
+    <Routine name="intro">
+      <TextComponent name="text_intro">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_intro" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome!&amp;#10;&amp;#10;Please press SPACE key to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_continue">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_continue" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <MicrophoneComponent name="mic_2">
+        <Param val="auto" valType="str" updates="None" name="channels"/>
+        <Param val="default" valType="str" updates="None" name="device"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="24000" valType="num" updates="None" name="maxSize"/>
+        <Param val="mic_2" valType="code" updates="None" name="name"/>
+        <Param val="default" valType="code" updates="None" name="outputType"/>
+        <Param val="DVD Audio (48kHz)" valType="num" updates="None" name="sampleRate"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="True" valType="bool" updates="None" name="speakTimes"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="10.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="False" valType="bool" updates="None" name="transcribe"/>
+        <Param val="Google" valType="code" updates="None" name="transcribeBackend"/>
+        <Param val="en-US" valType="str" updates="None" name="transcribeLang"/>
+        <Param val="" valType="list" updates="None" name="transcribeWords"/>
+        <Param val="False" valType="bool" updates="None" name="trimSilent"/>
+      </MicrophoneComponent>
+    </Routine>
+    <Routine name="instr">
+      <TextComponent name="text_instr">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_instr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="There will be some sentences for you to record. &amp;#10;&amp;#10;On each screen you'll see one sentence. Please read it out loud as if you are using them in real life with your family or friends.&amp;#10;&amp;#10;Take all the time you need to prepare, and when you are ready to record, you can simply start to read it out loud. If you want to record the sentence again, you can simply pause briefly and start from the beginning of the sentence again. When you are ready to continue with the next sentence, you can press &quot;SPACE&quot; key.&amp;#10;&amp;#10;Let's start with some try-outs. Press &quot;SPACE&quot; key to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_instr">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_instr" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="tutorial_trial">
+      <KeyboardComponent name="key_tutorial">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_tutorial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextComponent name="text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$item&amp;#10;" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="start_page">
+      <TextComponent name="text_start">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_start" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Now, let's get started.&amp;#10;Press &quot;SPACE&quot; to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="end_page">
+      <TextComponent name="text_end">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_end" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Thank you for your participation" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="intro"/>
+    <Routine name="instr"/>
+    <LoopInitiator loopType="TrialHandler" name="tutorial_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'item': 'I want to order Chinese food.'}, {'item': 'Manuel lava la ropa.'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="stim_tutorial.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="tutorial_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="tutorial_trial"/>
+    <LoopTerminator name="tutorial_trials"/>
+    <Routine name="start_page"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'phr': 'Why do you like my gatos?', 'list': 1, 'num': 1.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where can we find your abuela?', 'list': 1, 'num': 2.0, 'cond': 't', 'lang': 'es'}, {'phr': 'How did he get his móvil?', 'list': 1, 'num': 3.0, 'cond': 't', 'lang': 'es'}, {'phr': 'What is in Juan´s camioneta?', 'list': 1, 'num': 4.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Who is buying Ariela´s chanclas?', 'list': 1, 'num': 5.0, 'cond': 't', 'lang': 'es'}, {'phr': 'When should we visit your pueblo?', 'list': 1, 'num': 6.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Which one is his chaqueta?', 'list': 1, 'num': 7.0, 'cond': 't', 'lang': 'es'}, {'phr': &quot;Why can't I wear your camisa?&quot;, 'list': 1, 'num': 8.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where can we find your mom´s taquería?', 'list': 1, 'num': 9.0, 'cond': 't', 'lang': 'es'}, {'phr': 'How did Alicia lost her pulsera?', 'list': 1, 'num': 10.0, 'cond': 't', 'lang': 'es'}, {'phr': 'What color is your sillón?', 'list': 1, 'num': 11.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Who drew on my libro de texto?', 'list': 1, 'num': 12.0, 'cond': 't', 'lang': 'es'}, {'phr': 'When should we start drining my cerveza?', 'list': 1, 'num': 13.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Why do you have my llaves?', 'list': 1, 'num': 14.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where did you buy your gafas?', 'list': 1, 'num': 15.0, 'cond': 't', 'lang': 'es'}, {'phr': 'How much are you going to charge for your bolsa?', 'list': 1, 'num': 16.0, 'cond': 't', 'lang': 'es'}, {'phr': 'What are you going to do with his jarra?', 'list': 1, 'num': 17.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Who can bring me some servilletas?', 'list': 1, 'num': 18.0, 'cond': 't', 'lang': 'es'}, {'phr': 'When are you goint to pick up your primo?', 'list': 1, 'num': 19.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where did you leave his mochilla?', 'list': 1, 'num': 20.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Why do you like my chaqueta?', 'list': 2, 'num': 21.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where can we find your gato?', 'list': 2, 'num': 22.0, 'cond': 't', 'lang': 'es'}, {'phr': 'How did he get his vino?', 'list': 2, 'num': 23.0, 'cond': 't', 'lang': 'es'}, {'phr': 'What is in Juan´s jarra?', 'list': 2, 'num': 24.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Who is buying Ariela´s móvil?', 'list': 2, 'num': 25.0, 'cond': 't', 'lang': 'es'}, {'phr': 'When should we visit your abuela?', 'list': 2, 'num': 26.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Which one is his camisa?', 'list': 2, 'num': 27.0, 'cond': 't', 'lang': 'es'}, {'phr': &quot;Why can't I wear your gafas?&quot;, 'list': 2, 'num': 28.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where can we find your mom´s sillón?', 'list': 2, 'num': 29.0, 'cond': 't', 'lang': 'es'}, {'phr': 'How did Alicia lost her primo?', 'list': 2, 'num': 30.0, 'cond': 't', 'lang': 'es'}, {'phr': 'What color is your perro?', 'list': 2, 'num': 31.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Who drew on my camioneta?', 'list': 2, 'num': 32.0, 'cond': 't', 'lang': 'es'}, {'phr': 'When should we start drining my horchata?', 'list': 2, 'num': 33.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Why do you have my mochilla?', 'list': 2, 'num': 34.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where did you buy your bolsa?', 'list': 2, 'num': 35.0, 'cond': 't', 'lang': 'es'}, {'phr': 'How much are you going to charge for your chanclas?', 'list': 2, 'num': 36.0, 'cond': 't', 'lang': 'es'}, {'phr': 'What are you going to do with his camioneta?', 'list': 2, 'num': 37.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Who can bring me some copas?', 'list': 2, 'num': 38.0, 'cond': 't', 'lang': 'es'}, {'phr': 'When are you goint to pick up your nieto?', 'list': 2, 'num': 39.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Where did you leave his llaves?', 'list': 2, 'num': 40.0, 'cond': 't', 'lang': 'es'}, {'phr': 'Why do you like my cats?', 'list': 0, 'num': 41.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Where can we find your grandma?', 'list': 0, 'num': 42.0, 'cond': 't', 'lang': 'en'}, {'phr': 'How did he get his cell phone?', 'list': 0, 'num': 43.0, 'cond': 't', 'lang': 'en'}, {'phr': 'What is in Juan´s truck?', 'list': 0, 'num': 44.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Who is buying Ariela´s flip flops?', 'list': 0, 'num': 45.0, 'cond': 't', 'lang': 'en'}, {'phr': 'When should we visit your hometown?', 'list': 0, 'num': 46.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Which one is his jacket?', 'list': 0, 'num': 47.0, 'cond': 't', 'lang': 'en'}, {'phr': &quot;Why can't I wear your shirt?&quot;, 'list': 0, 'num': 48.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Where can we find your mom´s restaurant?', 'list': 0, 'num': 49.0, 'cond': 't', 'lang': 'en'}, {'phr': 'How did Alicia lost her ring?', 'list': 0, 'num': 50.0, 'cond': 't', 'lang': 'en'}, {'phr': 'What color is your bed?', 'list': 0, 'num': 51.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Who drew on my text book?', 'list': 0, 'num': 52.0, 'cond': 't', 'lang': 'en'}, {'phr': 'When should we start drining my beer?', 'list': 0, 'num': 53.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Why do you have my keys?', 'list': 0, 'num': 54.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Where did you buy your gloves?', 'list': 0, 'num': 55.0, 'cond': 't', 'lang': 'en'}, {'phr': 'How much are you going to charge for your bag?', 'list': 0, 'num': 56.0, 'cond': 't', 'lang': 'en'}, {'phr': 'What are you going to do with his jug?', 'list': 0, 'num': 57.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Who can bring me some napkins?', 'list': 0, 'num': 58.0, 'cond': 't', 'lang': 'en'}, {'phr': 'When are you goint to pick up your cousin?', 'list': 0, 'num': 59.0, 'cond': 't', 'lang': 'en'}, {'phr': 'Where did you leave his backpack?', 'list': 0, 'num': 60.0, 'cond': 't', 'lang': 'en'}, {'phr': 'What is your dog doing?', 'list': 1, 'num': 61.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'What’s your shoe size?', 'list': 1, 'num': 62.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Who is the father?', 'list': 1, 'num': 63.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Where is my wallet?', 'list': 1, 'num': 64.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Which book is yours?', 'list': 1, 'num': 65.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Why did you buy that bag?', 'list': 1, 'num': 66.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'How did you sell those glasses?', 'list': 1, 'num': 67.0, 'cond': 'f', 'lang': 'en'}, {'phr': &quot;Where are Nick's socks?&quot;, 'list': 1, 'num': 68.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Whose shirt is red?', 'list': 1, 'num': 69.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Why the computer is making so much noise?', 'list': 1, 'num': 70.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Who told you I plan to buy a plane?', 'list': 1, 'num': 71.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'What is the name of that dog?', 'list': 1, 'num': 72.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Where did you leave your T-shirt?', 'list': 1, 'num': 73.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Where is the boy?', 'list': 1, 'num': 74.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'How did you catch the fish?', 'list': 1, 'num': 75.0, 'cond': 'f', 'lang': 'en'}, {'phr': '¿Quién quiere más hotdogs?', 'list': 1, 'num': 76.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Por qué no comes donuts?', 'list': 1, 'num': 77.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Dónde están mis AirPods?', 'list': 1, 'num': 78.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Cuántos pares de jeans tienes?', 'list': 1, 'num': 79.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿De qué color es el mouse?', 'list': 1, 'num': 80.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Cuándo vamos a lavar los sweatpants?', 'list': 1, 'num': 81.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Por qué odias a Mickey Mouse?', 'list': 1, 'num': 82.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Cuántos cheese burgers quieres?', 'list': 1, 'num': 83.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Quién te dijo que tengo un penthouse?', 'list': 1, 'num': 84.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Dónde puedo encontrar estos sneakers?', 'list': 1, 'num': 85.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Dónde están los platos?', 'list': 1, 'num': 86.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Qué está debajo de la cama?', 'list': 1, 'num': 87.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Quién me regaló el libro?', 'list': 1, 'num': 88.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cuándo compraste la cartera?', 'list': 1, 'num': 89.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cuál de las bolsas está rota?', 'list': 1, 'num': 90.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿De quién es la pulsera?', 'list': 1, 'num': 91.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Por qué el sillón está aquí?', 'list': 1, 'num': 92.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cuántos libros tienes?', 'list': 1, 'num': 93.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cómo lograste a comprar una cerveza a esta hora?', 'list': 1, 'num': 94.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Dónde están mis llaves?', 'list': 1, 'num': 95.0, 'cond': 'f', 'lang': 'sp'}, {'phr': 'What is your cat doing?', 'list': 2, 'num': 96.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'What’s your ring size?', 'list': 2, 'num': 97.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Who is the sister?', 'list': 2, 'num': 98.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Where is my dog?', 'list': 2, 'num': 99.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Which scarf is yours?', 'list': 2, 'num': 100.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Why did you buy that computer?', 'list': 2, 'num': 101.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'How did you sell those books?', 'list': 2, 'num': 102.0, 'cond': 'f', 'lang': 'en'}, {'phr': &quot;Where are Nick's toys?&quot;, 'list': 2, 'num': 103.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Whose bag is red?', 'list': 2, 'num': 104.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Why the bed is making so much noise?', 'list': 2, 'num': 105.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Who told you I plan to buy a computer?', 'list': 2, 'num': 106.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'What is the name of that guy?', 'list': 2, 'num': 107.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Where did you leave your socks?', 'list': 2, 'num': 108.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'Where is the fish?', 'list': 2, 'num': 109.0, 'cond': 'f', 'lang': 'en'}, {'phr': 'How did you catch the cat?', 'list': 2, 'num': 110.0, 'cond': 'f', 'lang': 'en'}, {'phr': '¿Quién quiere más mashed potatoes?', 'list': 2, 'num': 111.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Por qué no comes hotdog?', 'list': 2, 'num': 112.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Dónde están mis loafers?', 'list': 2, 'num': 113.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Cuántos pares de jeans tienes?', 'list': 2, 'num': 114.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿De qué color es el notebook?', 'list': 2, 'num': 115.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Cuándo vamos a lavar los boxers?', 'list': 2, 'num': 116.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Por qué odias a Sponge Bob?', 'list': 2, 'num': 117.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Cuántos donuts quieres?', 'list': 2, 'num': 118.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Quién te dijo que tengo un penthouse?', 'list': 2, 'num': 119.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Dónde puedo encontrar estos Joy-cons?', 'list': 2, 'num': 120.0, 'cond': 'f', 'lang': 'se'}, {'phr': '¿Dónde están los zapatos?', 'list': 2, 'num': 121.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Qué está debajo de la silla?', 'list': 2, 'num': 122.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Quién me regaló el suéter?', 'list': 2, 'num': 123.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cuándo compraste la cama?', 'list': 2, 'num': 124.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cuál de las mesas está rota?', 'list': 2, 'num': 125.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿De quién es la llave?', 'list': 2, 'num': 126.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Por qué el gato está aquí?', 'list': 2, 'num': 127.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cuántos nietos tienes?', 'list': 2, 'num': 128.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Cómo lograste a comprar una bolsa a esta hora?', 'list': 2, 'num': 129.0, 'cond': 'f', 'lang': 'sp'}, {'phr': '¿Dónde están mis gafas?', 'list': 2, 'num': 130.0, 'cond': 'f', 'lang': 'sp'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="stimuli_production.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end_page"/>
+  </Flow>
+</PsychoPy2experiment>
