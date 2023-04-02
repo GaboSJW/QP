@@ -109,7 +109,7 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="exp1_instr">
-      <TextComponent name="insturction_1">
+      <TextComponent name="exp1_instr_text">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
@@ -119,7 +119,7 @@
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="insturction_1" valType="code" updates="None" name="name"/>
+        <Param val="exp1_instr_text" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -154,8 +154,8 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="exp1_trial">
-      <ImageComponent name="exp1_trial_image">
-        <Param val="center-left" valType="str" updates="constant" name="anchor"/>
+      <ImageComponent name="exp1_trial_image_l">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
@@ -163,47 +163,59 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$image" valType="file" updates="set every repeat" name="image"/>
+        <Param val="$left" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="exp1_trial_image" valType="code" updates="None" name="name"/>
+        <Param val="exp1_trial_image_l" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(-0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
-      <SoundComponent name="exp1_trial_sound">
+      <ImageComponent name="exp1_trial_image_r">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="True" valType="bool" updates="constant" name="hamming"/>
-        <Param val="exp1_trial_sound" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$right" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp1_trial_image_r" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.5, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="$num" valType="str" updates="constant" name="sound"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="5" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="constant" name="syncScreenRefresh"/>
-        <Param val="1" valType="num" updates="constant" name="volume"/>
-      </SoundComponent>
-      <KeyboardComponent name="key_resp">
-        <Param val="'left-shift','right-shift'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <KeyboardComponent name="exp1_trial_key">
+        <Param val="'lshift','rshift'" valType="list" updates="set every repeat" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="exp1_trial_key" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -214,7 +226,96 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
-      <ImageComponent name="exp1_trial_image__alt">
+      <SoundComponent name="exp1_trial_sound">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="exp1_trial_sound" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="$sound_dir" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="exp1_start">
+      <KeyboardComponent name="exp1_start_key">
+        <Param val="'rshift'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_start_key" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextComponent name="exp1_start_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="exp1_start_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Now let's start the experiment 1!&amp;#10;&amp;#10;Please keep your hands on the left-shift key and right-shift key. &amp;#10;&amp;#10;To start, please, press the left-shift key then the right-shift key." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="end_exp1_trial">
+      <TextComponent name="end_exp1_trial_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="end_exp1_trial_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Good Job!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="exp1">
+      <ImageComponent name="exp1_image_l">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -223,41 +324,98 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="$image_alt" valType="file" updates="constant" name="image"/>
+        <Param val="$left" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="exp1_trial_image__alt" valType="code" updates="None" name="name"/>
+        <Param val="exp1_image_l" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.5, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
+      <ImageComponent name="exp1_image_r">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$right" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp1_image_r" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <KeyboardComponent name="exp1_key">
+        <Param val="'lshift','rshift'" valType="list" updates="set every repeat" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_key" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="exp1_sound">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="exp1_sound" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="$sound_dir" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
-    <Routine name="exp1_start"/>
-    <Routine name="end_exp1_trial"/>
-    <Routine name="exp1"/>
     <Routine name="exp1_end"/>
   </Routines>
   <Flow>
     <Routine name="welcome"/>
     <Routine name="exp1_instr"/>
     <LoopInitiator loopType="TrialHandler" name="exp1_trial_loop">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'NOTE': 'trial', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'num': 'tr1', 'phr': 'Where are your kids?', 'sent_code': 'lt_tr_en_na_tr1', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'kids', 'image_alt': 'key'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'num': 'tr2', 'phr': 'Who is buying my car?', 'sent_code': 'lt_tr_en_na_tr2', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'car', 'image_alt': 'bag'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'num': 'tr3', 'phr': '¿Dónde está mi perro?', 'sent_code': 'lt_tr_sp_na_tr3', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'dog', 'image_alt': 'backpack'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'num': 'tr4', 'phr': '¿De quién es la bolsa?', 'sent_code': 'lt_tr_sp_na_tr4', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'bag', 'image_alt': 'flower'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'num': 'tr5', 'phr': '¿Dónde encontraste sus donuts?', 'sent_code': 'lt_tr_se_na_tr5', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'donuts', 'image_alt': 'plates'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'num': 'tr6', 'phr': '¿Cuándo compraste tu sweater?', 'sent_code': 'lt_tr_se_na_tr6', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'sweater', 'image_alt': 'book'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'num': 'tr7', 'phr': 'Why do you have my camisa?', 'sent_code': 'lt_tr_es_na_tr7', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'shirt', 'image_alt': 'ring'}, {'NOTE': None, 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'num': 'tr8', 'phr': 'Where did you find his chanclas?', 'sent_code': 'lt_tr_es_na_tr8', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'image': 'flipflops', 'image_alt': 'sweatpants'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="/Users/gabmac/Documents/RU/QP/exp/trial/trial.xlsx" valType="file"/>
+      <Param name="Selected rows" updates="None" val="0:8" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'n': 1, 'num': 'tr1', 'sound_dir': '../practice_trial/audio/tr1.wav', 'left': '../image/kids.png', 'right': '../image/plates.png'}, {'n': 2, 'num': 'tr2', 'sound_dir': '../practice_trial/audio/tr2.wav', 'left': '../image/bag.png', 'right': '../image/car.png'}, {'n': 3, 'num': 'tr3', 'sound_dir': '../practice_trial/audio/tr3.wav', 'left': '../image/dog.png', 'right': '../image/grandma.png'}, {'n': 4, 'num': 'tr4', 'sound_dir': '../practice_trial/audio/tr4.wav', 'left': '../image/shirt.png', 'right': '../image/bag.png'}, {'n': 5, 'num': 'tr5', 'sound_dir': '../practice_trial/audio/tr5.wav', 'left': '../image/donuts.png', 'right': '../image/cups.png'}, {'n': 6, 'num': 'tr6', 'sound_dir': '../practice_trial/audio/tr6.wav', 'left': '../image/chair.png', 'right': '../image/sweater.png'}, {'n': 7, 'num': 'tr7', 'sound_dir': '../practice_trial/audio/tr7.wav', 'left': '../image/shirt.png', 'right': '../image/wallet.png'}, {'n': 8, 'num': 'tr8', 'sound_dir': '../practice_trial/audio/tr8.wav', 'left': '../image/key.png', 'right': '../image/flipflops.png'}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}, {'n': None, 'num': None, 'sound_dir': None, 'left': None, 'right': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="/Users/gabmac/Documents/RU/QP/exp/practice_trial/trial_exp_1/trial.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="0" valType="num"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
       <Param name="name" updates="None" val="exp1_trial_loop" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -266,13 +424,13 @@
     <Routine name="end_exp1_trial"/>
     <Routine name="exp1_start"/>
     <LoopInitiator loopType="TrialHandler" name="exp1_loop">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="Selected rows" updates="None" val="1:56" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="" valType="num"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
       <Param name="name" updates="None" val="exp1_loop" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
