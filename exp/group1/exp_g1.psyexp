@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="False" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="exp_g1" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="welcome">
+      <TextComponent name="welcome_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="welcome_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome to the study.&amp;#10;&amp;#10;In this study, you'll finish two similar but different experiments. You'll receive instructions and do a couple of practice trials before the real experiments begin.&amp;#10;&amp;#10;Between the two experiments you'll have time to take a 5-minute break. During the experiment, if you need to pause or stop, please raise you hand so the researcher can assist you.&amp;#10;&amp;#10;Press space to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="end_welcome">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="end_welcome" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="exp1_trial">
+      <ImageComponent name="exp1_trial_image_l">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$left" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp1_trial_image_l" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <ImageComponent name="exp1_trial_image_r">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$right" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp1_trial_image_r" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <KeyboardComponent name="exp1_trial_key">
+        <Param val="'lshift','rshift'" valType="list" updates="set every repeat" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_trial_key" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="exp1_trial_sound">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="exp1_trial_sound" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="$sound_dir" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="end_exp1_trial">
+      <TextComponent name="end_exp1_trial_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="end_exp1_trial_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Good Job!&amp;#10;&amp;#10;If you want to practice again, press space.&amp;#10;&amp;#10;If you are ready to start the experiment, press right shift." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="end_exp1_trial_key">
+        <Param val="'space','rshift'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="end_exp1_trial_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="exp1_trial_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="if ((end_exp1_trial_key.keys === &quot;rshift&quot;)) {&amp;#10;    exp1_retrial.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if end_exp1_trial_key.keys == &quot;rshift&quot;:&amp;#10;      exp1_retrial.finished = True&amp;#10;      " valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="exp1_trial_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="exp1">
+      <ImageComponent name="exp1_image_l">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$left" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp1_image_l" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <ImageComponent name="exp1_image_r">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$right" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp1_image_r" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <KeyboardComponent name="exp1_key">
+        <Param val="'lshift','rshift'" valType="list" updates="set every repeat" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_key" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="exp1_sound">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="exp1_sound" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="$sound_dir" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="set every repeat" name="volume"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="exp1_end">
+      <TextComponent name="exp1_end_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="exp1_end_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Good Job! This is the end of experiment 1&amp;#10;&amp;#10;Before we start experiment 2, you can take a short break.&amp;#10;&amp;#10;When you are ready to start experiment 2, please press space to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="exp1_end_key">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_end_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="exp1_instr">
+      <TextComponent name="exp1_instr_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="exp1_instr_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome! Here are the instructions for experiment 1.&amp;#10;&amp;#10;In this experiment you will see two items on the screen while listening to a sentence. The sentence you hear can be English, Spanish or a mix of both. Only one of the two items will be mentioned in the recording. When you hear the item, you should press the corresponding left/right shift key immediately. You only need to press the key ONCE.&amp;#10;&amp;#10;Before the experiment starts, let's do a couple of practice trials.&amp;#10;&amp;#10;Press space to start practice trial." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="exp1_instr_key">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_instr_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="exp1_start">
+      <KeyboardComponent name="exp1_start_key">
+        <Param val="'rshift'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp1_start_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextComponent name="exp1_start_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="exp1_start_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Now let's start the experiment 1!&amp;#10;&amp;#10;Please keep your hands on the left-shift key and right-shift key. &amp;#10;&amp;#10;To start, please, press the left-shift key then the right-shift key." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="exp2_instr">
+      <TextComponent name="exp2_instr_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="exp2_instr_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome back. Here are the instrctions for experiment 2&amp;#10;&amp;#10;You'll see two flags: American flag representing English and Spanish flag respresenting Spanish. You'll listen to sentences and pick the language you hear using left/right shift key. If you hear a change of language, you should then press the other shift key as soon as you hear the change.&amp;#10;&amp;#10;Before the experiment starts, let's do a couple of practice trials.&amp;#10;&amp;#10;Press space to start practice trial." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="exp2_instr_key">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp2_instr_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="exp2_trial">
+      <ImageComponent name="exp2_trial_iamge_l">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$left" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp2_trial_iamge_l" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <ImageComponent name="exp2_trial_image_r">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$right" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp2_trial_image_r" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <KeyboardComponent name="exp2_trial_key">
+        <Param val="'lshift','rshift'" valType="list" updates="set every repeat" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp2_trial_key" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="exp2_trial_sound">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="exp2_trial_sound" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="$sound_dir" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="end_exp2_trial">
+      <TextComponent name="end_exp2_trial_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="end_exp2_trial_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Good Job!&amp;#10;&amp;#10;If you want to practice again, press space.&amp;#10;&amp;#10;If you are ready to start the experiment, press right shift." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="end_exp2_trial_key">
+        <Param val="'space','rshift'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="end_exp2_trial_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="exp2_trial_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="if ((end_exp2_trial_key.keys === &quot;rshift&quot;)) {&amp;#10;    exp2_retrial.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if end_exp2_trial_key.keys == &quot;rshift&quot;:&amp;#10;      exp2_retrial.finished = True" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="exp2_trial_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="exp2_start">
+      <KeyboardComponent name="exp2_start_key">
+        <Param val="'rshift'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp2_start_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextComponent name="exp2_start_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="exp2_start_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Now let's start the experiment 2!&amp;#10;&amp;#10;Please keep your hands on the left-shift key and right-shift key. &amp;#10;&amp;#10;To start, please, press the left-shift key then the right-shift key." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="exp2">
+      <ImageComponent name="exp2_image_l">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$left" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp2_image_l" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <ImageComponent name="exp2_image_r">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$right" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="exp2_image_r" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.5, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <KeyboardComponent name="exp2_key">
+        <Param val="'lshift','rshift'" valType="list" updates="set every repeat" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="exp2_key" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <SoundComponent name="exp2_sound">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="exp2_sound" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="$sound_dir" valType="str" updates="set every repeat" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="4" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="full_end">
+      <TextComponent name="full_end_text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="full_end_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="This is the end of the study.&amp;#10;&amp;#10;&amp;#10;Thank you for your participation!&amp;#10;&amp;#10;Have a great day!&amp;#10;&amp;#10;Press space to exit." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="full_end_key">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="full_end_key" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="welcome"/>
+    <LoopInitiator loopType="TrialHandler" name="exp1_retrial">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1000" valType="num"/>
+      <Param name="name" updates="None" val="exp1_retrial" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exp1_instr"/>
+    <LoopInitiator loopType="TrialHandler" name="exp1_trial_loop">
+      <Param name="Selected rows" updates="None" val="0:8" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'num': 'tr1', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr1.wav', 'phr': 'Where are your kids?', 'sent_code': 'lt_tr_en_na_tr1', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/kids.png', 'right': '../image/plates.png', 'correct_img': 'kids', 'correct': 'lshift'}, {'num': 'tr2', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr2.wav', 'phr': 'Who is buying my car?', 'sent_code': 'lt_tr_en_na_tr2', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/bag.png', 'right': '../image/car.png', 'correct_img': 'car', 'correct': 'rshift'}, {'num': 'tr3', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr3.wav', 'phr': '¿Dónde está mi perro?', 'sent_code': 'lt_tr_sp_na_tr3', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/dog.png', 'right': '../image/grandma.png', 'correct_img': 'dog', 'correct': 'lshift'}, {'num': 'tr4', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr4.wav', 'phr': '¿De quién es la bolsa?', 'sent_code': 'lt_tr_sp_na_tr4', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/shirt.png', 'right': '../image/bag.png', 'correct_img': 'bag', 'correct': 'rshift'}, {'num': 'tr5', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr5.wav', 'phr': '¿Dónde encontraste sus donuts?', 'sent_code': 'lt_tr_se_na_tr5', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/donut.png', 'right': '../image/cups.png', 'correct_img': 'donut', 'correct': 'lshift'}, {'num': 'tr6', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr6.wav', 'phr': '¿Cuándo compraste tu sweater?', 'sent_code': 'lt_tr_se_na_tr6', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/chair.png', 'right': '../image/sweater.png', 'correct_img': 'sweater', 'correct': 'rshift'}, {'num': 'tr7', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr7.wav', 'phr': 'Why do you have my camisa?', 'sent_code': 'lt_tr_es_na_tr7', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/shirt.png', 'right': '../image/wallet.png', 'correct_img': 'shirt', 'correct': 'lshift'}, {'num': 'tr8', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr8.wav', 'phr': 'Where did you find his chanclas?', 'sent_code': 'lt_tr_es_na_tr8', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/key.png', 'right': '../image/flipflops.png', 'correct_img': 'flipflops', 'correct': 'rshift'}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None, 'correct_img': None, 'correct': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="/Users/gabmac/Documents/RU/QP/exp/practice_trial/trial_exp_1/trial1.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="exp1_trial_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exp1_trial"/>
+    <LoopTerminator name="exp1_trial_loop"/>
+    <Routine name="end_exp1_trial"/>
+    <LoopTerminator name="exp1_retrial"/>
+    <Routine name="exp1_start"/>
+    <LoopInitiator loopType="TrialHandler" name="exp1_loop">
+      <Param name="Selected rows" updates="None" val="0:55" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'exp_num': 1, 'sentence_code': 'l1_f_en_na_061', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 61.0, 'image': 'dog', 'image_alt': 'cat', 'left_img': 'cat', 'right_img': 'dog', 'left': '../image/cat.png', 'right': '../image/dog.png', 'correct_img': 'dog', 'correct_key': 'r', 'sound_dir': '../audio/061.wav', 'image_dir': '../image/'}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_062', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 62.0, 'image': 'shoe', 'image_alt': 'ring', 'left_img': 'shoe', 'right_img': 'ring', 'left': '../image/shoe.png', 'right': '../image/ring.png', 'correct_img': 'shoe', 'correct_key': 'l', 'sound_dir': '../audio/062.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_063', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 63.0, 'image': 'man', 'image_alt': 'woman', 'left_img': 'woman', 'right_img': 'man', 'left': '../image/woman.png', 'right': '../image/man.png', 'correct_img': 'man', 'correct_key': 'r', 'sound_dir': '../audio/063.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_064', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 64.0, 'image': 'wallet', 'image_alt': 'key', 'left_img': 'wallet', 'right_img': 'key', 'left': '../image/wallet.png', 'right': '../image/key.png', 'correct_img': 'wallet', 'correct_key': 'l', 'sound_dir': '../audio/064.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_065', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 65.0, 'image': 'book', 'image_alt': 'computer', 'left_img': 'computer', 'right_img': 'book', 'left': '../image/computer.png', 'right': '../image/book.png', 'correct_img': 'book', 'correct_key': 'r', 'sound_dir': '../audio/065.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_066', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 66.0, 'image': 'bag', 'image_alt': 'scarf', 'left_img': 'bag', 'right_img': 'scarf', 'left': '../image/bag.png', 'right': '../image/scarf.png', 'correct_img': 'bag', 'correct_key': 'l', 'sound_dir': '../audio/066.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_067', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 67.0, 'image': 'glasses', 'image_alt': 'beer', 'left_img': 'beer', 'right_img': 'glasses', 'left': '../image/beer.png', 'right': '../image/glasses.png', 'correct_img': 'glasses', 'correct_key': 'r', 'sound_dir': '../audio/067.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_068', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 68.0, 'image': 'socks', 'image_alt': 'book', 'left_img': 'socks', 'right_img': 'book', 'left': '../image/socks.png', 'right': '../image/book.png', 'correct_img': 'socks', 'correct_key': 'l', 'sound_dir': '../audio/068.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_069', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 69.0, 'image': 'shirt', 'image_alt': 'bag', 'left_img': 'bag', 'right_img': 'shirt', 'left': '../image/bag.png', 'right': '../image/shirt.png', 'correct_img': 'shirt', 'correct_key': 'r', 'sound_dir': '../audio/069.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_070', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 70.0, 'image': 'computer', 'image_alt': 'bed', 'left_img': 'computer', 'right_img': 'bed', 'left': '../image/computer.png', 'right': '../image/bed.png', 'correct_img': 'computer', 'correct_key': 'l', 'sound_dir': '../audio/070.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_071', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 71.0, 'image': 'plane', 'image_alt': 'wallet', 'left_img': 'wallet', 'right_img': 'plane', 'left': '../image/wallet.png', 'right': '../image/plane.png', 'correct_img': 'plane', 'correct_key': 'r', 'sound_dir': '../audio/071.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_072', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 72.0, 'image': 'dog', 'image_alt': 'fish', 'left_img': 'dog', 'right_img': 'fish', 'left': '../image/dog.png', 'right': '../image/fish.png', 'correct_img': 'dog', 'correct_key': 'l', 'sound_dir': '../audio/072.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_073', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 73.0, 'image': 'tshirt', 'image_alt': 'socks', 'left_img': 'socks', 'right_img': 'tshirt', 'left': '../image/socks.png', 'right': '../image/tshirt.png', 'correct_img': 'tshirt', 'correct_key': 'r', 'sound_dir': '../audio/073.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_074', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 74.0, 'image': 'boy', 'image_alt': 'woman', 'left_img': 'boy', 'right_img': 'woman', 'left': '../image/boy.png', 'right': '../image/woman.png', 'correct_img': 'boy', 'correct_key': 'l', 'sound_dir': '../audio/074.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_en_na_075', 'lsit': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 75.0, 'image': 'fish', 'image_alt': 'dog', 'left_img': 'dog', 'right_img': 'fish', 'left': '../image/dog.png', 'right': '../image/fish.png', 'correct_img': 'fish', 'correct_key': 'r', 'sound_dir': '../audio/075.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_076', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 76.0, 'image': 'hotdog', 'image_alt': 'burger', 'left_img': 'hotdog', 'right_img': 'burger', 'left': '../image/hotdog.png', 'right': '../image/burger.png', 'correct_img': 'hotdog', 'correct_key': 'l', 'sound_dir': '../audio/076.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_077', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 77.0, 'image': 'donut', 'image_alt': 'mashedpotatoes', 'left_img': 'mashedpotatoes', 'right_img': 'donut', 'left': '../image/mashedpotatoes.png', 'right': '../image/donut.png', 'correct_img': 'donut', 'correct_key': 'r', 'sound_dir': '../audio/077.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_078', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 78.0, 'image': 'airpods', 'image_alt': 'joycons', 'left_img': 'airpods', 'right_img': 'joycons', 'left': '../image/airpods.png', 'right': '../image/joycons.png', 'correct_img': 'airpods', 'correct_key': 'l', 'sound_dir': '../audio/078.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_079', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 79.0, 'image': 'jeans', 'image_alt': 'sweatpants', 'left_img': 'sweatpants', 'right_img': 'jeans', 'left': '../image/sweatpants.png', 'right': '../image/jeans.png', 'correct_img': 'jeans', 'correct_key': 'r', 'sound_dir': '../audio/079.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_080', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 80.0, 'image': 'mouse', 'image_alt': 'rat', 'left_img': 'mouse', 'right_img': 'rat', 'left': '../image/mouse.png', 'right': '../image/rat.png', 'correct_img': 'mouse', 'correct_key': 'l', 'sound_dir': '../audio/080.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_081', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 81.0, 'image': 'sweatpants', 'image_alt': 'boxers', 'left_img': 'boxers', 'right_img': 'sweatpants', 'left': '../image/boxers.png', 'right': '../image/sweatpants.png', 'correct_img': 'sweatpants', 'correct_key': 'r', 'sound_dir': '../audio/081.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_082', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 82.0, 'image': 'mickeymouse', 'image_alt': 'spongebob', 'left_img': 'mickeymouse', 'right_img': 'spongebob', 'left': '../image/mickeymouse.png', 'right': '../image/spongebob.png', 'correct_img': 'mickeymouse', 'correct_key': 'l', 'sound_dir': '../audio/082.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_083', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 83.0, 'image': 'burger', 'image_alt': 'donut', 'left_img': 'donut', 'right_img': 'burger', 'left': '../image/donut.png', 'right': '../image/burger.png', 'correct_img': 'burger', 'correct_key': 'r', 'sound_dir': '../audio/083.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_084', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 84.0, 'image': 'penthouse', 'image_alt': 'rocket', 'left_img': 'penthouse', 'right_img': 'rocket', 'left': '../image/penthouse.png', 'right': '../image/rocket.png', 'correct_img': 'penthouse', 'correct_key': 'l', 'sound_dir': '../audio/084.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_se_na_085', 'lsit': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 85.0, 'image': 'sneakers', 'image_alt': 'loafers', 'left_img': 'loafers', 'right_img': 'sneakers', 'left': '../image/loafers.png', 'right': '../image/sneakers.png', 'correct_img': 'sneakers', 'correct_key': 'r', 'sound_dir': '../audio/085.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_086', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 86.0, 'image': 'plates', 'image_alt': 'glasses', 'left_img': 'plates', 'right_img': 'glasses', 'left': '../image/plates.png', 'right': '../image/glasses.png', 'correct_img': 'plates', 'correct_key': 'l', 'sound_dir': '../audio/086.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_087', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 87.0, 'image': 'bed', 'image_alt': 'desk', 'left_img': 'desk', 'right_img': 'bed', 'left': '../image/desk.png', 'right': '../image/bed.png', 'correct_img': 'bed', 'correct_key': 'r', 'sound_dir': '../audio/087.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_088', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 88.0, 'image': 'book', 'image_alt': 'cellphone', 'left_img': 'book', 'right_img': 'cellphone', 'left': '../image/book.png', 'right': '../image/cellphone.png', 'correct_img': 'book', 'correct_key': 'l', 'sound_dir': '../audio/088.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_089', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 89.0, 'image': 'wallet', 'image_alt': 'bed', 'left_img': 'bed', 'right_img': 'wallet', 'left': '../image/bed.png', 'right': '../image/wallet.png', 'correct_img': 'wallet', 'correct_key': 'r', 'sound_dir': '../audio/089.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_090', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 90.0, 'image': 'bag', 'image_alt': 'bottle', 'left_img': 'bag', 'right_img': 'bottle', 'left': '../image/bag.png', 'right': '../image/bottle.png', 'correct_img': 'bag', 'correct_key': 'l', 'sound_dir': '../audio/090.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_091', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 91.0, 'image': 'bracelet', 'image_alt': 'backpack', 'left_img': 'backpack', 'right_img': 'bracelet', 'left': '../image/backpack.png', 'right': '../image/bracelet.png', 'correct_img': 'bracelet', 'correct_key': 'r', 'sound_dir': '../audio/091.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_092', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 92.0, 'image': 'armchair', 'image_alt': 'dog', 'left_img': 'armchair', 'right_img': 'dog', 'left': '../image/armchair.png', 'right': '../image/dog.png', 'correct_img': 'armchair', 'correct_key': 'l', 'sound_dir': '../audio/092.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_093', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 93.0, 'image': 'book', 'image_alt': 'boy', 'left_img': 'boy', 'right_img': 'book', 'left': '../image/boy.png', 'right': '../image/book.png', 'correct_img': 'book', 'correct_key': 'r', 'sound_dir': '../audio/093.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_094', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 94.0, 'image': 'beer', 'image_alt': 'horchata', 'left_img': 'beer', 'right_img': 'horchata', 'left': '../image/beer.png', 'right': '../image/horchata.png', 'correct_img': 'beer', 'correct_key': 'l', 'sound_dir': '../audio/094.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_f_sp_na_095', 'lsit': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 95.0, 'image': 'key', 'image_alt': 'socks', 'left_img': 'socks', 'right_img': 'key', 'left': '../image/socks.png', 'right': '../image/key.png', 'correct_img': 'key', 'correct_key': 'r', 'sound_dir': '../audio/095.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_011', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 11.0, 'image': 'armchair', 'image_alt': 'bed', 'left_img': 'armchair', 'right_img': 'bed', 'left': '../image/armchair.png', 'right': '../image/bed.png', 'correct_img': 'armchair', 'correct_key': 'l', 'sound_dir': '../audio/011.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_012', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 12.0, 'image': 'book', 'image_alt': 'newspaper', 'left_img': 'newspaper', 'right_img': 'book', 'left': '../image/newspaper.png', 'right': '../image/book.png', 'correct_img': 'book', 'correct_key': 'r', 'sound_dir': '../audio/012.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_013', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 13.0, 'image': 'beer', 'image_alt': 'wine', 'left_img': 'beer', 'right_img': 'wine', 'left': '../image/beer.png', 'right': '../image/wine.png', 'correct_img': 'beer', 'correct_key': 'l', 'sound_dir': '../audio/013.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_014', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 14.0, 'image': 'key', 'image_alt': 'book', 'left_img': 'book', 'right_img': 'key', 'left': '../image/book.png', 'right': '../image/key.png', 'correct_img': 'key', 'correct_key': 'r', 'sound_dir': '../audio/014.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_015', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 15.0, 'image': 'glasses', 'image_alt': 'jacket', 'left_img': 'glasses', 'right_img': 'jacket', 'left': '../image/glasses.png', 'right': '../image/jacket.png', 'correct_img': 'glasses', 'correct_key': 'l', 'sound_dir': '../audio/015.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_016', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 16.0, 'image': 'bag', 'image_alt': 'flipflops', 'left_img': 'flipflops', 'right_img': 'bag', 'left': '../image/flipflops.png', 'right': '../image/bag.png', 'correct_img': 'bag', 'correct_key': 'r', 'sound_dir': '../audio/016.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_017', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 17.0, 'image': 'jug', 'image_alt': 'cat', 'left_img': 'jug', 'right_img': 'cat', 'left': '../image/jug.png', 'right': '../image/cat.png', 'correct_img': 'jug', 'correct_key': 'l', 'sound_dir': '../audio/017.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_018', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 18.0, 'image': 'napkins', 'image_alt': 'cups', 'left_img': 'cups', 'right_img': 'napkins', 'left': '../image/cups.png', 'right': '../image/napkins.png', 'correct_img': 'napkins', 'correct_key': 'r', 'sound_dir': '../audio/018.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_019', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 19.0, 'image': 'boy', 'image_alt': 'dog', 'left_img': 'boy', 'right_img': 'dog', 'left': '../image/boy.png', 'right': '../image/dog.png', 'correct_img': 'boy', 'correct_key': 'l', 'sound_dir': '../audio/019.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_na_020', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 20.0, 'image': 'backpack', 'image_alt': 'cellphone', 'left_img': 'cellphone', 'right_img': 'backpack', 'left': '../image/cellphone.png', 'right': '../image/backpack.png', 'correct_img': 'backpack', 'correct_key': 'r', 'sound_dir': '../audio/020.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_131', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 131.0, 'image': 'cat', 'image_alt': 'flower', 'left_img': 'cat', 'right_img': 'flower', 'left': '../image/cat.png', 'right': '../image/flower.png', 'correct_img': 'cat', 'correct_key': 'l', 'sound_dir': '../audio/131.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_132', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 132.0, 'image': 'grandma', 'image_alt': 'car', 'left_img': 'car', 'right_img': 'grandma', 'left': '../image/car.png', 'right': '../image/grandma.png', 'correct_img': 'grandma', 'correct_key': 'r', 'sound_dir': '../audio/132.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_133', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 133.0, 'image': 'cellphone', 'image_alt': 'book', 'left_img': 'cellphone', 'right_img': 'book', 'left': '../image/cellphone.png', 'right': '../image/book.png', 'correct_img': 'cellphone', 'correct_key': 'l', 'sound_dir': '../audio/133.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_134', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 134.0, 'image': 'truck', 'image_alt': 'basket', 'left_img': 'basket', 'right_img': 'truck', 'left': '../image/basket.png', 'right': '../image/truck.png', 'correct_img': 'truck', 'correct_key': 'r', 'sound_dir': '../audio/134.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_135', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 135.0, 'image': 'flipflops', 'image_alt': 'flower', 'left_img': 'flipflops', 'right_img': 'flower', 'left': '../image/flipflops.png', 'right': '../image/flower.png', 'correct_img': 'flipflops', 'correct_key': 'l', 'sound_dir': '../audio/135.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_136', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 136.0, 'image': 'village', 'image_alt': 'city', 'left_img': 'city', 'right_img': 'village', 'left': '../image/city.png', 'right': '../image/village.png', 'correct_img': 'village', 'correct_key': 'r', 'sound_dir': '../audio/136.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_137', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 137.0, 'image': 'jacket', 'image_alt': 'shirt', 'left_img': 'jacket', 'right_img': 'shirt', 'left': '../image/jacket.png', 'right': '../image/shirt.png', 'correct_img': 'jacket', 'correct_key': 'l', 'sound_dir': '../audio/137.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_138', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 138.0, 'image': 'shirt', 'image_alt': 'pants', 'left_img': 'pants', 'right_img': 'shirt', 'left': '../image/pants.png', 'right': '../image/shirt.png', 'correct_img': 'shirt', 'correct_key': 'r', 'sound_dir': '../audio/138.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_139', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 139.0, 'image': 'restaurant', 'image_alt': 'hotel', 'left_img': 'restaurant', 'right_img': 'hotel', 'left': '../image/restaurant.png', 'right': '../image/hotel.png', 'correct_img': 'restaurant', 'correct_key': 'l', 'sound_dir': '../audio/139.wav', 'image_dir': None}, {'exp_num': 1, 'sentence_code': 'l1_t_es_f0u_140', 'lsit': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 140.0, 'image': 'bracelet', 'image_alt': 'ring', 'left_img': 'ring', 'right_img': 'bracelet', 'left': '../image/ring.png', 'right': '../image/bracelet.png', 'correct_img': 'bracelet', 'correct_key': 'r', 'sound_dir': '../audio/140.wav', 'image_dir': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="/Users/gabmac/Documents/RU/QP/exp/stim/stim_g1_e1.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="exp1_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exp1"/>
+    <LoopTerminator name="exp1_loop"/>
+    <Routine name="exp1_end"/>
+    <LoopInitiator loopType="TrialHandler" name="exp2_retrial">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1000" valType="num"/>
+      <Param name="name" updates="None" val="exp2_retrial" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exp2_instr"/>
+    <LoopInitiator loopType="TrialHandler" name="exp2_trial_loop">
+      <Param name="Selected rows" updates="None" val="0:8" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'num': 'tr1', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr1.wav', 'phr': 'Where are your kids?', 'sent_code': 'lt_tr_en_na_tr1', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr2', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr2.wav', 'phr': 'Who is buying my car?', 'sent_code': 'lt_tr_en_na_tr2', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr3', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr3.wav', 'phr': '¿Dónde está mi perro?', 'sent_code': 'lt_tr_sp_na_tr3', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr4', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr4.wav', 'phr': '¿De quién es la bolsa?', 'sent_code': 'lt_tr_sp_na_tr4', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr5', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr5.wav', 'phr': '¿Dónde encontraste sus donuts?', 'sent_code': 'lt_tr_se_na_tr5', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr6', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr6.wav', 'phr': '¿Cuándo compraste tu sweater?', 'sent_code': 'lt_tr_se_na_tr6', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr7', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr7.wav', 'phr': 'Why do you have my camisa?', 'sent_code': 'lt_tr_es_na_tr7', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': 'tr8', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr8.wav', 'phr': 'Where did you find his chanclas?', 'sent_code': 'lt_tr_es_na_tr8', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}, {'num': None, 'list': None, 'cond': None, 'lang': None, 'type': None, 'sound_dir': None, 'phr': None, 'sent_code': None, 'mat': None, 'mat_num': None, 'emb_num': None, 'emb': None, 'cut': None, 'mat_f0_c': None, 'left': None, 'right': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="/Users/gabmac/Documents/RU/QP/exp/practice_trial/trial_exp_2/trial2.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="exp2_trial_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exp2_trial"/>
+    <LoopTerminator name="exp2_trial_loop"/>
+    <Routine name="end_exp2_trial"/>
+    <LoopTerminator name="exp2_retrial"/>
+    <Routine name="exp2_start"/>
+    <LoopInitiator loopType="TrialHandler" name="exp2_loop">
+      <Param name="Selected rows" updates="None" val="0:55" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'exp_num': 2, 'sentence_code': 'l2_f_en_na_096', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 96.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/096.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_097', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 97.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/097.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_098', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 98.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/098.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_099', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 99.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/099.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_100', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 100.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/100.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_101', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 101.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/101.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_102', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 102.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/102.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_103', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 103.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/103.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_104', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 104.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/104.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_105', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 105.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/105.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_106', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 106.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/106.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_107', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 107.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/107.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_108', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 108.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/108.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_109', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 109.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/109.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_en_na_110', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 110.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/110.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_111', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 111.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/111.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_112', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 112.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/112.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_113', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 113.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/113.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_114', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 114.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/114.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_115', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 115.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/115.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_116', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 116.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/116.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_117', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 117.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/117.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_118', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 118.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/118.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_119', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 119.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/119.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_se_na_120', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 120.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/120.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_121', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 121.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/121.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_122', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 122.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/122.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_123', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 123.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/123.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_124', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 124.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/124.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_125', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 125, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/125.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_126', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 126.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/126.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_127', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 127.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/127.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_128', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 128.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/128.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_129', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 129.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/129.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_f_sp_na_130', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 130.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/130.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_021', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 21.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/021.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_022', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 22.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/022.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_023', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 23.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/023.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_024', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 24.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/024.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_025', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 25.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/025.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_026', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 26.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/026.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_027', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 27.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/027.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_028', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 28.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/028.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_029', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 29.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/029.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_na_030', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 30.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/030.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_161', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 161.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/161.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_162', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 162.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/162.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_163', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 163.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/163.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_164', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 164.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/164.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_165', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 165.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/165.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_166', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 166.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/166.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_167', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 167.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/167.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_168', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 168.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/168.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_169', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 169.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/169.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}, {'exp_num': 2, 'sentence_code': 'l2_t_es_f0c_170', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 170.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/170.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="/Users/gabmac/Documents/RU/QP/exp/stim/stim_g1_e2.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="exp2_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="exp2"/>
+    <LoopTerminator name="exp2_loop"/>
+    <Routine name="full_end"/>
+  </Flow>
+</PsychoPy2experiment>
