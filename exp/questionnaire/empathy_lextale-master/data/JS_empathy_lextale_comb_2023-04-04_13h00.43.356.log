@@ -1,0 +1,175 @@
+6.5813 	INFO 	Loaded monitor calibration from ['2021_09_15 13:49']
+6.5908 	WARNING 	User requested fullscreen with size [1440  900], but screen is actually [1470, 956]. Using actual size
+7.8235 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+7.8247 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd838e4daf0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fd80c9520a0>, multiSample=False, name='window1', numSamples=2, pos=[367.5, 239.0], screen=0, size=array([2940, 1912]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.8252 	EXP 	window1: mouseVisible = True
+7.8266 	EXP 	window1: mouseVisible = False
+7.8266 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.8267 	EXP 	window1: recordFrameIntervals = False
+7.9065 	EXP 	window1: recordFrameIntervals = True
+8.7462 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.6699 	INFO 	keyboard.Keyboard is using iohub backend.
+10.6768 	EXP 	Created text_lextale_instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_lextale_instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=0.8)
+10.6769 	INFO 	keyboard.Keyboard is using iohub backend.
+10.7013 	EXP 	Created text_lextale_practice_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_practice_label', opacity=1.0, ori=0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='PRACTICE', units='height', win=Window(...), wrapWidth=1)
+10.7017 	EXP 	Created text_lextale_practice_word = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1,  1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_practice_word', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7017 	INFO 	keyboard.Keyboard is using iohub backend.
+10.7020 	EXP 	Created text_lextale_practice_real_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_practice_real_label', opacity=1.0, ori=0, pos=array([-0.3, -0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7024 	EXP 	Created text_lextale_practice_false_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_practice_false_label', opacity=1.0, ori=0, pos=array([ 0.3, -0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7027 	EXP 	Created text_lextale_practice_feedback = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_practice_feedback', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7027 	INFO 	keyboard.Keyboard is using iohub backend.
+10.7131 	EXP 	Created text_lextale_check = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_check', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.7131 	INFO 	keyboard.Keyboard is using iohub backend.
+10.7134 	EXP 	Created text_lextale_trial_word = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1,  1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_trial_word', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7134 	INFO 	keyboard.Keyboard is using iohub backend.
+10.7138 	EXP 	Created text_lextale_trial_real_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_trial_real_label', opacity=1.0, ori=0, pos=array([-0.3, -0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7141 	EXP 	Created text_lextale_trial_false_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_lextale_trial_false_label', opacity=1.0, ori=0, pos=array([ 0.3, -0.3]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.7230 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.7230 	INFO 	keyboard.Keyboard is using iohub backend.
+10.7446 	WARNING 	t of last frame was 1998.70ms (=1/0)
+10.7446 	EXP 	text_lextale_instructions: height = 0.025
+10.7446 	EXP 	text_lextale_instructions: height = 0.025
+10.7446 	EXP 	text_lextale_instructions: height = 0.025
+10.7446 	EXP 	text_lextale_instructions: text = 'Great! Now for the Spanish test.\n\nYou will see a total of 90 words, once each.\n\nYou must decide if each word is a real word by pressing 1.\n\nIf the word is not a real word, press 0. \n\nPress space to begin.'
+10.7446 	EXP 	text_lextale_instructions: autoDraw = True
+21.6395 	WARNING 	t of last frame was 33.19ms (=1/30)
+23.4080 	DEBUG 	Read excel file with openpyxl: trials/lextale_practice_trials.xlsx
+23.4094 	EXP 	Imported trials/lextale_practice_trials.xlsx as conditions, 12 conditions, 5 params
+23.4121 	EXP 	Created sequence: random, trialTypes=12, nReps=1, seed=None
+23.4125 	EXP 	New trial (rep=0, index=0): {'stim': 0, 'word': 'casa', 'correct_response': 1, 'prac_button_real': 'REAL', 'prac_button_false': 'FAKE'}
+23.4277 	DATA 	Keypress: space
+23.4328 	WARNING 	t of last frame was 69.72ms (=1/14)
+23.4328 	EXP 	text_lextale_instructions: autoDraw = False
+23.4328 	EXP 	text_lextale_practice_word: height = 0.1
+23.4328 	EXP 	text_lextale_practice_word: height = 0.1
+23.4328 	EXP 	text_lextale_practice_word: height = 0.1
+23.4328 	EXP 	text_lextale_practice_word: text = 'casa'
+23.4328 	EXP 	text_lextale_practice_real_label: height = 0.1
+23.4328 	EXP 	text_lextale_practice_real_label: height = 0.1
+23.4328 	EXP 	text_lextale_practice_real_label: height = 0.1
+23.4328 	EXP 	text_lextale_practice_real_label: text = 'REAL'
+23.4328 	EXP 	text_lextale_practice_false_label: height = 0.1
+23.4328 	EXP 	text_lextale_practice_false_label: height = 0.1
+23.4328 	EXP 	text_lextale_practice_false_label: height = 0.1
+23.4328 	EXP 	text_lextale_practice_false_label: text = 'FAKE'
+23.4328 	EXP 	text_lextale_practice_label: autoDraw = True
+23.6448 	EXP 	text_lextale_practice_real_label: autoDraw = True
+23.6448 	EXP 	text_lextale_practice_false_label: autoDraw = True
+23.8892 	EXP 	text_lextale_practice_word: autoDraw = True
+28.8827 	DATA 	Keypress: 1
+28.9083 	WARNING 	t of last frame was 20.09ms (=1/49)
+28.9083 	EXP 	text_lextale_practice_label: autoDraw = False
+28.9083 	EXP 	text_lextale_practice_word: autoDraw = False
+28.9083 	EXP 	text_lextale_practice_real_label: autoDraw = False
+28.9083 	EXP 	text_lextale_practice_false_label: autoDraw = False
+28.9083 	EXP 	text_lextale_practice_feedback: height = 0.1
+28.9083 	EXP 	text_lextale_practice_feedback: height = 0.1
+28.9083 	EXP 	text_lextale_practice_feedback: height = 0.1
+28.9083 	EXP 	text_lextale_practice_feedback: text = "Correct! That's a real word."
+28.9083 	EXP 	text_lextale_practice_feedback: autoDraw = True
+29.8959 	EXP 	New trial (rep=0, index=1): {'stim': 0, 'word': 'pretantas', 'correct_response': 0, 'prac_button_real': 'REAL', 'prac_button_false': 'FAKE'}
+29.9065 	EXP 	text_lextale_practice_feedback: autoDraw = False
+29.9065 	EXP 	text_lextale_practice_word: height = 0.1
+29.9065 	EXP 	text_lextale_practice_word: height = 0.1
+29.9065 	EXP 	text_lextale_practice_word: height = 0.1
+29.9065 	EXP 	text_lextale_practice_word: text = 'pretantas'
+29.9065 	EXP 	text_lextale_practice_real_label: text = 'REAL'
+29.9065 	EXP 	text_lextale_practice_false_label: text = 'FAKE'
+29.9065 	EXP 	text_lextale_practice_label: autoDraw = True
+30.1290 	EXP 	text_lextale_practice_real_label: autoDraw = True
+30.1290 	EXP 	text_lextale_practice_false_label: autoDraw = True
+30.3843 	EXP 	text_lextale_practice_word: autoDraw = True
+32.7267 	DATA 	Keypress: 0
+32.7313 	EXP 	text_lextale_practice_label: autoDraw = False
+32.7313 	EXP 	text_lextale_practice_word: autoDraw = False
+32.7313 	EXP 	text_lextale_practice_real_label: autoDraw = False
+32.7313 	EXP 	text_lextale_practice_false_label: autoDraw = False
+32.7313 	EXP 	text_lextale_practice_feedback: text = "Correct! That's a real word."
+32.7313 	EXP 	text_lextale_practice_feedback: autoDraw = True
+33.7240 	EXP 	New trial (rep=0, index=2): {'stim': 0, 'word': 'lejo', 'correct_response': 0, 'prac_button_real': 'REAL', 'prac_button_false': 'FAKE'}
+33.7353 	EXP 	text_lextale_practice_feedback: autoDraw = False
+33.7353 	EXP 	text_lextale_practice_feedback: autoDraw = False
+33.7353 	EXP 	text_lextale_practice_word: height = 0.1
+33.7353 	EXP 	text_lextale_practice_word: height = 0.1
+33.7353 	EXP 	text_lextale_practice_word: height = 0.1
+33.7353 	EXP 	text_lextale_practice_word: text = 'lejo'
+33.7353 	EXP 	text_lextale_practice_real_label: text = 'REAL'
+33.7353 	EXP 	text_lextale_practice_false_label: text = 'FAKE'
+33.7353 	EXP 	text_lextale_practice_label: autoDraw = True
+33.7559 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+33.9726 	EXP 	text_lextale_practice_real_label: autoDraw = True
+33.9726 	EXP 	text_lextale_practice_false_label: autoDraw = True
+34.2225 	EXP 	text_lextale_practice_word: autoDraw = True
+37.0606 	DATA 	Keypress: 0
+37.0651 	EXP 	text_lextale_practice_label: autoDraw = False
+37.0651 	EXP 	text_lextale_practice_word: autoDraw = False
+37.0651 	EXP 	text_lextale_practice_real_label: autoDraw = False
+37.0651 	EXP 	text_lextale_practice_false_label: autoDraw = False
+37.0651 	EXP 	text_lextale_practice_feedback: text = "Correct! That's a real word."
+37.0651 	EXP 	text_lextale_practice_feedback: autoDraw = True
+38.0569 	EXP 	New trial (rep=0, index=3): {'stim': 0, 'word': 'priba', 'correct_response': 0, 'prac_button_real': 'REAL', 'prac_button_false': 'FAKE'}
+38.0686 	EXP 	text_lextale_practice_feedback: autoDraw = False
+38.0686 	EXP 	text_lextale_practice_word: height = 0.1
+38.0686 	EXP 	text_lextale_practice_word: height = 0.1
+38.0686 	EXP 	text_lextale_practice_word: height = 0.1
+38.0686 	EXP 	text_lextale_practice_word: text = 'priba'
+38.0686 	EXP 	text_lextale_practice_real_label: text = 'REAL'
+38.0686 	EXP 	text_lextale_practice_false_label: text = 'FAKE'
+38.0686 	EXP 	text_lextale_practice_label: autoDraw = True
+38.2895 	EXP 	text_lextale_practice_real_label: autoDraw = True
+38.2895 	EXP 	text_lextale_practice_false_label: autoDraw = True
+38.5469 	EXP 	text_lextale_practice_word: autoDraw = True
+42.4936 	DATA 	Keypress: 0
+42.4982 	EXP 	text_lextale_practice_label: autoDraw = False
+42.4982 	EXP 	text_lextale_practice_word: autoDraw = False
+42.4982 	EXP 	text_lextale_practice_real_label: autoDraw = False
+42.4982 	EXP 	text_lextale_practice_false_label: autoDraw = False
+42.4982 	EXP 	text_lextale_practice_feedback: text = "Correct! That's a real word."
+42.4982 	EXP 	text_lextale_practice_feedback: autoDraw = True
+43.4813 	EXP 	New trial (rep=0, index=4): {'stim': 0, 'word': 'coné', 'correct_response': 0, 'prac_button_real': 'REAL', 'prac_button_false': 'FAKE'}
+43.4923 	EXP 	text_lextale_practice_feedback: autoDraw = False
+43.4923 	EXP 	text_lextale_practice_feedback: autoDraw = False
+43.4923 	EXP 	text_lextale_practice_word: height = 0.1
+43.4923 	EXP 	text_lextale_practice_word: height = 0.1
+43.4923 	EXP 	text_lextale_practice_word: height = 0.1
+43.4923 	EXP 	text_lextale_practice_word: text = 'coné'
+43.4923 	EXP 	text_lextale_practice_real_label: text = 'REAL'
+43.4923 	EXP 	text_lextale_practice_false_label: text = 'FAKE'
+43.4923 	EXP 	text_lextale_practice_label: autoDraw = True
+43.7315 	EXP 	text_lextale_practice_real_label: autoDraw = True
+43.7315 	EXP 	text_lextale_practice_false_label: autoDraw = True
+43.9892 	EXP 	text_lextale_practice_word: autoDraw = True
+44.1887 	DATA 	Keypress: 1
+44.1943 	EXP 	text_lextale_practice_label: autoDraw = False
+44.1943 	EXP 	text_lextale_practice_word: autoDraw = False
+44.1943 	EXP 	text_lextale_practice_real_label: autoDraw = False
+44.1943 	EXP 	text_lextale_practice_false_label: autoDraw = False
+44.1943 	EXP 	text_lextale_practice_feedback: height = 0.1
+44.1943 	EXP 	text_lextale_practice_feedback: height = 0.1
+44.1943 	EXP 	text_lextale_practice_feedback: height = 0.1
+44.1943 	EXP 	text_lextale_practice_feedback: text = "Ooo! That's not a real word."
+44.1943 	EXP 	text_lextale_practice_feedback: autoDraw = True
+45.1793 	EXP 	New trial (rep=0, index=5): {'stim': 0, 'word': 'calpar', 'correct_response': 0, 'prac_button_real': 'REAL', 'prac_button_false': 'FAKE'}
+45.1881 	EXP 	text_lextale_practice_feedback: autoDraw = False
+45.1881 	EXP 	text_lextale_practice_feedback: autoDraw = False
+45.1881 	EXP 	text_lextale_practice_word: height = 0.1
+45.1881 	EXP 	text_lextale_practice_word: height = 0.1
+45.1881 	EXP 	text_lextale_practice_word: height = 0.1
+45.1881 	EXP 	text_lextale_practice_word: text = 'calpar'
+45.1881 	EXP 	text_lextale_practice_real_label: text = 'REAL'
+45.1881 	EXP 	text_lextale_practice_false_label: text = 'FAKE'
+45.1881 	EXP 	text_lextale_practice_label: autoDraw = True
+45.4226 	EXP 	text_lextale_practice_real_label: autoDraw = True
+45.4226 	EXP 	text_lextale_practice_false_label: autoDraw = True
+45.6715 	EXP 	text_lextale_practice_word: autoDraw = True
+46.6629 	DATA 	Keypress: escape
+47.3324 	EXP 	window1: mouseVisible = True
+47.3325 	DEBUG 	Saving data for empathy_lextale_comb ExperimentHandler
+47.3336 	INFO 	saved data to /Users/gabmac/Documents/RU/QP/exp/questionnaire/empathy_lextale-master/data/JS_empathy_lextale_comb_2023-04-04_13h00.43.356.psydat
+47.3341 	INFO 	saved data to '/Users/gabmac/Documents/RU/QP/exp/questionnaire/empathy_lextale-master/data/JS_empathy_lextale_comb_2023-04-04_13h00.43.356.csv'
