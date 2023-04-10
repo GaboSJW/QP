@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on Tue Apr  4 19:21:52 2023
+    on Wed Apr  5 13:35:18 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -221,13 +221,6 @@ exp2_trial_key = keyboard.Keyboard()
 exp2_trial_sound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
     name='exp2_trial_sound')
 exp2_trial_sound.setVolume(1.0)
-text = visual.TextStim(win=win, name='text',
-    text='+',
-    font='Open Sans',
-    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-4.0);
 
 # --- Initialize components for Routine "end_exp2_trial" ---
 end_exp2_trial_text = visual.TextStim(win=win, name='end_exp2_trial_text',
@@ -1226,7 +1219,7 @@ for thisExp2_retrial in exp2_retrial:
         exp2_trial_sound.setSound(sound_dir, secs=4, hamming=True)
         exp2_trial_sound.setVolume(1.0, log=False)
         # keep track of which components have finished
-        exp2_trialComponents = [exp2_trial_iamge_l, exp2_trial_image_r, exp2_trial_key, exp2_trial_sound, text]
+        exp2_trialComponents = [exp2_trial_iamge_l, exp2_trial_image_r, exp2_trial_key, exp2_trial_sound]
         for thisComponent in exp2_trialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1240,7 +1233,7 @@ for thisExp2_retrial in exp2_retrial:
         frameN = -1
         
         # --- Run Routine "exp2_trial" ---
-        while continueRoutine:
+        while continueRoutine and routineTimer.getTime() < 5.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1328,17 +1321,6 @@ for thisExp2_retrial in exp2_retrial:
                     thisExp.timestampOnFlip(win, 'exp2_trial_sound.stopped')
                     exp2_trial_sound.stop()
             
-            # *text* updates
-            if text.status == NOT_STARTED and exp2_trial_key.keys == ['lshift', 'rshift']:
-                # keep track of start time/frame for later
-                text.frameNStart = frameN  # exact frame index
-                text.tStart = t  # local t and not account for scr refresh
-                text.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text.started')
-                text.setAutoDraw(True)
-            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -1368,8 +1350,11 @@ for thisExp2_retrial in exp2_retrial:
         if exp2_trial_key.keys != None:  # we had a response
             exp2_trial_loop.addData('exp2_trial_key.rt', exp2_trial_key.rt)
         exp2_trial_sound.stop()  # ensure sound has stopped at end of routine
-        # the Routine "exp2_trial" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if routineForceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-5.000000)
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'exp2_trial_loop'
