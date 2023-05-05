@@ -1,0 +1,66 @@
+---
+title: "tidy_data"
+output: html_document
+date: "2023-04-18"
+---
+
+```{r setup, include=FALSE}
+library("papaja")
+library("dplyr")
+library("afex")
+library("papaja")
+library("here")
+library("tidyverse")
+here()
+knitr::opts_chunk$set(echo = TRUE)
+r_refs("r-references.bib")
+```
+
+```{r data participants, echo=FALSE}
+#not ready 
+dat_participants1 <- read.csv(file = 'data/dat_participants.csv') %>% 
+  group_by(sub_partcipants_condition) %>%
+  summarize(
+    n = n(),
+    Mean = mean(score_participants)
+    , SD = sd(score_participants)
+    , Min = min(score_participants)
+    , Max = max(score_participants)
+  )
+dat_participants1[, -1] <- printnum(dat_participants1[, -1])
+
+apa_table(
+  dat_participants1
+  , caption = "Language information of the participants"
+  , note = 'age:age of the participant; age_acq: age of acquisition of English; CSF: code-switching frequency, EN_ES: use of either languages with family and friends, 0 means always in English, 7 means always in Spanish; LP:language proficiency in Spanish.'
+         )
+```
+
+```{r table3, echo = F, message=FALSE, warning=FALSE}
+dat_aj <- read.csv(file = '/dat/AJ.csv')
+dat_aj_clean <- select(num, list, cond, lang, type, sent_code, correct_key, exp1_trial_key.rt, exp1_key.corr, exp1_key.rt ) 
+dat1 <- dat_clean %>% 
+  group_by(stim_version) %>%
+  summarize(
+    Mean = mean(RT)
+    , SD = sd(RT)
+    , Min = min(RT)
+    , Max = max(RT)
+  )
+dat1[, -1] <- printnum(dat1[, -1])
+
+apa_table(
+  dat1
+  , caption = "Summerized results of experiment 1"
+  , note = 'RT unit = ms'
+         )
+```
+
+```{r plot1, echo = F, fig.cap="Median search time",}
+
+  plot1<-ggplot(dat, aes(sub_cond, RT, color = stim_version)) +
+      geom_violin(alpha = 0.5) +
+      geom_boxplot(width = 0.2, position = position_dodge(width = 0.9))
+
+plot1 + theme_apa()
+```

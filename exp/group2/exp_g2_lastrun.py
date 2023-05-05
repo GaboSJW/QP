@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on Fri May  5 16:30:06 2023
+    on Fri May  5 15:18:43 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -36,7 +36,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '2022.2.5'
-expName = 'exp_g1'  # from the Builder filename that created this script
+expName = 'exp_g2'  # from the Builder filename that created this script
 expInfo = {
     'participant': f"{randint(0, 999999):06.0f}",
     'session': '001',
@@ -55,7 +55,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/gabmac/Documents/RU/QP/exp/group1/exp_g1_lastrun.py',
+    originPath='/Users/gabmac/Documents/RU/QP/exp/group2/exp_g2_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -69,7 +69,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1470, 956], fullscr=True, screen=0, 
+    size=[1920, 1080], fullscr=True, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -134,7 +134,7 @@ exp1_trial_image_r = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
 exp1_trial_key = keyboard.Keyboard()
-exp1_trial_sound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+exp1_trial_sound = sound.Sound('A', secs=-1, stereo=False, hamming=True,
     name='exp1_trial_sound')
 exp1_trial_sound.setVolume(1.0)
 exp1_trial_cross = visual.TextStim(win=win, name='exp1_trial_cross',
@@ -183,7 +183,7 @@ exp1_image_r = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
 exp1_key = keyboard.Keyboard()
-exp1_sound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+exp1_sound = sound.Sound('A', secs=-1, stereo=False, hamming=True,
     name='exp1_sound')
 exp1_sound.setVolume(1.0)
 exp1_cross = visual.TextStim(win=win, name='exp1_cross',
@@ -196,7 +196,7 @@ exp1_cross = visual.TextStim(win=win, name='exp1_cross',
 
 # --- Initialize components for Routine "exp1_end" ---
 exp1_end_text = visual.TextStim(win=win, name='exp1_end_text',
-    text='Good Job! This is the end of experiment 1\n\nBefore we start experiment 2, you can take a short break.\n\nWhen you are ready to start experiment 2, please press space to continue.',
+    text='Good Job! This is the end of experiment 1\n\nBefore we start experiment 2, you can take a short break.\n\nWhen you are ready to start experiment 2, please hit space to continue.',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -232,7 +232,7 @@ exp2_trial_image_r = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
 exp2_trial_key = keyboard.Keyboard()
-exp2_trial_sound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+exp2_trial_sound = sound.Sound('A', secs=-1, stereo=False, hamming=True,
     name='exp2_trial_sound')
 exp2_trial_sound.setVolume(1.0)
 exp2_trial_cross = visual.TextStim(win=win, name='exp2_trial_cross',
@@ -281,7 +281,7 @@ exp2_image_r = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-1.0)
 exp2_key = keyboard.Keyboard()
-exp2_sound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+exp2_sound = sound.Sound('A', secs=-1, stereo=False, hamming=True,
     name='exp2_sound')
 exp2_sound.setVolume(1.0)
 exp2_cross = visual.TextStim(win=win, name='exp2_cross',
@@ -866,7 +866,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 exp1_loop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('/Users/gabmac/Documents/RU/QP/exp/stim/stim_g1_e1.xlsx', selection='0:55'),
+    trialList=data.importConditions('/Users/gabmac/Documents/RU/QP/exp/stim/stim_g2_e1.xlsx', selection='0:55'),
     seed=None, name='exp1_loop')
 thisExp.addLoop(exp1_loop)  # add the loop to the experiment
 thisExp1_loop = exp1_loop.trialList[0]  # so we can initialise stimuli with some values
@@ -975,13 +975,8 @@ for thisExp1_loop in exp1_loop:
             theseKeys = exp1_key.getKeys(keyList=['lshift','rshift'], waitRelease=False)
             _exp1_key_allKeys.extend(theseKeys)
             if len(_exp1_key_allKeys):
-                exp1_key.keys = _exp1_key_allKeys[0].name  # just the first key pressed
-                exp1_key.rt = _exp1_key_allKeys[0].rt
-                # was this correct?
-                if (exp1_key.keys == str(correct_key)) or (exp1_key.keys == correct_key):
-                    exp1_key.corr = 1
-                else:
-                    exp1_key.corr = 0
+                exp1_key.keys = [key.name for key in _exp1_key_allKeys]  # storing all keys
+                exp1_key.rt = [key.rt for key in _exp1_key_allKeys]
                 # a response ends the routine
                 continueRoutine = False
         # start/stop exp1_sound
@@ -1048,14 +1043,7 @@ for thisExp1_loop in exp1_loop:
     # check responses
     if exp1_key.keys in ['', [], None]:  # No response was made
         exp1_key.keys = None
-        # was no response the correct answer?!
-        if str(correct_key).lower() == 'none':
-           exp1_key.corr = 1;  # correct non-response
-        else:
-           exp1_key.corr = 0;  # failed to respond (incorrectly)
-    # store data for exp1_loop (TrialHandler)
     exp1_loop.addData('exp1_key.keys',exp1_key.keys)
-    exp1_loop.addData('exp1_key.corr', exp1_key.corr)
     if exp1_key.keys != None:  # we had a response
         exp1_loop.addData('exp1_key.rt', exp1_key.rt)
     exp1_sound.stop()  # ensure sound has stopped at end of routine
@@ -1628,7 +1616,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 exp2_loop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('/Users/gabmac/Documents/RU/QP/exp/stim/stim_g1_e2.xlsx', selection='0:55'),
+    trialList=data.importConditions('/Users/gabmac/Documents/RU/QP/exp/stim/stim_g2_e2.xlsx', selection='0:55'),
     seed=None, name='exp2_loop')
 thisExp.addLoop(exp2_loop)  # add the loop to the experiment
 thisExp2_loop = exp2_loop.trialList[0]  # so we can initialise stimuli with some values
