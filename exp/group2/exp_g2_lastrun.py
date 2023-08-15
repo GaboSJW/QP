@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on Fri May  5 15:18:43 2023
+    on Thu Jun 29 15:41:51 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -975,8 +975,13 @@ for thisExp1_loop in exp1_loop:
             theseKeys = exp1_key.getKeys(keyList=['lshift','rshift'], waitRelease=False)
             _exp1_key_allKeys.extend(theseKeys)
             if len(_exp1_key_allKeys):
-                exp1_key.keys = [key.name for key in _exp1_key_allKeys]  # storing all keys
-                exp1_key.rt = [key.rt for key in _exp1_key_allKeys]
+                exp1_key.keys = _exp1_key_allKeys[0].name  # just the first key pressed
+                exp1_key.rt = _exp1_key_allKeys[0].rt
+                # was this correct?
+                if (exp1_key.keys == str(correct_key)) or (exp1_key.keys == correct_key):
+                    exp1_key.corr = 1
+                else:
+                    exp1_key.corr = 0
                 # a response ends the routine
                 continueRoutine = False
         # start/stop exp1_sound
@@ -1043,7 +1048,14 @@ for thisExp1_loop in exp1_loop:
     # check responses
     if exp1_key.keys in ['', [], None]:  # No response was made
         exp1_key.keys = None
+        # was no response the correct answer?!
+        if str(correct_key).lower() == 'none':
+           exp1_key.corr = 1;  # correct non-response
+        else:
+           exp1_key.corr = 0;  # failed to respond (incorrectly)
+    # store data for exp1_loop (TrialHandler)
     exp1_loop.addData('exp1_key.keys',exp1_key.keys)
+    exp1_loop.addData('exp1_key.corr', exp1_key.corr)
     if exp1_key.keys != None:  # we had a response
         exp1_loop.addData('exp1_key.rt', exp1_key.rt)
     exp1_sound.stop()  # ensure sound has stopped at end of routine

@@ -1,0 +1,251 @@
+9.8904 	WARNING 	User requested fullscreen with size [3008 1692], but screen is actually [1680, 1050]. Using actual size
+11.4016 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.4019 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f901ceacee0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f8fedf1ee50>, multiSample=False, name='window1', numSamples=2, pos=[420.0, 262.5], screen=0, size=array([3360, 2100]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.4021 	EXP 	window1: mouseVisible = True
+11.4033 	EXP 	window1: mouseVisible = False
+11.4033 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.4034 	EXP 	window1: recordFrameIntervals = False
+11.4856 	EXP 	window1: recordFrameIntervals = True
+12.3359 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+15.5663 	EXP 	Created text_intro = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_intro', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.0437 	EXP 	Created text_instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_instr', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.0447 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.0510 	EXP 	Created text_start = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_start', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.0519 	EXP 	Created text_trial = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_trial', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.0711 	EXP 	Created text_end = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_end', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for your participation', units='height', win=Window(...), wrapWidth=1)
+18.2527 	WARNING 	t of last frame was 5917.07ms (=1/0)
+18.2527 	EXP 	text_intro: autoDraw = True
+21.7478 	DATA 	Keypress: space
+21.7771 	WARNING 	t of last frame was 199.11ms (=1/5)
+21.7771 	EXP 	text_intro: autoDraw = False
+21.7771 	EXP 	text_instr: autoDraw = True
+21.8115 	WARNING 	t of last frame was 22.23ms (=1/44)
+22.3126 	EXP 	Imported stim_tutorial.xlsx as conditions, 2 conditions, 1 params
+22.3133 	EXP 	Created sequence: random, trialTypes=2, nReps=1, seed=None
+22.3137 	EXP 	New trial (rep=0, index=0): {'item': 'I want to order Chinese food.'}
+22.3246 	DATA 	Keypress: space
+22.3321 	WARNING 	t of last frame was 28.80ms (=1/34)
+22.3321 	EXP 	text_instr: autoDraw = False
+22.3321 	EXP 	text: height = 0.05
+22.3321 	EXP 	text: height = 0.05
+22.3321 	EXP 	text: height = 0.05
+22.3321 	EXP 	text: text = 'I want to order Chinese food.'
+22.3321 	EXP 	text: autoDraw = True
+23.0211 	EXP 	New trial (rep=0, index=1): {'item': 'Manuel lava la ropa.'}
+23.0301 	DATA 	Keypress: space
+23.0375 	EXP 	text: autoDraw = False
+23.0375 	EXP 	text: height = 0.05
+23.0375 	EXP 	text: height = 0.05
+23.0375 	EXP 	text: height = 0.05
+23.0375 	EXP 	text: text = 'Manuel lava la ropa.'
+23.0375 	EXP 	text: autoDraw = True
+24.4150 	DATA 	Keypress: space
+24.4221 	EXP 	text: autoDraw = False
+24.4221 	EXP 	text_start: autoDraw = True
+24.4454 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+25.2898 	EXP 	Imported stim_trial.xlsx as conditions, 24 conditions, 2 params
+25.2906 	EXP 	Created sequence: sequential, trialTypes=24, nReps=1, seed=None
+25.2909 	EXP 	New trial (rep=0, index=0): {'item': 'This tastes great.', 'target': 0}
+27.3449 	DATA 	Keypress: space
+27.3480 	DATA 	Keypress: space
+27.3704 	EXP 	text_start: autoDraw = False
+27.3704 	EXP 	text_trial: height = 0.05
+27.3704 	EXP 	text_trial: height = 0.05
+27.3704 	EXP 	text_trial: height = 0.05
+27.3704 	EXP 	text_trial: text = 'This tastes great.'
+27.3704 	EXP 	text_trial: autoDraw = True
+28.4399 	EXP 	New trial (rep=0, index=1): {'item': 'Se me olvidó lavar los platos.', 'target': 0}
+30.3912 	DATA 	Keypress: space
+30.4163 	EXP 	text_trial: autoDraw = False
+30.4163 	EXP 	text_trial: height = 0.05
+30.4163 	EXP 	text_trial: height = 0.05
+30.4163 	EXP 	text_trial: height = 0.05
+30.4163 	EXP 	text_trial: text = 'Se me olvidó lavar los platos.'
+30.4163 	EXP 	text_trial: autoDraw = True
+31.9345 	EXP 	New trial (rep=0, index=2): {'item': 'I like those pantalones.', 'target': 0}
+33.7652 	DATA 	Keypress: space
+33.7928 	EXP 	text_trial: autoDraw = False
+33.7928 	EXP 	text_trial: height = 0.05
+33.7928 	EXP 	text_trial: height = 0.05
+33.7928 	EXP 	text_trial: height = 0.05
+33.7928 	EXP 	text_trial: text = 'I like those pantalones.'
+33.7928 	EXP 	text_trial: autoDraw = True
+37.4364 	EXP 	New trial (rep=0, index=3): {'item': '¿Por qué le regalaste tus gafas?', 'target': 1}
+39.2636 	DATA 	Keypress: space
+39.2928 	EXP 	text_trial: autoDraw = False
+39.2928 	EXP 	text_trial: height = 0.05
+39.2928 	EXP 	text_trial: height = 0.05
+39.2928 	EXP 	text_trial: height = 0.05
+39.2928 	EXP 	text_trial: text = '¿Por qué le regalaste tus gafas?'
+39.2928 	EXP 	text_trial: autoDraw = True
+42.1467 	EXP 	New trial (rep=0, index=4): {'item': 'Mi número de teléfono es 969-009-5674.', 'target': 0}
+44.1821 	DATA 	Keypress: space
+44.2100 	EXP 	text_trial: autoDraw = False
+44.2100 	EXP 	text_trial: height = 0.05
+44.2100 	EXP 	text_trial: height = 0.05
+44.2100 	EXP 	text_trial: height = 0.05
+44.2100 	EXP 	text_trial: text = 'Mi número de teléfono es 969-009-5674.'
+44.2100 	EXP 	text_trial: autoDraw = True
+46.4514 	EXP 	New trial (rep=0, index=5): {'item': '¿Y tú, qué te gustaría tomar?', 'target': 0}
+48.2768 	DATA 	Keypress: space
+48.3017 	EXP 	text_trial: autoDraw = False
+48.3017 	EXP 	text_trial: height = 0.05
+48.3017 	EXP 	text_trial: height = 0.05
+48.3017 	EXP 	text_trial: height = 0.05
+48.3017 	EXP 	text_trial: text = '¿Y tú, qué te gustaría tomar?'
+48.3017 	EXP 	text_trial: autoDraw = True
+51.0274 	EXP 	New trial (rep=0, index=6): {'item': 'I overslept.', 'target': 0}
+53.0963 	DATA 	Keypress: space
+53.1197 	EXP 	text_trial: autoDraw = False
+53.1197 	EXP 	text_trial: height = 0.05
+53.1197 	EXP 	text_trial: height = 0.05
+53.1197 	EXP 	text_trial: height = 0.05
+53.1197 	EXP 	text_trial: text = 'I overslept.'
+53.1197 	EXP 	text_trial: autoDraw = True
+55.7273 	EXP 	New trial (rep=0, index=7): {'item': 'What is the dog doing?', 'target': 1}
+57.6802 	DATA 	Keypress: space
+57.7087 	EXP 	text_trial: autoDraw = False
+57.7087 	EXP 	text_trial: height = 0.05
+57.7087 	EXP 	text_trial: height = 0.05
+57.7087 	EXP 	text_trial: height = 0.05
+57.7087 	EXP 	text_trial: text = 'What is the dog doing?'
+57.7087 	EXP 	text_trial: autoDraw = True
+60.0094 	EXP 	New trial (rep=0, index=8): {'item': 'Las tortillas están on sale.', 'target': 0}
+61.9899 	DATA 	Keypress: space
+62.0151 	EXP 	text_trial: autoDraw = False
+62.0151 	EXP 	text_trial: height = 0.05
+62.0151 	EXP 	text_trial: height = 0.05
+62.0151 	EXP 	text_trial: height = 0.05
+62.0151 	EXP 	text_trial: text = 'Las tortillas están on sale.'
+62.0151 	EXP 	text_trial: autoDraw = True
+63.8947 	EXP 	New trial (rep=0, index=9): {'item': 'Why do you like my gatos?', 'target': 1}
+65.7602 	DATA 	Keypress: space
+65.7846 	EXP 	text_trial: autoDraw = False
+65.7846 	EXP 	text_trial: height = 0.05
+65.7846 	EXP 	text_trial: height = 0.05
+65.7846 	EXP 	text_trial: height = 0.05
+65.7846 	EXP 	text_trial: text = 'Why do you like my gatos?'
+65.7846 	EXP 	text_trial: autoDraw = True
+67.9847 	EXP 	New trial (rep=0, index=10): {'item': 'I overslept.', 'target': 0}
+69.8304 	DATA 	Keypress: space
+69.8654 	EXP 	text_trial: autoDraw = False
+69.8654 	EXP 	text_trial: height = 0.05
+69.8654 	EXP 	text_trial: height = 0.05
+69.8654 	EXP 	text_trial: height = 0.05
+69.8654 	EXP 	text_trial: text = 'I overslept.'
+69.8654 	EXP 	text_trial: autoDraw = True
+72.5769 	EXP 	New trial (rep=0, index=11): {'item': 'Gracias pero no tengo hambre.', 'target': 0}
+74.5329 	DATA 	Keypress: space
+74.5596 	EXP 	text_trial: autoDraw = False
+74.5596 	EXP 	text_trial: height = 0.05
+74.5596 	EXP 	text_trial: height = 0.05
+74.5596 	EXP 	text_trial: height = 0.05
+74.5596 	EXP 	text_trial: text = 'Gracias pero no tengo hambre.'
+74.5596 	EXP 	text_trial: autoDraw = True
+79.5605 	EXP 	New trial (rep=0, index=12): {'item': 'What’s your zip code?', 'target': 0}
+81.7369 	DATA 	Keypress: space
+81.7623 	EXP 	text_trial: autoDraw = False
+81.7623 	EXP 	text_trial: height = 0.05
+81.7623 	EXP 	text_trial: height = 0.05
+81.7623 	EXP 	text_trial: height = 0.05
+81.7623 	EXP 	text_trial: text = 'What’s your zip code?'
+81.7623 	EXP 	text_trial: autoDraw = True
+87.5016 	EXP 	New trial (rep=0, index=13): {'item': 'Where can we find your abuela?', 'target': 1}
+89.5889 	DATA 	Keypress: space
+89.6143 	EXP 	text_trial: autoDraw = False
+89.6143 	EXP 	text_trial: height = 0.05
+89.6143 	EXP 	text_trial: height = 0.05
+89.6143 	EXP 	text_trial: height = 0.05
+89.6143 	EXP 	text_trial: text = 'Where can we find your abuela?'
+89.6143 	EXP 	text_trial: autoDraw = True
+91.8167 	EXP 	New trial (rep=0, index=14): {'item': 'I feel like to have some ice-cream.', 'target': 0}
+93.4482 	DATA 	Keypress: space
+93.4754 	EXP 	text_trial: autoDraw = False
+93.4754 	EXP 	text_trial: height = 0.05
+93.4754 	EXP 	text_trial: height = 0.05
+93.4754 	EXP 	text_trial: height = 0.05
+93.4754 	EXP 	text_trial: text = 'I feel like to have some ice-cream.'
+93.4754 	EXP 	text_trial: autoDraw = True
+96.1420 	EXP 	New trial (rep=0, index=15): {'item': 'Hace mucho sol hoy.', 'target': 0}
+98.1827 	DATA 	Keypress: space
+98.2090 	EXP 	text_trial: autoDraw = False
+98.2090 	EXP 	text_trial: height = 0.05
+98.2090 	EXP 	text_trial: height = 0.05
+98.2090 	EXP 	text_trial: height = 0.05
+98.2090 	EXP 	text_trial: text = 'Hace mucho sol hoy.'
+98.2090 	EXP 	text_trial: autoDraw = True
+100.5930 	EXP 	New trial (rep=0, index=16): {'item': 'How did he get his móvil?', 'target': 1}
+102.4592 	DATA 	Keypress: space
+102.4836 	EXP 	text_trial: autoDraw = False
+102.4836 	EXP 	text_trial: height = 0.05
+102.4836 	EXP 	text_trial: height = 0.05
+102.4836 	EXP 	text_trial: height = 0.05
+102.4836 	EXP 	text_trial: text = 'How did he get his móvil?'
+102.4836 	EXP 	text_trial: autoDraw = True
+104.7659 	EXP 	New trial (rep=0, index=17): {'item': 'Everything in my fridge están mal.', 'target': 0}
+107.0386 	DATA 	Keypress: space
+107.0638 	EXP 	text_trial: autoDraw = False
+107.0638 	EXP 	text_trial: height = 0.05
+107.0638 	EXP 	text_trial: height = 0.05
+107.0638 	EXP 	text_trial: height = 0.05
+107.0638 	EXP 	text_trial: text = 'Everything in my fridge están mal.'
+107.0638 	EXP 	text_trial: autoDraw = True
+110.6081 	EXP 	New trial (rep=0, index=18): {'item': 'Who is the girl’s father?', 'target': 1}
+112.3666 	DATA 	Keypress: space
+112.3921 	EXP 	text_trial: autoDraw = False
+112.3921 	EXP 	text_trial: height = 0.05
+112.3921 	EXP 	text_trial: height = 0.05
+112.3921 	EXP 	text_trial: height = 0.05
+112.3921 	EXP 	text_trial: text = 'Who is the girl’s father?'
+112.3921 	EXP 	text_trial: autoDraw = True
+115.2163 	EXP 	New trial (rep=0, index=19): {'item': 'Where is my wallet?', 'target': 1}
+117.3251 	DATA 	Keypress: space
+117.3496 	EXP 	text_trial: autoDraw = False
+117.3496 	EXP 	text_trial: height = 0.05
+117.3496 	EXP 	text_trial: height = 0.05
+117.3496 	EXP 	text_trial: height = 0.05
+117.3496 	EXP 	text_trial: text = 'Where is my wallet?'
+117.3496 	EXP 	text_trial: autoDraw = True
+119.0992 	EXP 	New trial (rep=0, index=20): {'item': "No, that's not what I ordered.", 'target': 0}
+121.1179 	DATA 	Keypress: space
+121.1441 	EXP 	text_trial: autoDraw = False
+121.1441 	EXP 	text_trial: height = 0.05
+121.1441 	EXP 	text_trial: height = 0.05
+121.1441 	EXP 	text_trial: height = 0.05
+121.1441 	EXP 	text_trial: text = "No, that's not what I ordered."
+121.1441 	EXP 	text_trial: autoDraw = True
+122.8586 	EXP 	New trial (rep=0, index=21): {'item': '¿Cuál es tu libro?', 'target': 1}
+124.7670 	DATA 	Keypress: space
+124.7934 	EXP 	text_trial: autoDraw = False
+124.7934 	EXP 	text_trial: height = 0.05
+124.7934 	EXP 	text_trial: height = 0.05
+124.7934 	EXP 	text_trial: height = 0.05
+124.7934 	EXP 	text_trial: text = '¿Cuál es tu libro?'
+124.7934 	EXP 	text_trial: autoDraw = True
+127.1259 	EXP 	New trial (rep=0, index=22): {'item': '¿Dónde está mi bolsa?', 'target': 1}
+129.0813 	DATA 	Keypress: space
+129.1080 	EXP 	text_trial: autoDraw = False
+129.1080 	EXP 	text_trial: height = 0.05
+129.1080 	EXP 	text_trial: height = 0.05
+129.1080 	EXP 	text_trial: height = 0.05
+129.1080 	EXP 	text_trial: text = '¿Dónde está mi bolsa?'
+129.1080 	EXP 	text_trial: autoDraw = True
+132.3821 	EXP 	New trial (rep=0, index=23): {'item': "Bye, I'll be back in two hours.", 'target': 0}
+134.2991 	DATA 	Keypress: space
+134.3248 	EXP 	text_trial: autoDraw = False
+134.3248 	EXP 	text_trial: height = 0.05
+134.3248 	EXP 	text_trial: height = 0.05
+134.3248 	EXP 	text_trial: height = 0.05
+134.3248 	EXP 	text_trial: text = "Bye, I'll be back in two hours."
+134.3248 	EXP 	text_trial: autoDraw = True
+137.0778 	DATA 	Keypress: space
+137.1008 	EXP 	text_trial: autoDraw = False
+137.1008 	EXP 	text_end: autoDraw = True
+140.1465 	EXP 	text_end: autoDraw = False
+140.7358 	EXP 	window1: mouseVisible = True

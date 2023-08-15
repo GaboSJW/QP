@@ -1,0 +1,124 @@
+---
+title: "tidy_data"
+output: html_document
+date: "2023-04-18"
+---
+
+```{r setup, include=FALSE}
+library("papaja")
+library("dplyr")
+library("afex")
+library("here")
+library("tidyverse")
+library("fs")
+here()
+knitr::opts_chunk$set(echo = TRUE)
+r_refs("r-references.bib")
+```
+
+```{r data participants, echo=FALSE}
+#not ready 
+#I need to trim data for all the participants, I can do it one csv at a time now.
+
+#Loop tryoout 1
+file_paths <- fs::dir_ls('dat/raw')  # Identify file names
+file_paths
+data_files <- list.files('dat/raw')  # Identify file names
+data_files  
+
+data_raw <- list()
+
+for (i in seq_along(file_paths)) {
+  data_raw <- read_csv(
+    file = file_paths[[i]]) 
+  
+  
+  
+  
+  %>% 
+  
+    filter(., exp_num == 1 & cond == "t") %>%
+    select (., num, list, type, exp1_key.keys, exp1_key.rt, exp1_key.corr, participant, group = expName)      %>% 
+    mutate(cor_rate = mean(exp1_key.corr)) %>% 
+    write.csv(file = 'dat/clean/KF2.csv')
+  
+}
+#           select (., num, list, type, exp1_key.keys, exp1_key.rt, exp1_key.corr, participant, group = expName)  %>%
+#           mutate(cor_rate = mean(exp1_key.corr)) %>% 
+#         write.csv2(
+#           get(data_files[i]),                              # Write CSV files to folder
+#             paste0('dat/clean/',
+#                    data_files[i],
+#                    ".csv"),
+#             row.names = FALSE)
+
+#open csv
+dat_raw <- read.csv(file = 'dat/raw/KF2.csv') %>% 
+
+#filter exp_num=1, cond=t
+#check correction rate 80% (?) (I'll just do it by hand no big deal)
+  filter(., exp_num == 1 & cond == "t") %>%
+
+#select columns: num, list, type, exp1_key.keys, exp1_key.rt, exp1_key.corr, participant, expName(rename to "group"), 
+#mutate cor_rate = sum(exp1_key.corr)/20
+  select (., num, list, type, exp1_key.keys, exp1_key.rt, exp1_key.corr, participant, group = expName)      %>% 
+   mutate(cor_rate = mean(exp1_key.corr)) %>% 
+  
+    
+    
+#I need to give each participant a proficiency score 
+#import proficiency score (manually do it)
+
+#save csv file to folder "dat/clean"
+  write.csv(file = 'dat/clean/KF2.csv')
+
+
+
+#compile all individual csv files into one large csv of all participants
+
+dat_participants1 <- read.csv(file = 'data/dat_participants.csv') %>% 
+  group_by(sub_partcipants_condition) %>%
+  summarize(
+    n = n(),
+    Mean = mean(score_participants)
+    , SD = sd(score_participants)
+    , Min = min(score_participants)
+    , Max = max(score_participants)
+  )
+dat_participants1[, -1] <- printnum(dat_participants1[, -1])
+
+apa_table(
+  dat_participants1
+  , caption = "Language information of the participants"
+  , note = 'age:age of the participant; age_acq: age of acquisition of English; CSF: code-switching frequency, EN_ES: use of either languages with family and friends, 0 means always in English, 7 means always in Spanish; LP:language proficiency in Spanish.'
+         )
+```
+
+```{r table3, echo = F, message=FALSE, warning=FALSE}
+dat_aj <- read.csv(file = '/dat/AJ.csv')
+dat_aj_clean <- select(num, list, cond, lang, type, sent_code, correct_key, exp1_trial_key.rt, exp1_key.corr, exp1_key.rt ) 
+dat1 <- dat_clean %>% 
+  group_by(stim_version) %>%
+  summarize(
+    Mean = mean(RT)
+    , SD = sd(RT)
+    , Min = min(RT)
+    , Max = max(RT)
+  )
+dat1[, -1] <- printnum(dat1[, -1])
+
+apa_table(
+  dat1
+  , caption = "Summerized results of experiment 1"
+  , note = 'RT unit = ms'
+         )
+```
+
+```{r plot1, echo = F, fig.cap="Median search time",}
+
+  plot1<-ggplot(dat, aes(sub_cond, RT, color = stim_version)) +
+      geom_violin(alpha = 0.5) +
+      geom_boxplot(width = 0.2, position = position_dodge(width = 0.9))
+
+plot1 + theme_apa()
+```

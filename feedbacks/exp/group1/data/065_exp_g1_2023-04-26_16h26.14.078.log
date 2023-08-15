@@ -1,0 +1,1627 @@
+1.2021 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice'] (in that order).
+11.4059 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.4073 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f93223fc9d0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f92faf327c0>, multiSample=False, name='window1', numSamples=2, pos=[367.5, 239.0], screen=0, size=array([2940, 1912]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.4080 	EXP 	window1: mouseVisible = True
+11.4097 	EXP 	window1: mouseVisible = False
+11.4098 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.4098 	EXP 	window1: recordFrameIntervals = False
+11.4889 	EXP 	window1: recordFrameIntervals = True
+12.3223 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+14.2522 	EXP 	Created welcome_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.2681 	EXP 	Created exp1_instr_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp1_instr_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.2742 	EXP 	Created exp1_trial_image_l = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp1_trial_image_l', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.2768 	EXP 	Created exp1_trial_image_r = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp1_trial_image_r', opacity=1.0, ori=0.0, pos=array([0.5, 0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4146 	EXP 	Sound exp1_trial_sound set volume 1.000
+14.4173 	EXP 	Created exp1_trial_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp1_trial_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+14.4223 	EXP 	Created end_exp1_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_exp1_trial_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.4276 	EXP 	Created exp1_start_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp1_start_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.4305 	EXP 	Created exp1_image_l = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp1_image_l', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4331 	EXP 	Created exp1_image_r = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp1_image_r', opacity=1.0, ori=0.0, pos=array([0.5, 0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4331 	EXP 	Sound exp1_sound set volume 1.000
+14.4343 	EXP 	Created exp1_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp1_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+14.4489 	EXP 	Created exp1_end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp1_end_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.4607 	EXP 	Created exp2_instr_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp2_instr_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.4636 	EXP 	Created exp2_trial_iamge_l = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp2_trial_iamge_l', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4661 	EXP 	Created exp2_trial_image_r = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp2_trial_image_r', opacity=1.0, ori=0.0, pos=array([0.5, 0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4661 	EXP 	Sound exp2_trial_sound set volume 1.000
+14.4672 	EXP 	Created exp2_trial_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp2_trial_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+14.4712 	EXP 	Created end_exp2_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_exp2_trial_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.4761 	EXP 	Created exp2_start_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp2_start_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.4789 	EXP 	Created exp2_image_l = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp2_image_l', opacity=1.0, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4815 	EXP 	Created exp2_image_r = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='exp2_image_r', opacity=1.0, ori=0.0, pos=array([0.5, 0. ]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+14.4815 	EXP 	Sound exp2_sound set volume 1.000
+14.4826 	EXP 	Created exp2_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='exp2_cross', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+14.4870 	EXP 	Created full_end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='full_end_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+14.5001 	WARNING 	t of last frame was 2178.01ms (=1/0)
+14.5001 	EXP 	welcome_text: autoDraw = True
+15.6437 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1000, seed=None
+15.6460 	EXP 	New trial (rep=0, index=0): None
+15.6511 	DATA 	Keypress: space
+15.6555 	WARNING 	t of last frame was 27.21ms (=1/36)
+15.6555 	EXP 	welcome_text: autoDraw = False
+15.6555 	EXP 	exp1_instr_text: autoDraw = True
+17.9552 	EXP 	Imported /Users/gabmac/Documents/RU/QP/exp/practice_trial/trial_exp_1/trial1.xlsx as conditions, 8 conditions, 18 params
+17.9556 	EXP 	Created sequence: sequential, trialTypes=8, nReps=1, seed=None
+17.9559 	EXP 	New trial (rep=0, index=0): {'num': 'tr1', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr1.wav', 'phr': 'Where are your kids?', 'sent_code': 'lt_tr_en_na_tr1', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/kids.png', 'right': '../image/plates.png', 'correct_img': 'kids', 'correct_key': 'lshift'}
+18.0003 	DATA 	Keypress: space
+18.0043 	WARNING 	t of last frame was 66.81ms (=1/14)
+18.0043 	EXP 	exp1_instr_text: autoDraw = False
+18.0043 	EXP 	exp1_trial_image_l: image = '../image/kids.png'
+18.0043 	EXP 	exp1_trial_image_r: image = '../image/plates.png'
+18.0043 	EXP 	exp1_trial_cross: autoDraw = True
+18.1760 	EXP 	exp1_trial_image_l: autoDraw = True
+18.1760 	EXP 	exp1_trial_image_r: autoDraw = True
+18.2431 	EXP 	exp1_trial_cross: autoDraw = False
+19.9458 	EXP 	New trial (rep=0, index=1): {'num': 'tr2', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr2.wav', 'phr': 'Who is buying my car?', 'sent_code': 'lt_tr_en_na_tr2', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/bag.png', 'right': '../image/car.png', 'correct_img': 'car', 'correct_key': 'rshift'}
+19.9693 	DATA 	Keypress: lshift
+19.9728 	WARNING 	t of last frame was 29.47ms (=1/33)
+19.9728 	EXP 	exp1_trial_image_l: autoDraw = False
+19.9728 	EXP 	exp1_trial_image_r: autoDraw = False
+19.9728 	EXP 	exp1_trial_cross: autoDraw = False
+19.9728 	EXP 	exp1_trial_image_l: image = '../image/bag.png'
+19.9728 	EXP 	exp1_trial_image_r: image = '../image/car.png'
+19.9728 	EXP 	exp1_trial_cross: autoDraw = True
+20.1884 	EXP 	exp1_trial_image_l: autoDraw = True
+20.1884 	EXP 	exp1_trial_image_r: autoDraw = True
+20.2219 	EXP 	exp1_trial_cross: autoDraw = False
+22.1637 	EXP 	New trial (rep=0, index=2): {'num': 'tr3', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr3.wav', 'phr': '¿Dónde está mi perro?', 'sent_code': 'lt_tr_sp_na_tr3', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/dog.png', 'right': '../image/grandma.png', 'correct_img': 'dog', 'correct_key': 'lshift'}
+22.1906 	DATA 	Keypress: rshift
+22.1942 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+22.1941 	EXP 	exp1_trial_image_l: autoDraw = False
+22.1941 	EXP 	exp1_trial_image_r: autoDraw = False
+22.1941 	EXP 	exp1_trial_cross: autoDraw = False
+22.1941 	EXP 	exp1_trial_image_l: image = '../image/dog.png'
+22.1941 	EXP 	exp1_trial_image_r: image = '../image/grandma.png'
+22.1941 	EXP 	exp1_trial_cross: autoDraw = True
+22.4123 	EXP 	exp1_trial_image_l: autoDraw = True
+22.4123 	EXP 	exp1_trial_image_r: autoDraw = True
+22.4386 	EXP 	exp1_trial_cross: autoDraw = False
+24.0555 	EXP 	New trial (rep=0, index=3): {'num': 'tr4', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr4.wav', 'phr': '¿De quién es la bolsa?', 'sent_code': 'lt_tr_sp_na_tr4', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/shirt.png', 'right': '../image/bag.png', 'correct_img': 'bag', 'correct_key': 'rshift'}
+24.0746 	DATA 	Keypress: lshift
+24.0781 	EXP 	exp1_trial_image_l: autoDraw = False
+24.0781 	EXP 	exp1_trial_image_r: autoDraw = False
+24.0781 	EXP 	exp1_trial_cross: autoDraw = False
+24.0781 	EXP 	exp1_trial_image_l: image = '../image/shirt.png'
+24.0781 	EXP 	exp1_trial_image_r: image = '../image/bag.png'
+24.0781 	EXP 	exp1_trial_cross: autoDraw = True
+24.2950 	EXP 	exp1_trial_image_l: autoDraw = True
+24.2950 	EXP 	exp1_trial_image_r: autoDraw = True
+24.3282 	EXP 	exp1_trial_cross: autoDraw = False
+26.5401 	EXP 	New trial (rep=0, index=4): {'num': 'tr5', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr5.wav', 'phr': '¿Dónde encontraste sus donuts?', 'sent_code': 'lt_tr_se_na_tr5', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/donut.png', 'right': '../image/cups.png', 'correct_img': 'donut', 'correct_key': 'lshift'}
+26.5690 	DATA 	Keypress: rshift
+26.5725 	EXP 	exp1_trial_image_l: autoDraw = False
+26.5725 	EXP 	exp1_trial_image_r: autoDraw = False
+26.5725 	EXP 	exp1_trial_cross: autoDraw = False
+26.5725 	EXP 	exp1_trial_image_l: image = '../image/donut.png'
+26.5725 	EXP 	exp1_trial_image_r: image = '../image/cups.png'
+26.5725 	EXP 	exp1_trial_cross: autoDraw = True
+26.7875 	EXP 	exp1_trial_image_l: autoDraw = True
+26.7875 	EXP 	exp1_trial_image_r: autoDraw = True
+26.8219 	EXP 	exp1_trial_cross: autoDraw = False
+29.3639 	DATA 	Keypress: lshift
+29.3717 	EXP 	New trial (rep=0, index=5): {'num': 'tr6', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr6.wav', 'phr': '¿Cuándo compraste tu sweater?', 'sent_code': 'lt_tr_se_na_tr6', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/chair.png', 'right': '../image/sweater.png', 'correct_img': 'sweater', 'correct_key': 'rshift'}
+29.3971 	EXP 	exp1_trial_image_l: autoDraw = False
+29.3971 	EXP 	exp1_trial_image_r: autoDraw = False
+29.3971 	EXP 	exp1_trial_cross: autoDraw = False
+29.3971 	EXP 	exp1_trial_image_l: image = '../image/chair.png'
+29.3971 	EXP 	exp1_trial_image_r: image = '../image/sweater.png'
+29.3971 	EXP 	exp1_trial_cross: autoDraw = True
+29.6121 	EXP 	exp1_trial_image_l: autoDraw = True
+29.6121 	EXP 	exp1_trial_image_r: autoDraw = True
+29.6419 	EXP 	exp1_trial_cross: autoDraw = False
+31.9307 	EXP 	New trial (rep=0, index=6): {'num': 'tr7', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr7.wav', 'phr': 'Why do you have my camisa?', 'sent_code': 'lt_tr_es_na_tr7', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/shirt.png', 'right': '../image/wallet.png', 'correct_img': 'shirt', 'correct_key': 'lshift'}
+31.9582 	DATA 	Keypress: rshift
+31.9616 	EXP 	exp1_trial_image_l: autoDraw = False
+31.9616 	EXP 	exp1_trial_image_r: autoDraw = False
+31.9616 	EXP 	exp1_trial_cross: autoDraw = False
+31.9616 	EXP 	exp1_trial_image_l: image = '../image/shirt.png'
+31.9616 	EXP 	exp1_trial_image_r: image = '../image/wallet.png'
+31.9616 	EXP 	exp1_trial_cross: autoDraw = True
+32.1776 	EXP 	exp1_trial_image_l: autoDraw = True
+32.1776 	EXP 	exp1_trial_image_r: autoDraw = True
+32.2050 	EXP 	exp1_trial_cross: autoDraw = False
+34.2968 	EXP 	New trial (rep=0, index=7): {'num': 'tr8', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr8.wav', 'phr': 'Where did you find his chanclas?', 'sent_code': 'lt_tr_es_na_tr8', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/key.png', 'right': '../image/flipflops.png', 'correct_img': 'flipflops', 'correct_key': 'rshift'}
+34.3187 	DATA 	Keypress: lshift
+34.3222 	EXP 	exp1_trial_image_l: autoDraw = False
+34.3222 	EXP 	exp1_trial_image_r: autoDraw = False
+34.3222 	EXP 	exp1_trial_cross: autoDraw = False
+34.3222 	EXP 	exp1_trial_image_l: image = '../image/key.png'
+34.3222 	EXP 	exp1_trial_image_r: image = '../image/flipflops.png'
+34.3222 	EXP 	exp1_trial_cross: autoDraw = True
+34.5455 	EXP 	exp1_trial_image_l: autoDraw = True
+34.5455 	EXP 	exp1_trial_image_r: autoDraw = True
+34.5716 	EXP 	exp1_trial_cross: autoDraw = False
+36.4911 	DATA 	Keypress: rshift
+36.4946 	EXP 	exp1_trial_image_l: autoDraw = False
+36.4946 	EXP 	exp1_trial_image_r: autoDraw = False
+36.4946 	EXP 	exp1_trial_cross: autoDraw = False
+36.4946 	EXP 	end_exp1_trial_text: autoDraw = True
+39.7090 	DATA 	Keypress: rshift
+39.7136 	EXP 	end_exp1_trial_text: autoDraw = False
+39.7136 	EXP 	exp1_start_text: autoDraw = True
+41.3095 	DATA 	Keypress: lshift
+41.6088 	EXP 	Imported /Users/gabmac/Documents/RU/QP/exp/stim/stim_g1_e1.xlsx as conditions, 55 conditions, 17 params
+41.6121 	EXP 	Created sequence: random, trialTypes=55, nReps=1, seed=None
+41.6126 	EXP 	New trial (rep=0, index=0): {'exp_num': 1, 'sent_code': 'l1_f_se_na_082', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 82.0, 'image': 'mickeymouse', 'image_alt': 'spongebob', 'left_img': 'mickeymouse', 'right_img': 'spongebob', 'left': '../image/mickeymouse.png', 'right': '../image/spongebob.png', 'correct_img': 'mickeymouse', 'correct_key': 'lshift', 'sound_dir': '../audio/082.wav', 'image_dir': None}
+41.6371 	DATA 	Keypress: rshift
+41.6405 	EXP 	exp1_start_text: autoDraw = False
+41.6405 	EXP 	exp1_image_l: image = '../image/mickeymouse.png'
+41.6405 	EXP 	exp1_image_r: image = '../image/spongebob.png'
+41.6405 	EXP 	exp1_cross: autoDraw = True
+41.7372 	EXP 	exp1_image_l: autoDraw = True
+41.7372 	EXP 	exp1_image_r: autoDraw = True
+41.7379 	EXP 	New trial (rep=0, index=1): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_140', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 140.0, 'image': 'bracelet', 'image_alt': 'ring', 'left_img': 'ring', 'right_img': 'bracelet', 'left': '../image/ring.png', 'right': '../image/bracelet.png', 'correct_img': 'bracelet', 'correct_key': 'rshift', 'sound_dir': '../audio/140.wav', 'image_dir': None}
+41.7616 	EXP 	exp1_image_l: autoDraw = False
+41.7616 	EXP 	exp1_image_r: autoDraw = False
+41.7616 	EXP 	exp1_cross: autoDraw = False
+41.7616 	EXP 	exp1_image_l: image = '../image/ring.png'
+41.7616 	EXP 	exp1_image_r: image = '../image/bracelet.png'
+41.7616 	EXP 	exp1_cross: autoDraw = True
+41.9749 	EXP 	exp1_image_l: autoDraw = True
+41.9749 	EXP 	exp1_image_r: autoDraw = True
+42.0119 	EXP 	exp1_cross: autoDraw = False
+44.9737 	EXP 	New trial (rep=0, index=2): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_135', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 135.0, 'image': 'flipflops', 'image_alt': 'flower', 'left_img': 'flipflops', 'right_img': 'flower', 'left': '../image/flipflops.png', 'right': '../image/flower.png', 'correct_img': 'flipflops', 'correct_key': 'lshift', 'sound_dir': '../audio/135.wav', 'image_dir': None}
+44.9995 	DATA 	Keypress: rshift
+45.0031 	EXP 	exp1_image_l: autoDraw = False
+45.0031 	EXP 	exp1_image_r: autoDraw = False
+45.0031 	EXP 	exp1_cross: autoDraw = False
+45.0031 	EXP 	exp1_image_l: image = '../image/flipflops.png'
+45.0031 	EXP 	exp1_image_r: image = '../image/flower.png'
+45.0031 	EXP 	exp1_cross: autoDraw = True
+45.2217 	EXP 	exp1_image_l: autoDraw = True
+45.2217 	EXP 	exp1_image_r: autoDraw = True
+45.2429 	EXP 	exp1_cross: autoDraw = False
+47.4583 	DATA 	Keypress: lshift
+47.4652 	EXP 	New trial (rep=0, index=3): {'exp_num': 1, 'sent_code': 'l1_f_en_na_069', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 69.0, 'image': 'shirt', 'image_alt': 'bag', 'left_img': 'bag', 'right_img': 'shirt', 'left': '../image/bag.png', 'right': '../image/shirt.png', 'correct_img': 'shirt', 'correct_key': 'rshift', 'sound_dir': '../audio/069.wav', 'image_dir': None}
+47.4932 	EXP 	exp1_image_l: autoDraw = False
+47.4932 	EXP 	exp1_image_r: autoDraw = False
+47.4932 	EXP 	exp1_cross: autoDraw = False
+47.4932 	EXP 	exp1_image_l: image = '../image/bag.png'
+47.4932 	EXP 	exp1_image_r: image = '../image/shirt.png'
+47.4932 	EXP 	exp1_cross: autoDraw = True
+47.7118 	EXP 	exp1_image_l: autoDraw = True
+47.7118 	EXP 	exp1_image_r: autoDraw = True
+47.7382 	EXP 	exp1_cross: autoDraw = False
+49.4073 	EXP 	New trial (rep=0, index=4): {'exp_num': 1, 'sent_code': 'l1_f_se_na_077', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 77.0, 'image': 'donut', 'image_alt': 'mashedpotatoes', 'left_img': 'mashedpotatoes', 'right_img': 'donut', 'left': '../image/mashedpotatoes.png', 'right': '../image/donut.png', 'correct_img': 'donut', 'correct_key': 'rshift', 'sound_dir': '../audio/077.wav', 'image_dir': None}
+49.4327 	DATA 	Keypress: rshift
+49.4358 	EXP 	exp1_image_l: autoDraw = False
+49.4358 	EXP 	exp1_image_r: autoDraw = False
+49.4358 	EXP 	exp1_cross: autoDraw = False
+49.4358 	EXP 	exp1_image_l: image = '../image/mashedpotatoes.png'
+49.4358 	EXP 	exp1_image_r: image = '../image/donut.png'
+49.4358 	EXP 	exp1_cross: autoDraw = True
+49.6549 	EXP 	exp1_image_l: autoDraw = True
+49.6549 	EXP 	exp1_image_r: autoDraw = True
+49.6764 	EXP 	exp1_cross: autoDraw = False
+51.6075 	EXP 	New trial (rep=0, index=5): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_089', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 89.0, 'image': 'wallet', 'image_alt': 'bed', 'left_img': 'bed', 'right_img': 'wallet', 'left': '../image/bed.png', 'right': '../image/wallet.png', 'correct_img': 'wallet', 'correct_key': 'rshift', 'sound_dir': '../audio/089.wav', 'image_dir': None}
+51.6381 	DATA 	Keypress: rshift
+51.6415 	EXP 	exp1_image_l: autoDraw = False
+51.6415 	EXP 	exp1_image_r: autoDraw = False
+51.6415 	EXP 	exp1_cross: autoDraw = False
+51.6415 	EXP 	exp1_image_l: image = '../image/bed.png'
+51.6415 	EXP 	exp1_image_r: image = '../image/wallet.png'
+51.6415 	EXP 	exp1_cross: autoDraw = True
+51.8549 	EXP 	exp1_image_l: autoDraw = True
+51.8549 	EXP 	exp1_image_r: autoDraw = True
+51.8884 	EXP 	exp1_cross: autoDraw = False
+54.1407 	EXP 	New trial (rep=0, index=6): {'exp_num': 1, 'sent_code': 'l1_f_en_na_075', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 75.0, 'image': 'fish', 'image_alt': 'dog', 'left_img': 'dog', 'right_img': 'fish', 'left': '../image/dog.png', 'right': '../image/fish.png', 'correct_img': 'fish', 'correct_key': 'rshift', 'sound_dir': '../audio/075.wav', 'image_dir': None}
+54.1702 	DATA 	Keypress: rshift
+54.1731 	EXP 	exp1_image_l: autoDraw = False
+54.1731 	EXP 	exp1_image_r: autoDraw = False
+54.1731 	EXP 	exp1_cross: autoDraw = False
+54.1731 	EXP 	exp1_image_l: image = '../image/dog.png'
+54.1731 	EXP 	exp1_image_r: image = '../image/fish.png'
+54.1731 	EXP 	exp1_cross: autoDraw = True
+54.3883 	EXP 	exp1_image_l: autoDraw = True
+54.3883 	EXP 	exp1_image_r: autoDraw = True
+54.4217 	EXP 	exp1_cross: autoDraw = False
+56.6470 	EXP 	New trial (rep=0, index=7): {'exp_num': 1, 'sent_code': 'l1_f_se_na_078', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 78.0, 'image': 'airpods', 'image_alt': 'joycons', 'left_img': 'airpods', 'right_img': 'joycons', 'left': '../image/airpods.png', 'right': '../image/joycons.png', 'correct_img': 'airpods', 'correct_key': 'lshift', 'sound_dir': '../audio/078.wav', 'image_dir': None}
+56.6674 	DATA 	Keypress: rshift
+56.6709 	EXP 	exp1_image_l: autoDraw = False
+56.6709 	EXP 	exp1_image_r: autoDraw = False
+56.6709 	EXP 	exp1_cross: autoDraw = False
+56.6709 	EXP 	exp1_image_l: image = '../image/airpods.png'
+56.6709 	EXP 	exp1_image_r: image = '../image/joycons.png'
+56.6709 	EXP 	exp1_cross: autoDraw = True
+56.8919 	EXP 	exp1_image_l: autoDraw = True
+56.8919 	EXP 	exp1_image_r: autoDraw = True
+56.9095 	EXP 	exp1_cross: autoDraw = False
+58.8484 	EXP 	New trial (rep=0, index=8): {'exp_num': 1, 'sent_code': 'l1_t_es_na_013', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 13.0, 'image': 'beer', 'image_alt': 'wine', 'left_img': 'beer', 'right_img': 'wine', 'left': '../image/beer.png', 'right': '../image/wine.png', 'correct_img': 'beer', 'correct_key': 'lshift', 'sound_dir': '../audio/013.wav', 'image_dir': None}
+58.8751 	DATA 	Keypress: lshift
+58.8781 	EXP 	exp1_image_l: autoDraw = False
+58.8781 	EXP 	exp1_image_r: autoDraw = False
+58.8781 	EXP 	exp1_cross: autoDraw = False
+58.8781 	EXP 	exp1_image_l: image = '../image/beer.png'
+58.8781 	EXP 	exp1_image_r: image = '../image/wine.png'
+58.8781 	EXP 	exp1_cross: autoDraw = True
+59.0939 	EXP 	exp1_image_l: autoDraw = True
+59.0939 	EXP 	exp1_image_r: autoDraw = True
+59.1255 	EXP 	exp1_cross: autoDraw = False
+62.0975 	EXP 	New trial (rep=0, index=9): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_093', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 93.0, 'image': 'book', 'image_alt': 'boy', 'left_img': 'boy', 'right_img': 'book', 'left': '../image/boy.png', 'right': '../image/book.png', 'correct_img': 'book', 'correct_key': 'rshift', 'sound_dir': '../audio/093.wav', 'image_dir': None}
+62.1245 	DATA 	Keypress: lshift
+62.1280 	EXP 	exp1_image_l: autoDraw = False
+62.1280 	EXP 	exp1_image_r: autoDraw = False
+62.1280 	EXP 	exp1_cross: autoDraw = False
+62.1280 	EXP 	exp1_image_l: image = '../image/boy.png'
+62.1280 	EXP 	exp1_image_r: image = '../image/book.png'
+62.1280 	EXP 	exp1_cross: autoDraw = True
+62.3456 	EXP 	exp1_image_l: autoDraw = True
+62.3456 	EXP 	exp1_image_r: autoDraw = True
+62.3717 	EXP 	exp1_cross: autoDraw = False
+64.2236 	EXP 	New trial (rep=0, index=10): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_091', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 91.0, 'image': 'bracelet', 'image_alt': 'backpack', 'left_img': 'backpack', 'right_img': 'bracelet', 'left': '../image/backpack.png', 'right': '../image/bracelet.png', 'correct_img': 'bracelet', 'correct_key': 'rshift', 'sound_dir': '../audio/091.wav', 'image_dir': None}
+64.2525 	DATA 	Keypress: rshift
+64.2555 	EXP 	exp1_image_l: autoDraw = False
+64.2555 	EXP 	exp1_image_r: autoDraw = False
+64.2555 	EXP 	exp1_cross: autoDraw = False
+64.2555 	EXP 	exp1_image_l: image = '../image/backpack.png'
+64.2555 	EXP 	exp1_image_r: image = '../image/bracelet.png'
+64.2555 	EXP 	exp1_cross: autoDraw = True
+64.4715 	EXP 	exp1_image_l: autoDraw = True
+64.4715 	EXP 	exp1_image_r: autoDraw = True
+64.5049 	EXP 	exp1_cross: autoDraw = False
+66.4977 	EXP 	New trial (rep=0, index=11): {'exp_num': 1, 'sent_code': 'l1_t_es_na_012', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 12.0, 'image': 'book', 'image_alt': 'newspaper', 'left_img': 'newspaper', 'right_img': 'book', 'left': '../image/newspaper.png', 'right': '../image/book.png', 'correct_img': 'book', 'correct_key': 'rshift', 'sound_dir': '../audio/012.wav', 'image_dir': None}
+66.5249 	DATA 	Keypress: lshift
+66.5284 	EXP 	exp1_image_l: autoDraw = False
+66.5284 	EXP 	exp1_image_r: autoDraw = False
+66.5284 	EXP 	exp1_cross: autoDraw = False
+66.5284 	EXP 	exp1_image_l: image = '../image/newspaper.png'
+66.5284 	EXP 	exp1_image_r: image = '../image/book.png'
+66.5284 	EXP 	exp1_cross: autoDraw = True
+66.7453 	EXP 	exp1_image_l: autoDraw = True
+66.7453 	EXP 	exp1_image_r: autoDraw = True
+66.7781 	EXP 	exp1_cross: autoDraw = False
+69.5473 	EXP 	New trial (rep=0, index=12): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_134', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 134.0, 'image': 'truck', 'image_alt': 'basket', 'left_img': 'basket', 'right_img': 'truck', 'left': '../image/basket.png', 'right': '../image/truck.png', 'correct_img': 'truck', 'correct_key': 'rshift', 'sound_dir': '../audio/134.wav', 'image_dir': None}
+69.5794 	DATA 	Keypress: rshift
+69.5824 	EXP 	exp1_image_l: autoDraw = False
+69.5824 	EXP 	exp1_image_r: autoDraw = False
+69.5824 	EXP 	exp1_cross: autoDraw = False
+69.5824 	EXP 	exp1_image_l: image = '../image/basket.png'
+69.5824 	EXP 	exp1_image_r: image = '../image/truck.png'
+69.5824 	EXP 	exp1_cross: autoDraw = True
+69.7945 	EXP 	exp1_image_l: autoDraw = True
+69.7945 	EXP 	exp1_image_r: autoDraw = True
+69.8254 	EXP 	exp1_cross: autoDraw = False
+72.3641 	EXP 	New trial (rep=0, index=13): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_087', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 87.0, 'image': 'bed', 'image_alt': 'desk', 'left_img': 'desk', 'right_img': 'bed', 'left': '../image/desk.png', 'right': '../image/bed.png', 'correct_img': 'bed', 'correct_key': 'rshift', 'sound_dir': '../audio/087.wav', 'image_dir': None}
+72.3928 	DATA 	Keypress: lshift
+72.3963 	EXP 	exp1_image_l: autoDraw = False
+72.3963 	EXP 	exp1_image_r: autoDraw = False
+72.3963 	EXP 	exp1_cross: autoDraw = False
+72.3963 	EXP 	exp1_image_l: image = '../image/desk.png'
+72.3963 	EXP 	exp1_image_r: image = '../image/bed.png'
+72.3963 	EXP 	exp1_cross: autoDraw = True
+72.6119 	EXP 	exp1_image_l: autoDraw = True
+72.6119 	EXP 	exp1_image_r: autoDraw = True
+72.6442 	EXP 	exp1_cross: autoDraw = False
+74.8804 	EXP 	New trial (rep=0, index=14): {'exp_num': 1, 'sent_code': 'l1_f_en_na_067', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 67.0, 'image': 'glasses', 'image_alt': 'beer', 'left_img': 'beer', 'right_img': 'glasses', 'left': '../image/beer.png', 'right': '../image/glasses.png', 'correct_img': 'glasses', 'correct_key': 'rshift', 'sound_dir': '../audio/067.wav', 'image_dir': None}
+74.9039 	DATA 	Keypress: rshift
+74.9074 	EXP 	exp1_image_l: autoDraw = False
+74.9074 	EXP 	exp1_image_r: autoDraw = False
+74.9074 	EXP 	exp1_cross: autoDraw = False
+74.9074 	EXP 	exp1_image_l: image = '../image/beer.png'
+74.9074 	EXP 	exp1_image_r: image = '../image/glasses.png'
+74.9074 	EXP 	exp1_cross: autoDraw = True
+75.1283 	EXP 	exp1_image_l: autoDraw = True
+75.1283 	EXP 	exp1_image_r: autoDraw = True
+75.1549 	EXP 	exp1_cross: autoDraw = False
+77.3737 	EXP 	New trial (rep=0, index=15): {'exp_num': 1, 'sent_code': 'l1_f_en_na_064', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 64.0, 'image': 'wallet', 'image_alt': 'key', 'left_img': 'wallet', 'right_img': 'key', 'left': '../image/wallet.png', 'right': '../image/key.png', 'correct_img': 'wallet', 'correct_key': 'lshift', 'sound_dir': '../audio/064.wav', 'image_dir': None}
+77.4031 	DATA 	Keypress: rshift
+77.4065 	EXP 	exp1_image_l: autoDraw = False
+77.4065 	EXP 	exp1_image_r: autoDraw = False
+77.4065 	EXP 	exp1_cross: autoDraw = False
+77.4065 	EXP 	exp1_image_l: image = '../image/wallet.png'
+77.4065 	EXP 	exp1_image_r: image = '../image/key.png'
+77.4065 	EXP 	exp1_cross: autoDraw = True
+77.6213 	EXP 	exp1_image_l: autoDraw = True
+77.6213 	EXP 	exp1_image_r: autoDraw = True
+77.6547 	EXP 	exp1_cross: autoDraw = False
+79.5463 	EXP 	New trial (rep=0, index=16): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_090', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 90.0, 'image': 'bag', 'image_alt': 'bottle', 'left_img': 'bag', 'right_img': 'bottle', 'left': '../image/bag.png', 'right': '../image/bottle.png', 'correct_img': 'bag', 'correct_key': 'lshift', 'sound_dir': '../audio/090.wav', 'image_dir': None}
+79.5706 	DATA 	Keypress: lshift
+79.5740 	EXP 	exp1_image_l: autoDraw = False
+79.5740 	EXP 	exp1_image_r: autoDraw = False
+79.5740 	EXP 	exp1_cross: autoDraw = False
+79.5740 	EXP 	exp1_image_l: image = '../image/bag.png'
+79.5740 	EXP 	exp1_image_r: image = '../image/bottle.png'
+79.5740 	EXP 	exp1_cross: autoDraw = True
+79.7952 	EXP 	exp1_image_l: autoDraw = True
+79.7952 	EXP 	exp1_image_r: autoDraw = True
+79.8217 	EXP 	exp1_cross: autoDraw = False
+82.0468 	EXP 	New trial (rep=0, index=17): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_138', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 138.0, 'image': 'shirt', 'image_alt': 'pants', 'left_img': 'pants', 'right_img': 'shirt', 'left': '../image/pants.png', 'right': '../image/shirt.png', 'correct_img': 'shirt', 'correct_key': 'rshift', 'sound_dir': '../audio/138.wav', 'image_dir': None}
+82.0738 	DATA 	Keypress: lshift
+82.0772 	EXP 	exp1_image_l: autoDraw = False
+82.0772 	EXP 	exp1_image_r: autoDraw = False
+82.0772 	EXP 	exp1_cross: autoDraw = False
+82.0772 	EXP 	exp1_image_l: image = '../image/pants.png'
+82.0772 	EXP 	exp1_image_r: image = '../image/shirt.png'
+82.0772 	EXP 	exp1_cross: autoDraw = True
+82.2949 	EXP 	exp1_image_l: autoDraw = True
+82.2949 	EXP 	exp1_image_r: autoDraw = True
+82.3214 	EXP 	exp1_cross: autoDraw = False
+84.8634 	EXP 	New trial (rep=0, index=18): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_086', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 86.0, 'image': 'plates', 'image_alt': 'glasses', 'left_img': 'plates', 'right_img': 'glasses', 'left': '../image/plates.png', 'right': '../image/glasses.png', 'correct_img': 'plates', 'correct_key': 'lshift', 'sound_dir': '../audio/086.wav', 'image_dir': None}
+84.8870 	DATA 	Keypress: rshift
+84.8905 	EXP 	exp1_image_l: autoDraw = False
+84.8905 	EXP 	exp1_image_r: autoDraw = False
+84.8905 	EXP 	exp1_cross: autoDraw = False
+84.8905 	EXP 	exp1_image_l: image = '../image/plates.png'
+84.8905 	EXP 	exp1_image_r: image = '../image/glasses.png'
+84.8905 	EXP 	exp1_cross: autoDraw = True
+85.1118 	EXP 	exp1_image_l: autoDraw = True
+85.1118 	EXP 	exp1_image_r: autoDraw = True
+85.1382 	EXP 	exp1_cross: autoDraw = False
+87.1971 	EXP 	New trial (rep=0, index=19): {'exp_num': 1, 'sent_code': 'l1_t_es_na_014', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 14.0, 'image': 'key', 'image_alt': 'book', 'left_img': 'book', 'right_img': 'key', 'left': '../image/book.png', 'right': '../image/key.png', 'correct_img': 'key', 'correct_key': 'rshift', 'sound_dir': '../audio/014.wav', 'image_dir': None}
+87.2223 	DATA 	Keypress: lshift
+87.2257 	EXP 	exp1_image_l: autoDraw = False
+87.2257 	EXP 	exp1_image_r: autoDraw = False
+87.2257 	EXP 	exp1_cross: autoDraw = False
+87.2257 	EXP 	exp1_image_l: image = '../image/book.png'
+87.2257 	EXP 	exp1_image_r: image = '../image/key.png'
+87.2257 	EXP 	exp1_cross: autoDraw = True
+87.4445 	EXP 	exp1_image_l: autoDraw = True
+87.4445 	EXP 	exp1_image_r: autoDraw = True
+87.4714 	EXP 	exp1_cross: autoDraw = False
+89.8139 	EXP 	New trial (rep=0, index=20): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_092', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 92.0, 'image': 'armchair', 'image_alt': 'dog', 'left_img': 'armchair', 'right_img': 'dog', 'left': '../image/armchair.png', 'right': '../image/dog.png', 'correct_img': 'armchair', 'correct_key': 'lshift', 'sound_dir': '../audio/092.wav', 'image_dir': None}
+89.8456 	DATA 	Keypress: rshift
+89.8491 	EXP 	exp1_image_l: autoDraw = False
+89.8491 	EXP 	exp1_image_r: autoDraw = False
+89.8491 	EXP 	exp1_cross: autoDraw = False
+89.8491 	EXP 	exp1_image_l: image = '../image/armchair.png'
+89.8491 	EXP 	exp1_image_r: image = '../image/dog.png'
+89.8491 	EXP 	exp1_cross: autoDraw = True
+90.0618 	EXP 	exp1_image_l: autoDraw = True
+90.0618 	EXP 	exp1_image_r: autoDraw = True
+90.0948 	EXP 	exp1_cross: autoDraw = False
+92.2138 	EXP 	New trial (rep=0, index=21): {'exp_num': 1, 'sent_code': 'l1_f_en_na_070', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 70.0, 'image': 'computer', 'image_alt': 'bed', 'left_img': 'computer', 'right_img': 'bed', 'left': '../image/computer.png', 'right': '../image/bed.png', 'correct_img': 'computer', 'correct_key': 'lshift', 'sound_dir': '../audio/070.wav', 'image_dir': None}
+92.2427 	DATA 	Keypress: lshift
+92.2461 	EXP 	exp1_image_l: autoDraw = False
+92.2461 	EXP 	exp1_image_r: autoDraw = False
+92.2461 	EXP 	exp1_cross: autoDraw = False
+92.2461 	EXP 	exp1_image_l: image = '../image/computer.png'
+92.2461 	EXP 	exp1_image_r: image = '../image/bed.png'
+92.2461 	EXP 	exp1_cross: autoDraw = True
+92.4614 	EXP 	exp1_image_l: autoDraw = True
+92.4614 	EXP 	exp1_image_r: autoDraw = True
+92.4944 	EXP 	exp1_cross: autoDraw = False
+94.5232 	EXP 	New trial (rep=0, index=22): {'exp_num': 1, 'sent_code': 'l1_f_en_na_061', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 61.0, 'image': 'dog', 'image_alt': 'cat', 'left_img': 'cat', 'right_img': 'dog', 'left': '../image/cat.png', 'right': '../image/dog.png', 'correct_img': 'dog', 'correct_key': 'rshift', 'sound_dir': '../audio/061.wav', 'image_dir': '../image/'}
+94.5503 	DATA 	Keypress: lshift
+94.5543 	EXP 	exp1_image_l: autoDraw = False
+94.5543 	EXP 	exp1_image_r: autoDraw = False
+94.5543 	EXP 	exp1_cross: autoDraw = False
+94.5543 	EXP 	exp1_image_l: image = '../image/cat.png'
+94.5543 	EXP 	exp1_image_r: image = '../image/dog.png'
+94.5543 	EXP 	exp1_cross: autoDraw = True
+94.7704 	EXP 	exp1_image_l: autoDraw = True
+94.7704 	EXP 	exp1_image_r: autoDraw = True
+94.8047 	EXP 	exp1_cross: autoDraw = False
+96.3727 	EXP 	New trial (rep=0, index=23): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_095', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 95.0, 'image': 'key', 'image_alt': 'socks', 'left_img': 'socks', 'right_img': 'key', 'left': '../image/socks.png', 'right': '../image/key.png', 'correct_img': 'key', 'correct_key': 'rshift', 'sound_dir': '../audio/095.wav', 'image_dir': None}
+96.3960 	DATA 	Keypress: rshift
+96.3999 	EXP 	exp1_image_l: autoDraw = False
+96.3999 	EXP 	exp1_image_r: autoDraw = False
+96.3999 	EXP 	exp1_cross: autoDraw = False
+96.3999 	EXP 	exp1_image_l: image = '../image/socks.png'
+96.3999 	EXP 	exp1_image_r: image = '../image/key.png'
+96.3999 	EXP 	exp1_cross: autoDraw = True
+96.6201 	EXP 	exp1_image_l: autoDraw = True
+96.6201 	EXP 	exp1_image_r: autoDraw = True
+96.6422 	EXP 	exp1_cross: autoDraw = False
+98.7388 	EXP 	New trial (rep=0, index=24): {'exp_num': 1, 'sent_code': 'l1_t_es_na_019', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 19.0, 'image': 'boy', 'image_alt': 'dog', 'left_img': 'boy', 'right_img': 'dog', 'left': '../image/boy.png', 'right': '../image/dog.png', 'correct_img': 'boy', 'correct_key': 'lshift', 'sound_dir': '../audio/019.wav', 'image_dir': None}
+98.7625 	DATA 	Keypress: rshift
+98.7664 	EXP 	exp1_image_l: autoDraw = False
+98.7664 	EXP 	exp1_image_r: autoDraw = False
+98.7664 	EXP 	exp1_cross: autoDraw = False
+98.7664 	EXP 	exp1_image_l: image = '../image/boy.png'
+98.7664 	EXP 	exp1_image_r: image = '../image/dog.png'
+98.7664 	EXP 	exp1_cross: autoDraw = True
+98.9871 	EXP 	exp1_image_l: autoDraw = True
+98.9871 	EXP 	exp1_image_r: autoDraw = True
+99.0088 	EXP 	exp1_cross: autoDraw = False
+101.8787 	EXP 	New trial (rep=0, index=25): {'exp_num': 1, 'sent_code': 'l1_f_en_na_068', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 68.0, 'image': 'socks', 'image_alt': 'book', 'left_img': 'socks', 'right_img': 'book', 'left': '../image/socks.png', 'right': '../image/book.png', 'correct_img': 'socks', 'correct_key': 'lshift', 'sound_dir': '../audio/068.wav', 'image_dir': None}
+101.9009 	DATA 	Keypress: lshift
+101.9045 	EXP 	exp1_image_l: autoDraw = False
+101.9045 	EXP 	exp1_image_r: autoDraw = False
+101.9045 	EXP 	exp1_cross: autoDraw = False
+101.9045 	EXP 	exp1_image_l: image = '../image/socks.png'
+101.9045 	EXP 	exp1_image_r: image = '../image/book.png'
+101.9045 	EXP 	exp1_cross: autoDraw = True
+102.1283 	EXP 	exp1_image_l: autoDraw = True
+102.1283 	EXP 	exp1_image_r: autoDraw = True
+102.1547 	EXP 	exp1_cross: autoDraw = False
+104.1564 	EXP 	New trial (rep=0, index=26): {'exp_num': 1, 'sent_code': 'l1_f_se_na_079', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 79.0, 'image': 'jeans', 'image_alt': 'sweatpants', 'left_img': 'sweatpants', 'right_img': 'jeans', 'left': '../image/sweatpants.png', 'right': '../image/jeans.png', 'correct_img': 'jeans', 'correct_key': 'rshift', 'sound_dir': '../audio/079.wav', 'image_dir': None}
+104.1774 	DATA 	Keypress: lshift
+104.1804 	EXP 	exp1_image_l: autoDraw = False
+104.1804 	EXP 	exp1_image_r: autoDraw = False
+104.1804 	EXP 	exp1_cross: autoDraw = False
+104.1804 	EXP 	exp1_image_l: image = '../image/sweatpants.png'
+104.1804 	EXP 	exp1_image_r: image = '../image/jeans.png'
+104.1804 	EXP 	exp1_cross: autoDraw = True
+104.4034 	EXP 	exp1_image_l: autoDraw = True
+104.4034 	EXP 	exp1_image_r: autoDraw = True
+104.4279 	EXP 	exp1_cross: autoDraw = False
+106.9299 	EXP 	New trial (rep=0, index=27): {'exp_num': 1, 'sent_code': 'l1_f_en_na_065', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 65.0, 'image': 'book', 'image_alt': 'computer', 'left_img': 'computer', 'right_img': 'book', 'left': '../image/computer.png', 'right': '../image/book.png', 'correct_img': 'book', 'correct_key': 'rshift', 'sound_dir': '../audio/065.wav', 'image_dir': None}
+106.9562 	DATA 	Keypress: rshift
+106.9603 	EXP 	exp1_image_l: autoDraw = False
+106.9603 	EXP 	exp1_image_r: autoDraw = False
+106.9603 	EXP 	exp1_cross: autoDraw = False
+106.9603 	EXP 	exp1_image_l: image = '../image/computer.png'
+106.9603 	EXP 	exp1_image_r: image = '../image/book.png'
+106.9603 	EXP 	exp1_cross: autoDraw = True
+107.1781 	EXP 	exp1_image_l: autoDraw = True
+107.1781 	EXP 	exp1_image_r: autoDraw = True
+107.2046 	EXP 	exp1_cross: autoDraw = False
+108.9803 	EXP 	New trial (rep=0, index=28): {'exp_num': 1, 'sent_code': 'l1_f_se_na_083', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 83.0, 'image': 'burger', 'image_alt': 'donut', 'left_img': 'donut', 'right_img': 'burger', 'left': '../image/donut.png', 'right': '../image/burger.png', 'correct_img': 'burger', 'correct_key': 'rshift', 'sound_dir': '../audio/083.wav', 'image_dir': None}
+109.0136 	DATA 	Keypress: rshift
+109.0171 	EXP 	exp1_image_l: autoDraw = False
+109.0171 	EXP 	exp1_image_r: autoDraw = False
+109.0171 	EXP 	exp1_cross: autoDraw = False
+109.0171 	EXP 	exp1_image_l: image = '../image/donut.png'
+109.0171 	EXP 	exp1_image_r: image = '../image/burger.png'
+109.0171 	EXP 	exp1_cross: autoDraw = True
+109.2279 	EXP 	exp1_image_l: autoDraw = True
+109.2279 	EXP 	exp1_image_r: autoDraw = True
+109.2611 	EXP 	exp1_cross: autoDraw = False
+111.2238 	EXP 	New trial (rep=0, index=29): {'exp_num': 1, 'sent_code': 'l1_f_se_na_081', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 81.0, 'image': 'sweatpants', 'image_alt': 'boxers', 'left_img': 'boxers', 'right_img': 'sweatpants', 'left': '../image/boxers.png', 'right': '../image/sweatpants.png', 'correct_img': 'sweatpants', 'correct_key': 'rshift', 'sound_dir': '../audio/081.wav', 'image_dir': None}
+111.2537 	DATA 	Keypress: rshift
+111.2572 	EXP 	exp1_image_l: autoDraw = False
+111.2572 	EXP 	exp1_image_r: autoDraw = False
+111.2572 	EXP 	exp1_cross: autoDraw = False
+111.2572 	EXP 	exp1_image_l: image = '../image/boxers.png'
+111.2572 	EXP 	exp1_image_r: image = '../image/sweatpants.png'
+111.2572 	EXP 	exp1_cross: autoDraw = True
+111.4700 	EXP 	exp1_image_l: autoDraw = True
+111.4700 	EXP 	exp1_image_r: autoDraw = True
+111.5030 	EXP 	exp1_cross: autoDraw = False
+114.3064 	EXP 	New trial (rep=0, index=30): {'exp_num': 1, 'sent_code': 'l1_t_es_na_016', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 16.0, 'image': 'bag', 'image_alt': 'flipflops', 'left_img': 'flipflops', 'right_img': 'bag', 'left': '../image/flipflops.png', 'right': '../image/bag.png', 'correct_img': 'bag', 'correct_key': 'rshift', 'sound_dir': '../audio/016.wav', 'image_dir': None}
+114.3347 	DATA 	Keypress: rshift
+114.3381 	EXP 	exp1_image_l: autoDraw = False
+114.3381 	EXP 	exp1_image_r: autoDraw = False
+114.3381 	EXP 	exp1_cross: autoDraw = False
+114.3381 	EXP 	exp1_image_l: image = '../image/flipflops.png'
+114.3381 	EXP 	exp1_image_r: image = '../image/bag.png'
+114.3381 	EXP 	exp1_cross: autoDraw = True
+114.5532 	EXP 	exp1_image_l: autoDraw = True
+114.5532 	EXP 	exp1_image_r: autoDraw = True
+114.5775 	EXP 	exp1_cross: autoDraw = False
+117.5218 	EXP 	New trial (rep=0, index=31): {'exp_num': 1, 'sent_code': 'l1_f_en_na_066', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 66.0, 'image': 'bag', 'image_alt': 'scarf', 'left_img': 'bag', 'right_img': 'scarf', 'left': '../image/bag.png', 'right': '../image/scarf.png', 'correct_img': 'bag', 'correct_key': 'lshift', 'sound_dir': '../audio/066.wav', 'image_dir': None}
+117.5500 	DATA 	Keypress: rshift
+117.5541 	EXP 	exp1_image_l: autoDraw = False
+117.5541 	EXP 	exp1_image_r: autoDraw = False
+117.5541 	EXP 	exp1_cross: autoDraw = False
+117.5541 	EXP 	exp1_image_l: image = '../image/bag.png'
+117.5541 	EXP 	exp1_image_r: image = '../image/scarf.png'
+117.5541 	EXP 	exp1_cross: autoDraw = True
+117.7579 	EXP 	exp1_image_l: autoDraw = True
+117.7579 	EXP 	exp1_image_r: autoDraw = True
+117.7912 	EXP 	exp1_cross: autoDraw = False
+120.0232 	EXP 	New trial (rep=0, index=32): {'exp_num': 1, 'sent_code': 'l1_f_en_na_073', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 73.0, 'image': 'tshirt', 'image_alt': 'socks', 'left_img': 'socks', 'right_img': 'tshirt', 'left': '../image/socks.png', 'right': '../image/tshirt.png', 'correct_img': 'tshirt', 'correct_key': 'rshift', 'sound_dir': '../audio/073.wav', 'image_dir': None}
+120.0527 	DATA 	Keypress: lshift
+120.0561 	EXP 	exp1_image_l: autoDraw = False
+120.0561 	EXP 	exp1_image_r: autoDraw = False
+120.0561 	EXP 	exp1_cross: autoDraw = False
+120.0561 	EXP 	exp1_image_l: image = '../image/socks.png'
+120.0561 	EXP 	exp1_image_r: image = '../image/tshirt.png'
+120.0561 	EXP 	exp1_cross: autoDraw = True
+120.2710 	EXP 	exp1_image_l: autoDraw = True
+120.2710 	EXP 	exp1_image_r: autoDraw = True
+120.3045 	EXP 	exp1_cross: autoDraw = False
+122.4637 	EXP 	New trial (rep=0, index=33): {'exp_num': 1, 'sent_code': 'l1_f_se_na_085', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 85.0, 'image': 'sneakers', 'image_alt': 'loafers', 'left_img': 'loafers', 'right_img': 'sneakers', 'left': '../image/loafers.png', 'right': '../image/sneakers.png', 'correct_img': 'sneakers', 'correct_key': 'rshift', 'sound_dir': '../audio/085.wav', 'image_dir': None}
+122.4943 	DATA 	Keypress: rshift
+122.4977 	EXP 	exp1_image_l: autoDraw = False
+122.4977 	EXP 	exp1_image_r: autoDraw = False
+122.4977 	EXP 	exp1_cross: autoDraw = False
+122.4977 	EXP 	exp1_image_l: image = '../image/loafers.png'
+122.4977 	EXP 	exp1_image_r: image = '../image/sneakers.png'
+122.4977 	EXP 	exp1_cross: autoDraw = True
+122.7111 	EXP 	exp1_image_l: autoDraw = True
+122.7111 	EXP 	exp1_image_r: autoDraw = True
+122.7439 	EXP 	exp1_cross: autoDraw = False
+125.2233 	EXP 	New trial (rep=0, index=34): {'exp_num': 1, 'sent_code': 'l1_f_se_na_076', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 76.0, 'image': 'hotdog', 'image_alt': 'burger', 'left_img': 'hotdog', 'right_img': 'burger', 'left': '../image/hotdog.png', 'right': '../image/burger.png', 'correct_img': 'hotdog', 'correct_key': 'lshift', 'sound_dir': '../audio/076.wav', 'image_dir': None}
+125.2545 	DATA 	Keypress: rshift
+125.2580 	EXP 	exp1_image_l: autoDraw = False
+125.2580 	EXP 	exp1_image_r: autoDraw = False
+125.2580 	EXP 	exp1_cross: autoDraw = False
+125.2580 	EXP 	exp1_image_l: image = '../image/hotdog.png'
+125.2580 	EXP 	exp1_image_r: image = '../image/burger.png'
+125.2580 	EXP 	exp1_cross: autoDraw = True
+125.4708 	EXP 	exp1_image_l: autoDraw = True
+125.4708 	EXP 	exp1_image_r: autoDraw = True
+125.5046 	EXP 	exp1_cross: autoDraw = False
+127.5631 	EXP 	New trial (rep=0, index=35): {'exp_num': 1, 'sent_code': 'l1_t_es_na_020', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 20.0, 'image': 'backpack', 'image_alt': 'cellphone', 'left_img': 'cellphone', 'right_img': 'backpack', 'left': '../image/cellphone.png', 'right': '../image/backpack.png', 'correct_img': 'backpack', 'correct_key': 'rshift', 'sound_dir': '../audio/020.wav', 'image_dir': None}
+127.5926 	DATA 	Keypress: lshift
+127.5960 	EXP 	exp1_image_l: autoDraw = False
+127.5960 	EXP 	exp1_image_r: autoDraw = False
+127.5960 	EXP 	exp1_cross: autoDraw = False
+127.5960 	EXP 	exp1_image_l: image = '../image/cellphone.png'
+127.5960 	EXP 	exp1_image_r: image = '../image/backpack.png'
+127.5960 	EXP 	exp1_cross: autoDraw = True
+127.8094 	EXP 	exp1_image_l: autoDraw = True
+127.8094 	EXP 	exp1_image_r: autoDraw = True
+127.8417 	EXP 	exp1_cross: autoDraw = False
+130.3126 	EXP 	New trial (rep=0, index=36): {'exp_num': 1, 'sent_code': 'l1_t_es_na_018', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 18.0, 'image': 'napkins', 'image_alt': 'cups', 'left_img': 'cups', 'right_img': 'napkins', 'left': '../image/cups.png', 'right': '../image/napkins.png', 'correct_img': 'napkins', 'correct_key': 'rshift', 'sound_dir': '../audio/018.wav', 'image_dir': None}
+130.3383 	DATA 	Keypress: rshift
+130.3417 	EXP 	exp1_image_l: autoDraw = False
+130.3417 	EXP 	exp1_image_r: autoDraw = False
+130.3417 	EXP 	exp1_cross: autoDraw = False
+130.3417 	EXP 	exp1_image_l: image = '../image/cups.png'
+130.3417 	EXP 	exp1_image_r: image = '../image/napkins.png'
+130.3417 	EXP 	exp1_cross: autoDraw = True
+130.5615 	EXP 	exp1_image_l: autoDraw = True
+130.5615 	EXP 	exp1_image_r: autoDraw = True
+130.5878 	EXP 	exp1_cross: autoDraw = False
+133.5563 	EXP 	New trial (rep=0, index=37): {'exp_num': 1, 'sent_code': 'l1_f_se_na_084', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 84.0, 'image': 'penthouse', 'image_alt': 'rocket', 'left_img': 'penthouse', 'right_img': 'rocket', 'left': '../image/penthouse.png', 'right': '../image/rocket.png', 'correct_img': 'penthouse', 'correct_key': 'lshift', 'sound_dir': '../audio/084.wav', 'image_dir': None}
+133.5848 	DATA 	Keypress: lshift
+133.5882 	EXP 	exp1_image_l: autoDraw = False
+133.5882 	EXP 	exp1_image_r: autoDraw = False
+133.5882 	EXP 	exp1_cross: autoDraw = False
+133.5882 	EXP 	exp1_image_l: image = '../image/penthouse.png'
+133.5882 	EXP 	exp1_image_r: image = '../image/rocket.png'
+133.5882 	EXP 	exp1_cross: autoDraw = True
+133.8030 	EXP 	exp1_image_l: autoDraw = True
+133.8030 	EXP 	exp1_image_r: autoDraw = True
+133.8276 	EXP 	exp1_cross: autoDraw = False
+136.4967 	EXP 	New trial (rep=0, index=38): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_133', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 133.0, 'image': 'cellphone', 'image_alt': 'book', 'left_img': 'cellphone', 'right_img': 'book', 'left': '../image/cellphone.png', 'right': '../image/book.png', 'correct_img': 'cellphone', 'correct_key': 'lshift', 'sound_dir': '../audio/133.wav', 'image_dir': None}
+136.5245 	DATA 	Keypress: lshift
+136.5280 	EXP 	exp1_image_l: autoDraw = False
+136.5280 	EXP 	exp1_image_r: autoDraw = False
+136.5280 	EXP 	exp1_cross: autoDraw = False
+136.5280 	EXP 	exp1_image_l: image = '../image/cellphone.png'
+136.5280 	EXP 	exp1_image_r: image = '../image/book.png'
+136.5280 	EXP 	exp1_cross: autoDraw = True
+136.7441 	EXP 	exp1_image_l: autoDraw = True
+136.7441 	EXP 	exp1_image_r: autoDraw = True
+136.7770 	EXP 	exp1_cross: autoDraw = False
+139.4226 	EXP 	New trial (rep=0, index=39): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_132', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 132.0, 'image': 'grandma', 'image_alt': 'car', 'left_img': 'car', 'right_img': 'grandma', 'left': '../image/car.png', 'right': '../image/grandma.png', 'correct_img': 'grandma', 'correct_key': 'rshift', 'sound_dir': '../audio/132.wav', 'image_dir': None}
+139.4511 	DATA 	Keypress: lshift
+139.4540 	EXP 	exp1_image_l: autoDraw = False
+139.4540 	EXP 	exp1_image_r: autoDraw = False
+139.4540 	EXP 	exp1_cross: autoDraw = False
+139.4540 	EXP 	exp1_image_l: image = '../image/car.png'
+139.4540 	EXP 	exp1_image_r: image = '../image/grandma.png'
+139.4540 	EXP 	exp1_cross: autoDraw = True
+139.6709 	EXP 	exp1_image_l: autoDraw = True
+139.6709 	EXP 	exp1_image_r: autoDraw = True
+139.7045 	EXP 	exp1_cross: autoDraw = False
+141.9233 	EXP 	New trial (rep=0, index=40): {'exp_num': 1, 'sent_code': 'l1_f_en_na_071', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 71.0, 'image': 'plane', 'image_alt': 'wallet', 'left_img': 'wallet', 'right_img': 'plane', 'left': '../image/wallet.png', 'right': '../image/plane.png', 'correct_img': 'plane', 'correct_key': 'rshift', 'sound_dir': '../audio/071.wav', 'image_dir': None}
+141.9458 	DATA 	Keypress: rshift
+141.9487 	EXP 	exp1_image_l: autoDraw = False
+141.9487 	EXP 	exp1_image_r: autoDraw = False
+141.9487 	EXP 	exp1_cross: autoDraw = False
+141.9487 	EXP 	exp1_image_l: image = '../image/wallet.png'
+141.9487 	EXP 	exp1_image_r: image = '../image/plane.png'
+141.9487 	EXP 	exp1_cross: autoDraw = True
+142.1704 	EXP 	exp1_image_l: autoDraw = True
+142.1704 	EXP 	exp1_image_r: autoDraw = True
+142.1922 	EXP 	exp1_cross: autoDraw = False
+144.8335 	DATA 	Keypress: rshift
+144.8416 	EXP 	New trial (rep=0, index=41): {'exp_num': 1, 'sent_code': 'l1_f_en_na_074', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 74.0, 'image': 'boy', 'image_alt': 'woman', 'left_img': 'boy', 'right_img': 'woman', 'left': '../image/boy.png', 'right': '../image/woman.png', 'correct_img': 'boy', 'correct_key': 'lshift', 'sound_dir': '../audio/074.wav', 'image_dir': None}
+144.8691 	EXP 	exp1_image_l: autoDraw = False
+144.8691 	EXP 	exp1_image_r: autoDraw = False
+144.8691 	EXP 	exp1_cross: autoDraw = False
+144.8691 	EXP 	exp1_image_l: image = '../image/boy.png'
+144.8691 	EXP 	exp1_image_r: image = '../image/woman.png'
+144.8691 	EXP 	exp1_cross: autoDraw = True
+145.0875 	EXP 	exp1_image_l: autoDraw = True
+145.0875 	EXP 	exp1_image_r: autoDraw = True
+145.1093 	EXP 	exp1_cross: autoDraw = False
+146.9224 	EXP 	New trial (rep=0, index=42): {'exp_num': 1, 'sent_code': 'l1_t_es_na_017', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 17.0, 'image': 'jug', 'image_alt': 'cat', 'left_img': 'jug', 'right_img': 'cat', 'left': '../image/jug.png', 'right': '../image/cat.png', 'correct_img': 'jug', 'correct_key': 'lshift', 'sound_dir': '../audio/017.wav', 'image_dir': None}
+146.9496 	DATA 	Keypress: lshift
+146.9531 	EXP 	exp1_image_l: autoDraw = False
+146.9531 	EXP 	exp1_image_r: autoDraw = False
+146.9531 	EXP 	exp1_cross: autoDraw = False
+146.9531 	EXP 	exp1_image_l: image = '../image/jug.png'
+146.9531 	EXP 	exp1_image_r: image = '../image/cat.png'
+146.9531 	EXP 	exp1_cross: autoDraw = True
+147.1709 	EXP 	exp1_image_l: autoDraw = True
+147.1709 	EXP 	exp1_image_r: autoDraw = True
+147.1917 	EXP 	exp1_cross: autoDraw = False
+149.8715 	EXP 	New trial (rep=0, index=43): {'exp_num': 1, 'sent_code': 'l1_f_en_na_072', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 72.0, 'image': 'dog', 'image_alt': 'fish', 'left_img': 'dog', 'right_img': 'fish', 'left': '../image/dog.png', 'right': '../image/fish.png', 'correct_img': 'dog', 'correct_key': 'lshift', 'sound_dir': '../audio/072.wav', 'image_dir': None}
+149.8990 	DATA 	Keypress: lshift
+149.9024 	EXP 	exp1_image_l: autoDraw = False
+149.9024 	EXP 	exp1_image_r: autoDraw = False
+149.9024 	EXP 	exp1_cross: autoDraw = False
+149.9024 	EXP 	exp1_image_l: image = '../image/dog.png'
+149.9024 	EXP 	exp1_image_r: image = '../image/fish.png'
+149.9024 	EXP 	exp1_cross: autoDraw = True
+150.1115 	EXP 	exp1_image_l: autoDraw = True
+150.1115 	EXP 	exp1_image_r: autoDraw = True
+150.1435 	EXP 	exp1_cross: autoDraw = False
+152.1800 	EXP 	New trial (rep=0, index=44): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_094', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 94.0, 'image': 'beer', 'image_alt': 'horchata', 'left_img': 'beer', 'right_img': 'horchata', 'left': '../image/beer.png', 'right': '../image/horchata.png', 'correct_img': 'beer', 'correct_key': 'lshift', 'sound_dir': '../audio/094.wav', 'image_dir': None}
+152.2048 	DATA 	Keypress: lshift
+152.2082 	EXP 	exp1_image_l: autoDraw = False
+152.2082 	EXP 	exp1_image_r: autoDraw = False
+152.2082 	EXP 	exp1_cross: autoDraw = False
+152.2082 	EXP 	exp1_image_l: image = '../image/beer.png'
+152.2082 	EXP 	exp1_image_r: image = '../image/horchata.png'
+152.2082 	EXP 	exp1_cross: autoDraw = True
+152.4277 	EXP 	exp1_image_l: autoDraw = True
+152.4277 	EXP 	exp1_image_r: autoDraw = True
+152.4543 	EXP 	exp1_cross: autoDraw = False
+154.9790 	EXP 	New trial (rep=0, index=45): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_131', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 131.0, 'image': 'cat', 'image_alt': 'flower', 'left_img': 'cat', 'right_img': 'flower', 'left': '../image/cat.png', 'right': '../image/flower.png', 'correct_img': 'cat', 'correct_key': 'lshift', 'sound_dir': '../audio/131.wav', 'image_dir': None}
+155.0060 	DATA 	Keypress: lshift
+155.0094 	EXP 	exp1_image_l: autoDraw = False
+155.0094 	EXP 	exp1_image_r: autoDraw = False
+155.0094 	EXP 	exp1_cross: autoDraw = False
+155.0094 	EXP 	exp1_image_l: image = '../image/cat.png'
+155.0094 	EXP 	exp1_image_r: image = '../image/flower.png'
+155.0094 	EXP 	exp1_cross: autoDraw = True
+155.2278 	EXP 	exp1_image_l: autoDraw = True
+155.2278 	EXP 	exp1_image_r: autoDraw = True
+155.2544 	EXP 	exp1_cross: autoDraw = False
+157.3896 	EXP 	New trial (rep=0, index=46): {'exp_num': 1, 'sent_code': 'l1_t_es_na_011', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 11.0, 'image': 'armchair', 'image_alt': 'bed', 'left_img': 'armchair', 'right_img': 'bed', 'left': '../image/armchair.png', 'right': '../image/bed.png', 'correct_img': 'armchair', 'correct_key': 'lshift', 'sound_dir': '../audio/011.wav', 'image_dir': None}
+157.4206 	DATA 	Keypress: lshift
+157.4241 	EXP 	exp1_image_l: autoDraw = False
+157.4241 	EXP 	exp1_image_r: autoDraw = False
+157.4241 	EXP 	exp1_cross: autoDraw = False
+157.4241 	EXP 	exp1_image_l: image = '../image/armchair.png'
+157.4241 	EXP 	exp1_image_r: image = '../image/bed.png'
+157.4241 	EXP 	exp1_cross: autoDraw = True
+157.6375 	EXP 	exp1_image_l: autoDraw = True
+157.6375 	EXP 	exp1_image_r: autoDraw = True
+157.6707 	EXP 	exp1_cross: autoDraw = False
+160.8629 	EXP 	New trial (rep=0, index=47): {'exp_num': 1, 'sent_code': 'l1_f_en_na_062', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 62.0, 'image': 'shoe', 'image_alt': 'ring', 'left_img': 'shoe', 'right_img': 'ring', 'left': '../image/shoe.png', 'right': '../image/ring.png', 'correct_img': 'shoe', 'correct_key': 'lshift', 'sound_dir': '../audio/062.wav', 'image_dir': None}
+160.8890 	DATA 	Keypress: rshift
+160.8924 	EXP 	exp1_image_l: autoDraw = False
+160.8924 	EXP 	exp1_image_r: autoDraw = False
+160.8924 	EXP 	exp1_cross: autoDraw = False
+160.8924 	EXP 	exp1_image_l: image = '../image/shoe.png'
+160.8924 	EXP 	exp1_image_r: image = '../image/ring.png'
+160.8924 	EXP 	exp1_cross: autoDraw = True
+161.1107 	EXP 	exp1_image_l: autoDraw = True
+161.1107 	EXP 	exp1_image_r: autoDraw = True
+161.1376 	EXP 	exp1_cross: autoDraw = False
+163.3564 	EXP 	New trial (rep=0, index=48): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_136', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 136.0, 'image': 'village', 'image_alt': 'city', 'left_img': 'city', 'right_img': 'village', 'left': '../image/city.png', 'right': '../image/village.png', 'correct_img': 'village', 'correct_key': 'rshift', 'sound_dir': '../audio/136.wav', 'image_dir': None}
+163.3854 	DATA 	Keypress: lshift
+163.3892 	EXP 	exp1_image_l: autoDraw = False
+163.3892 	EXP 	exp1_image_r: autoDraw = False
+163.3892 	EXP 	exp1_cross: autoDraw = False
+163.3892 	EXP 	exp1_image_l: image = '../image/city.png'
+163.3892 	EXP 	exp1_image_r: image = '../image/village.png'
+163.3892 	EXP 	exp1_cross: autoDraw = True
+163.6031 	EXP 	exp1_image_l: autoDraw = True
+163.6031 	EXP 	exp1_image_r: autoDraw = True
+163.6375 	EXP 	exp1_cross: autoDraw = False
+166.4732 	EXP 	New trial (rep=0, index=49): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_139', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 139.0, 'image': 'restaurant', 'image_alt': 'hotel', 'left_img': 'restaurant', 'right_img': 'hotel', 'left': '../image/restaurant.png', 'right': '../image/hotel.png', 'correct_img': 'restaurant', 'correct_key': 'lshift', 'sound_dir': '../audio/139.wav', 'image_dir': None}
+166.5046 	DATA 	Keypress: rshift
+166.5076 	EXP 	exp1_image_l: autoDraw = False
+166.5076 	EXP 	exp1_image_r: autoDraw = False
+166.5076 	EXP 	exp1_cross: autoDraw = False
+166.5076 	EXP 	exp1_image_l: image = '../image/restaurant.png'
+166.5076 	EXP 	exp1_image_r: image = '../image/hotel.png'
+166.5076 	EXP 	exp1_cross: autoDraw = True
+166.7208 	EXP 	exp1_image_l: autoDraw = True
+166.7208 	EXP 	exp1_image_r: autoDraw = True
+166.7543 	EXP 	exp1_cross: autoDraw = False
+169.5063 	EXP 	New trial (rep=0, index=50): {'exp_num': 1, 'sent_code': 'l1_f_sp_na_088', 'list': 'l1', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 88.0, 'image': 'book', 'image_alt': 'cellphone', 'left_img': 'book', 'right_img': 'cellphone', 'left': '../image/book.png', 'right': '../image/cellphone.png', 'correct_img': 'book', 'correct_key': 'lshift', 'sound_dir': '../audio/088.wav', 'image_dir': None}
+169.5368 	DATA 	Keypress: lshift
+169.5403 	EXP 	exp1_image_l: autoDraw = False
+169.5403 	EXP 	exp1_image_r: autoDraw = False
+169.5403 	EXP 	exp1_cross: autoDraw = False
+169.5403 	EXP 	exp1_image_l: image = '../image/book.png'
+169.5403 	EXP 	exp1_image_r: image = '../image/cellphone.png'
+169.5403 	EXP 	exp1_cross: autoDraw = True
+169.7542 	EXP 	exp1_image_l: autoDraw = True
+169.7542 	EXP 	exp1_image_r: autoDraw = True
+169.7874 	EXP 	exp1_cross: autoDraw = False
+171.9064 	EXP 	New trial (rep=0, index=51): {'exp_num': 1, 'sent_code': 'l1_f_se_na_080', 'list': 'l1', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 80.0, 'image': 'mouse', 'image_alt': 'rat', 'left_img': 'mouse', 'right_img': 'rat', 'left': '../image/mouse.png', 'right': '../image/rat.png', 'correct_img': 'mouse', 'correct_key': 'lshift', 'sound_dir': '../audio/080.wav', 'image_dir': None}
+171.9327 	DATA 	Keypress: lshift
+171.9363 	EXP 	exp1_image_l: autoDraw = False
+171.9363 	EXP 	exp1_image_r: autoDraw = False
+171.9363 	EXP 	exp1_cross: autoDraw = False
+171.9363 	EXP 	exp1_image_l: image = '../image/mouse.png'
+171.9363 	EXP 	exp1_image_r: image = '../image/rat.png'
+171.9363 	EXP 	exp1_cross: autoDraw = True
+172.1541 	EXP 	exp1_image_l: autoDraw = True
+172.1541 	EXP 	exp1_image_r: autoDraw = True
+172.1755 	EXP 	exp1_cross: autoDraw = False
+174.1383 	EXP 	New trial (rep=0, index=52): {'exp_num': 1, 'sent_code': 'l1_f_en_na_063', 'list': 'l1', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 63.0, 'image': 'man', 'image_alt': 'woman', 'left_img': 'woman', 'right_img': 'man', 'left': '../image/woman.png', 'right': '../image/man.png', 'correct_img': 'man', 'correct_key': 'rshift', 'sound_dir': '../audio/063.wav', 'image_dir': None}
+174.1674 	DATA 	Keypress: rshift
+174.1709 	EXP 	exp1_image_l: autoDraw = False
+174.1709 	EXP 	exp1_image_r: autoDraw = False
+174.1709 	EXP 	exp1_cross: autoDraw = False
+174.1709 	EXP 	exp1_image_l: image = '../image/woman.png'
+174.1709 	EXP 	exp1_image_r: image = '../image/man.png'
+174.1709 	EXP 	exp1_cross: autoDraw = True
+174.3777 	EXP 	exp1_image_l: autoDraw = True
+174.3777 	EXP 	exp1_image_r: autoDraw = True
+174.4100 	EXP 	exp1_cross: autoDraw = False
+176.1870 	EXP 	New trial (rep=0, index=53): {'exp_num': 1, 'sent_code': 'l1_t_es_f0u_137', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'f0u', 'num': 137.0, 'image': 'jacket', 'image_alt': 'shirt', 'left_img': 'jacket', 'right_img': 'shirt', 'left': '../image/jacket.png', 'right': '../image/shirt.png', 'correct_img': 'jacket', 'correct_key': 'lshift', 'sound_dir': '../audio/137.wav', 'image_dir': None}
+176.2130 	DATA 	Keypress: rshift
+176.2164 	EXP 	exp1_image_l: autoDraw = False
+176.2164 	EXP 	exp1_image_r: autoDraw = False
+176.2164 	EXP 	exp1_cross: autoDraw = False
+176.2164 	EXP 	exp1_image_l: image = '../image/jacket.png'
+176.2164 	EXP 	exp1_image_r: image = '../image/shirt.png'
+176.2164 	EXP 	exp1_cross: autoDraw = True
+176.4276 	EXP 	exp1_image_l: autoDraw = True
+176.4276 	EXP 	exp1_image_r: autoDraw = True
+176.4588 	EXP 	exp1_cross: autoDraw = False
+178.5208 	EXP 	New trial (rep=0, index=54): {'exp_num': 1, 'sent_code': 'l1_t_es_na_015', 'list': 'l1', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 15.0, 'image': 'glasses', 'image_alt': 'jacket', 'left_img': 'glasses', 'right_img': 'jacket', 'left': '../image/glasses.png', 'right': '../image/jacket.png', 'correct_img': 'glasses', 'correct_key': 'lshift', 'sound_dir': '../audio/015.wav', 'image_dir': None}
+178.5411 	DATA 	Keypress: lshift
+178.5446 	EXP 	exp1_image_l: autoDraw = False
+178.5446 	EXP 	exp1_image_r: autoDraw = False
+178.5446 	EXP 	exp1_cross: autoDraw = False
+178.5446 	EXP 	exp1_image_l: image = '../image/glasses.png'
+178.5446 	EXP 	exp1_image_r: image = '../image/jacket.png'
+178.5446 	EXP 	exp1_cross: autoDraw = True
+178.7601 	EXP 	exp1_image_l: autoDraw = True
+178.7601 	EXP 	exp1_image_r: autoDraw = True
+178.7873 	EXP 	exp1_cross: autoDraw = False
+180.8995 	DATA 	Keypress: lshift
+180.9058 	EXP 	exp1_image_l: autoDraw = False
+180.9058 	EXP 	exp1_image_r: autoDraw = False
+180.9058 	EXP 	exp1_cross: autoDraw = False
+180.9058 	EXP 	exp1_end_text: autoDraw = True
+245.6999 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1000, seed=None
+245.7046 	EXP 	New trial (rep=0, index=0): None
+245.7085 	DATA 	Keypress: space
+245.7125 	EXP 	exp1_end_text: autoDraw = False
+245.7125 	EXP 	exp2_instr_text: autoDraw = True
+247.8258 	EXP 	Imported /Users/gabmac/Documents/RU/QP/exp/practice_trial/trial_exp_2/trial2.xlsx as conditions, 8 conditions, 16 params
+247.8262 	EXP 	Created sequence: sequential, trialTypes=8, nReps=1, seed=None
+247.8267 	EXP 	New trial (rep=0, index=0): {'num': 'tr1', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr1.wav', 'phr': 'Where are your kids?', 'sent_code': 'lt_tr_en_na_tr1', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+247.8496 	DATA 	Keypress: space
+247.8538 	EXP 	exp2_instr_text: autoDraw = False
+247.8538 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+247.8538 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+247.8538 	EXP 	exp2_trial_cross: autoDraw = True
+248.0537 	EXP 	exp2_trial_iamge_l: autoDraw = True
+248.0537 	EXP 	exp2_trial_image_r: autoDraw = True
+248.0932 	EXP 	exp2_trial_cross: autoDraw = False
+249.6575 	DATA 	Keypress: lshift
+253.0380 	EXP 	New trial (rep=0, index=1): {'num': 'tr2', 'list': 'lt', 'cond': 'tr', 'lang': 'en', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr2.wav', 'phr': 'Who is buying my car?', 'sent_code': 'lt_tr_en_na_tr2', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+253.0647 	EXP 	exp2_trial_iamge_l: autoDraw = False
+253.0647 	EXP 	exp2_trial_image_r: autoDraw = False
+253.0647 	EXP 	exp2_trial_iamge_l: autoDraw = False
+253.0647 	EXP 	exp2_trial_image_r: autoDraw = False
+253.0647 	EXP 	exp2_trial_cross: autoDraw = False
+253.0647 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+253.0647 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+253.0647 	EXP 	exp2_trial_cross: autoDraw = True
+253.2940 	EXP 	exp2_trial_iamge_l: autoDraw = True
+253.2940 	EXP 	exp2_trial_image_r: autoDraw = True
+253.3085 	EXP 	exp2_trial_cross: autoDraw = False
+254.9497 	DATA 	Keypress: lshift
+258.2884 	EXP 	New trial (rep=0, index=2): {'num': 'tr3', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr3.wav', 'phr': '¿Dónde está mi perro?', 'sent_code': 'lt_tr_sp_na_tr3', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+258.3151 	EXP 	exp2_trial_iamge_l: autoDraw = False
+258.3151 	EXP 	exp2_trial_image_r: autoDraw = False
+258.3151 	EXP 	exp2_trial_iamge_l: autoDraw = False
+258.3151 	EXP 	exp2_trial_image_r: autoDraw = False
+258.3151 	EXP 	exp2_trial_cross: autoDraw = False
+258.3151 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+258.3151 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+258.3151 	EXP 	exp2_trial_cross: autoDraw = True
+258.5437 	EXP 	exp2_trial_iamge_l: autoDraw = True
+258.5437 	EXP 	exp2_trial_image_r: autoDraw = True
+258.5582 	EXP 	exp2_trial_cross: autoDraw = False
+260.6391 	DATA 	Keypress: rshift
+263.5274 	EXP 	New trial (rep=0, index=3): {'num': 'tr4', 'list': 'lt', 'cond': 'tr', 'lang': 'sp', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr4.wav', 'phr': '¿De quién es la bolsa?', 'sent_code': 'lt_tr_sp_na_tr4', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+263.5530 	EXP 	exp2_trial_iamge_l: autoDraw = False
+263.5530 	EXP 	exp2_trial_image_r: autoDraw = False
+263.5530 	EXP 	exp2_trial_iamge_l: autoDraw = False
+263.5530 	EXP 	exp2_trial_image_r: autoDraw = False
+263.5530 	EXP 	exp2_trial_cross: autoDraw = False
+263.5530 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+263.5530 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+263.5530 	EXP 	exp2_trial_cross: autoDraw = True
+263.7936 	EXP 	exp2_trial_iamge_l: autoDraw = True
+263.7936 	EXP 	exp2_trial_image_r: autoDraw = True
+263.7936 	EXP 	exp2_trial_cross: autoDraw = False
+266.2737 	DATA 	Keypress: rshift
+268.7783 	EXP 	New trial (rep=0, index=4): {'num': 'tr5', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr5.wav', 'phr': '¿Dónde encontraste sus donuts?', 'sent_code': 'lt_tr_se_na_tr5', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+268.8040 	EXP 	exp2_trial_iamge_l: autoDraw = False
+268.8040 	EXP 	exp2_trial_image_r: autoDraw = False
+268.8040 	EXP 	exp2_trial_iamge_l: autoDraw = False
+268.8040 	EXP 	exp2_trial_image_r: autoDraw = False
+268.8040 	EXP 	exp2_trial_cross: autoDraw = False
+268.8040 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+268.8040 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+268.8040 	EXP 	exp2_trial_cross: autoDraw = True
+269.0434 	EXP 	exp2_trial_iamge_l: autoDraw = True
+269.0434 	EXP 	exp2_trial_image_r: autoDraw = True
+269.0434 	EXP 	exp2_trial_cross: autoDraw = False
+270.6138 	DATA 	Keypress: rshift
+274.0273 	EXP 	New trial (rep=0, index=5): {'num': 'tr6', 'list': 'lt', 'cond': 'tr', 'lang': 'se', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr6.wav', 'phr': '¿Cuándo compraste tu sweater?', 'sent_code': 'lt_tr_se_na_tr6', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+274.0535 	EXP 	exp2_trial_iamge_l: autoDraw = False
+274.0535 	EXP 	exp2_trial_image_r: autoDraw = False
+274.0535 	EXP 	exp2_trial_iamge_l: autoDraw = False
+274.0535 	EXP 	exp2_trial_image_r: autoDraw = False
+274.0535 	EXP 	exp2_trial_cross: autoDraw = False
+274.0535 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+274.0535 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+274.0535 	EXP 	exp2_trial_cross: autoDraw = True
+274.3022 	EXP 	exp2_trial_iamge_l: autoDraw = True
+274.3022 	EXP 	exp2_trial_image_r: autoDraw = True
+274.3022 	EXP 	exp2_trial_cross: autoDraw = False
+275.8464 	DATA 	Keypress: rshift
+279.2882 	EXP 	New trial (rep=0, index=6): {'num': 'tr7', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr7.wav', 'phr': 'Why do you have my camisa?', 'sent_code': 'lt_tr_es_na_tr7', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+279.3108 	EXP 	exp2_trial_iamge_l: autoDraw = False
+279.3108 	EXP 	exp2_trial_image_r: autoDraw = False
+279.3108 	EXP 	exp2_trial_iamge_l: autoDraw = False
+279.3108 	EXP 	exp2_trial_image_r: autoDraw = False
+279.3108 	EXP 	exp2_trial_cross: autoDraw = False
+279.3108 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+279.3108 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+279.3108 	EXP 	exp2_trial_cross: autoDraw = True
+279.5431 	EXP 	exp2_trial_iamge_l: autoDraw = True
+279.5431 	EXP 	exp2_trial_image_r: autoDraw = True
+279.5591 	EXP 	exp2_trial_cross: autoDraw = False
+281.2302 	DATA 	Keypress: lshift
+281.8390 	DATA 	Keypress: rshift
+284.5285 	EXP 	New trial (rep=0, index=7): {'num': 'tr8', 'list': 'lt', 'cond': 'tr', 'lang': 'es', 'type': 'na', 'sound_dir': '../practice_trial/audio/tr8.wav', 'phr': 'Where did you find his chanclas?', 'sent_code': 'lt_tr_es_na_tr8', 'mat': '-', 'mat_num': '-', 'emb_num': '-', 'emb': '-', 'cut': '-', 'mat_f0_c': '-', 'left': '../image/america.png', 'right': '../image/spain.png'}
+284.5537 	EXP 	exp2_trial_iamge_l: autoDraw = False
+284.5537 	EXP 	exp2_trial_image_r: autoDraw = False
+284.5537 	EXP 	exp2_trial_iamge_l: autoDraw = False
+284.5537 	EXP 	exp2_trial_image_r: autoDraw = False
+284.5537 	EXP 	exp2_trial_cross: autoDraw = False
+284.5537 	EXP 	exp2_trial_iamge_l: image = '../image/america.png'
+284.5537 	EXP 	exp2_trial_image_r: image = '../image/spain.png'
+284.5537 	EXP 	exp2_trial_cross: autoDraw = True
+284.7929 	EXP 	exp2_trial_iamge_l: autoDraw = True
+284.7929 	EXP 	exp2_trial_image_r: autoDraw = True
+284.7929 	EXP 	exp2_trial_cross: autoDraw = False
+286.2954 	DATA 	Keypress: lshift
+286.9200 	DATA 	Keypress: rshift
+289.7856 	EXP 	exp2_trial_iamge_l: autoDraw = False
+289.7856 	EXP 	exp2_trial_image_r: autoDraw = False
+289.7856 	EXP 	exp2_trial_iamge_l: autoDraw = False
+289.7856 	EXP 	exp2_trial_image_r: autoDraw = False
+289.7856 	EXP 	exp2_trial_cross: autoDraw = False
+289.8034 	EXP 	end_exp2_trial_text: autoDraw = True
+293.1928 	DATA 	Keypress: rshift
+293.1975 	EXP 	end_exp2_trial_text: autoDraw = False
+293.1975 	EXP 	exp2_start_text: autoDraw = True
+296.4726 	DATA 	Keypress: lshift
+296.6820 	EXP 	Imported /Users/gabmac/Documents/RU/QP/exp/stim/stim_g1_e2.xlsx as conditions, 55 conditions, 13 params
+296.6829 	EXP 	Created sequence: random, trialTypes=55, nReps=1, seed=None
+296.6833 	EXP 	New trial (rep=0, index=0): {'exp_num': 2, 'sent_code': 'l2_f_en_na_098', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 98.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/098.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+296.7027 	DATA 	Keypress: rshift
+296.7061 	EXP 	exp2_start_text: autoDraw = False
+296.7061 	EXP 	exp2_image_l: image = '../image/america.png'
+296.7061 	EXP 	exp2_image_r: image = '../image/spain.png'
+296.7061 	EXP 	exp2_cross: autoDraw = True
+296.9097 	EXP 	exp2_image_l: autoDraw = True
+296.9097 	EXP 	exp2_image_r: autoDraw = True
+296.9533 	EXP 	exp2_cross: autoDraw = False
+298.4063 	DATA 	Keypress: lshift
+301.8946 	EXP 	New trial (rep=0, index=1): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_166', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 166.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/166.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+301.9220 	EXP 	exp2_image_l: autoDraw = False
+301.9220 	EXP 	exp2_image_r: autoDraw = False
+301.9220 	EXP 	exp2_image_l: autoDraw = False
+301.9220 	EXP 	exp2_image_r: autoDraw = False
+301.9220 	EXP 	exp2_cross: autoDraw = False
+301.9220 	EXP 	exp2_image_l: image = '../image/america.png'
+301.9220 	EXP 	exp2_image_r: image = '../image/spain.png'
+301.9220 	EXP 	exp2_cross: autoDraw = True
+302.1518 	EXP 	exp2_image_l: autoDraw = True
+302.1518 	EXP 	exp2_image_r: autoDraw = True
+302.1699 	EXP 	exp2_cross: autoDraw = False
+303.7295 	DATA 	Keypress: lshift
+305.2119 	DATA 	Keypress: rshift
+307.1365 	EXP 	New trial (rep=0, index=2): {'exp_num': 2, 'sent_code': 'l2_f_en_na_097', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 97.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/097.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+307.1624 	EXP 	exp2_image_l: autoDraw = False
+307.1624 	EXP 	exp2_image_r: autoDraw = False
+307.1624 	EXP 	exp2_image_l: autoDraw = False
+307.1624 	EXP 	exp2_image_r: autoDraw = False
+307.1624 	EXP 	exp2_cross: autoDraw = False
+307.1624 	EXP 	exp2_image_l: image = '../image/america.png'
+307.1624 	EXP 	exp2_image_r: image = '../image/spain.png'
+307.1624 	EXP 	exp2_cross: autoDraw = True
+307.4103 	EXP 	exp2_image_l: autoDraw = True
+307.4103 	EXP 	exp2_image_r: autoDraw = True
+307.4103 	EXP 	exp2_cross: autoDraw = False
+308.6455 	DATA 	Keypress: lshift
+312.4051 	EXP 	New trial (rep=0, index=3): {'exp_num': 2, 'sent_code': 'l2_f_en_na_104', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 104.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/104.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+312.4310 	EXP 	exp2_image_l: autoDraw = False
+312.4310 	EXP 	exp2_image_r: autoDraw = False
+312.4310 	EXP 	exp2_image_l: autoDraw = False
+312.4310 	EXP 	exp2_image_r: autoDraw = False
+312.4310 	EXP 	exp2_cross: autoDraw = False
+312.4310 	EXP 	exp2_image_l: image = '../image/america.png'
+312.4310 	EXP 	exp2_image_r: image = '../image/spain.png'
+312.4310 	EXP 	exp2_cross: autoDraw = True
+312.6531 	EXP 	exp2_image_l: autoDraw = True
+312.6531 	EXP 	exp2_image_r: autoDraw = True
+312.6746 	EXP 	exp2_cross: autoDraw = False
+314.0629 	DATA 	Keypress: lshift
+317.6377 	EXP 	New trial (rep=0, index=4): {'exp_num': 2, 'sent_code': 'l2_t_es_na_029', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 29.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/029.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+317.6629 	EXP 	exp2_image_l: autoDraw = False
+317.6629 	EXP 	exp2_image_r: autoDraw = False
+317.6629 	EXP 	exp2_image_l: autoDraw = False
+317.6629 	EXP 	exp2_image_r: autoDraw = False
+317.6629 	EXP 	exp2_cross: autoDraw = False
+317.6629 	EXP 	exp2_image_l: image = '../image/america.png'
+317.6629 	EXP 	exp2_image_r: image = '../image/spain.png'
+317.6629 	EXP 	exp2_cross: autoDraw = True
+317.9027 	EXP 	exp2_image_l: autoDraw = True
+317.9027 	EXP 	exp2_image_r: autoDraw = True
+317.9092 	EXP 	exp2_cross: autoDraw = False
+319.1726 	DATA 	Keypress: lshift
+320.4630 	DATA 	Keypress: rshift
+322.8876 	EXP 	New trial (rep=0, index=5): {'exp_num': 2, 'sent_code': 'l2_f_en_na_108', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 108.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/108.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+322.9136 	EXP 	exp2_image_l: autoDraw = False
+322.9136 	EXP 	exp2_image_r: autoDraw = False
+322.9136 	EXP 	exp2_image_l: autoDraw = False
+322.9136 	EXP 	exp2_image_r: autoDraw = False
+322.9136 	EXP 	exp2_cross: autoDraw = False
+322.9136 	EXP 	exp2_image_l: image = '../image/america.png'
+322.9136 	EXP 	exp2_image_r: image = '../image/spain.png'
+322.9136 	EXP 	exp2_cross: autoDraw = True
+323.1518 	EXP 	exp2_image_l: autoDraw = True
+323.1518 	EXP 	exp2_image_r: autoDraw = True
+323.1580 	EXP 	exp2_cross: autoDraw = False
+324.4588 	DATA 	Keypress: lshift
+325.4882 	DATA 	Keypress: lshift
+328.1376 	EXP 	New trial (rep=0, index=6): {'exp_num': 2, 'sent_code': 'l2_f_se_na_120', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 120.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/120.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+328.1611 	EXP 	exp2_image_l: autoDraw = False
+328.1611 	EXP 	exp2_image_r: autoDraw = False
+328.1611 	EXP 	exp2_image_l: autoDraw = False
+328.1611 	EXP 	exp2_image_r: autoDraw = False
+328.1611 	EXP 	exp2_cross: autoDraw = False
+328.1611 	EXP 	exp2_image_l: image = '../image/america.png'
+328.1611 	EXP 	exp2_image_r: image = '../image/spain.png'
+328.1611 	EXP 	exp2_cross: autoDraw = True
+328.4081 	EXP 	exp2_image_l: autoDraw = True
+328.4081 	EXP 	exp2_image_r: autoDraw = True
+328.4081 	EXP 	exp2_cross: autoDraw = False
+330.4424 	DATA 	Keypress: rshift
+332.1598 	DATA 	Keypress: lshift
+333.3943 	EXP 	New trial (rep=0, index=7): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_126', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 126.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/126.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+333.4203 	EXP 	exp2_image_l: autoDraw = False
+333.4203 	EXP 	exp2_image_r: autoDraw = False
+333.4203 	EXP 	exp2_image_l: autoDraw = False
+333.4203 	EXP 	exp2_image_r: autoDraw = False
+333.4203 	EXP 	exp2_cross: autoDraw = False
+333.4203 	EXP 	exp2_image_l: image = '../image/america.png'
+333.4203 	EXP 	exp2_image_r: image = '../image/spain.png'
+333.4203 	EXP 	exp2_cross: autoDraw = True
+333.6592 	EXP 	exp2_image_l: autoDraw = True
+333.6592 	EXP 	exp2_image_r: autoDraw = True
+333.6592 	EXP 	exp2_cross: autoDraw = False
+335.5726 	DATA 	Keypress: rshift
+338.6434 	EXP 	New trial (rep=0, index=8): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_165', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 165.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/165.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+338.6633 	EXP 	exp2_image_l: autoDraw = False
+338.6633 	EXP 	exp2_image_r: autoDraw = False
+338.6633 	EXP 	exp2_image_l: autoDraw = False
+338.6633 	EXP 	exp2_image_r: autoDraw = False
+338.6633 	EXP 	exp2_cross: autoDraw = False
+338.6633 	EXP 	exp2_image_l: image = '../image/america.png'
+338.6633 	EXP 	exp2_image_r: image = '../image/spain.png'
+338.6633 	EXP 	exp2_cross: autoDraw = True
+338.9095 	EXP 	exp2_image_l: autoDraw = True
+338.9095 	EXP 	exp2_image_r: autoDraw = True
+338.9095 	EXP 	exp2_cross: autoDraw = False
+340.2138 	DATA 	Keypress: lshift
+341.0100 	DATA 	Keypress: rshift
+343.8932 	EXP 	New trial (rep=0, index=9): {'exp_num': 2, 'sent_code': 'l2_t_es_na_027', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 27.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/027.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+343.9192 	EXP 	exp2_image_l: autoDraw = False
+343.9192 	EXP 	exp2_image_r: autoDraw = False
+343.9192 	EXP 	exp2_image_l: autoDraw = False
+343.9192 	EXP 	exp2_image_r: autoDraw = False
+343.9192 	EXP 	exp2_cross: autoDraw = False
+343.9192 	EXP 	exp2_image_l: image = '../image/america.png'
+343.9192 	EXP 	exp2_image_r: image = '../image/spain.png'
+343.9192 	EXP 	exp2_cross: autoDraw = True
+344.1519 	EXP 	exp2_image_l: autoDraw = True
+344.1519 	EXP 	exp2_image_r: autoDraw = True
+344.1586 	EXP 	exp2_cross: autoDraw = False
+345.4895 	DATA 	Keypress: lshift
+346.1045 	DATA 	Keypress: rshift
+349.1380 	EXP 	New trial (rep=0, index=10): {'exp_num': 2, 'sent_code': 'l2_f_en_na_110', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 110.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/110.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+349.1632 	EXP 	exp2_image_l: autoDraw = False
+349.1632 	EXP 	exp2_image_r: autoDraw = False
+349.1632 	EXP 	exp2_image_l: autoDraw = False
+349.1632 	EXP 	exp2_image_r: autoDraw = False
+349.1632 	EXP 	exp2_cross: autoDraw = False
+349.1632 	EXP 	exp2_image_l: image = '../image/america.png'
+349.1632 	EXP 	exp2_image_r: image = '../image/spain.png'
+349.1632 	EXP 	exp2_cross: autoDraw = True
+349.4015 	EXP 	exp2_image_l: autoDraw = True
+349.4015 	EXP 	exp2_image_r: autoDraw = True
+349.4081 	EXP 	exp2_cross: autoDraw = False
+350.8057 	DATA 	Keypress: lshift
+354.3870 	EXP 	New trial (rep=0, index=11): {'exp_num': 2, 'sent_code': 'l2_f_se_na_116', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 116.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/116.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+354.4168 	EXP 	exp2_image_l: autoDraw = False
+354.4168 	EXP 	exp2_image_r: autoDraw = False
+354.4168 	EXP 	exp2_image_l: autoDraw = False
+354.4168 	EXP 	exp2_image_r: autoDraw = False
+354.4168 	EXP 	exp2_cross: autoDraw = False
+354.4168 	EXP 	exp2_image_l: image = '../image/america.png'
+354.4168 	EXP 	exp2_image_r: image = '../image/spain.png'
+354.4168 	EXP 	exp2_cross: autoDraw = True
+354.6593 	EXP 	exp2_image_l: autoDraw = True
+354.6593 	EXP 	exp2_image_r: autoDraw = True
+354.6593 	EXP 	exp2_cross: autoDraw = False
+356.1439 	DATA 	Keypress: rshift
+359.6440 	EXP 	New trial (rep=0, index=12): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_122', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 122.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/122.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+359.6726 	EXP 	exp2_image_l: autoDraw = False
+359.6726 	EXP 	exp2_image_r: autoDraw = False
+359.6726 	EXP 	exp2_image_l: autoDraw = False
+359.6726 	EXP 	exp2_image_r: autoDraw = False
+359.6726 	EXP 	exp2_cross: autoDraw = False
+359.6726 	EXP 	exp2_image_l: image = '../image/america.png'
+359.6726 	EXP 	exp2_image_r: image = '../image/spain.png'
+359.6726 	EXP 	exp2_cross: autoDraw = True
+359.9103 	EXP 	exp2_image_l: autoDraw = True
+359.9103 	EXP 	exp2_image_r: autoDraw = True
+359.9179 	EXP 	exp2_cross: autoDraw = False
+361.1553 	DATA 	Keypress: lshift
+361.9295 	DATA 	Keypress: rshift
+364.8947 	EXP 	New trial (rep=0, index=13): {'exp_num': 2, 'sent_code': 'l2_f_se_na_117', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 117.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/117.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+364.9201 	EXP 	exp2_image_l: autoDraw = False
+364.9201 	EXP 	exp2_image_r: autoDraw = False
+364.9201 	EXP 	exp2_image_l: autoDraw = False
+364.9201 	EXP 	exp2_image_r: autoDraw = False
+364.9201 	EXP 	exp2_cross: autoDraw = False
+364.9201 	EXP 	exp2_image_l: image = '../image/america.png'
+364.9201 	EXP 	exp2_image_r: image = '../image/spain.png'
+364.9201 	EXP 	exp2_cross: autoDraw = True
+365.1599 	EXP 	exp2_image_l: autoDraw = True
+365.1599 	EXP 	exp2_image_r: autoDraw = True
+365.1599 	EXP 	exp2_cross: autoDraw = False
+367.6613 	DATA 	Keypress: rshift
+370.1540 	EXP 	New trial (rep=0, index=14): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_127', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 127.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/127.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+370.1809 	EXP 	exp2_image_l: autoDraw = False
+370.1809 	EXP 	exp2_image_r: autoDraw = False
+370.1809 	EXP 	exp2_image_l: autoDraw = False
+370.1809 	EXP 	exp2_image_r: autoDraw = False
+370.1809 	EXP 	exp2_cross: autoDraw = False
+370.1809 	EXP 	exp2_image_l: image = '../image/america.png'
+370.1809 	EXP 	exp2_image_r: image = '../image/spain.png'
+370.1809 	EXP 	exp2_cross: autoDraw = True
+370.4093 	EXP 	exp2_image_l: autoDraw = True
+370.4093 	EXP 	exp2_image_r: autoDraw = True
+370.4243 	EXP 	exp2_cross: autoDraw = False
+371.7634 	DATA 	Keypress: rshift
+375.3940 	EXP 	New trial (rep=0, index=15): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_124', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 124.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/124.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+375.4200 	EXP 	exp2_image_l: autoDraw = False
+375.4200 	EXP 	exp2_image_r: autoDraw = False
+375.4200 	EXP 	exp2_image_l: autoDraw = False
+375.4200 	EXP 	exp2_image_r: autoDraw = False
+375.4200 	EXP 	exp2_cross: autoDraw = False
+375.4200 	EXP 	exp2_image_l: image = '../image/america.png'
+375.4200 	EXP 	exp2_image_r: image = '../image/spain.png'
+375.4200 	EXP 	exp2_cross: autoDraw = True
+375.6594 	EXP 	exp2_image_l: autoDraw = True
+375.6594 	EXP 	exp2_image_r: autoDraw = True
+375.6594 	EXP 	exp2_cross: autoDraw = False
+377.0396 	DATA 	Keypress: rshift
+380.6446 	EXP 	New trial (rep=0, index=16): {'exp_num': 2, 'sent_code': 'l2_f_en_na_101', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 101.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/101.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+380.6706 	EXP 	exp2_image_l: autoDraw = False
+380.6706 	EXP 	exp2_image_r: autoDraw = False
+380.6706 	EXP 	exp2_image_l: autoDraw = False
+380.6706 	EXP 	exp2_image_r: autoDraw = False
+380.6706 	EXP 	exp2_cross: autoDraw = False
+380.6706 	EXP 	exp2_image_l: image = '../image/america.png'
+380.6706 	EXP 	exp2_image_r: image = '../image/spain.png'
+380.6706 	EXP 	exp2_cross: autoDraw = True
+380.9011 	EXP 	exp2_image_l: autoDraw = True
+380.9011 	EXP 	exp2_image_r: autoDraw = True
+380.9194 	EXP 	exp2_cross: autoDraw = False
+382.1234 	DATA 	Keypress: lshift
+385.8880 	EXP 	New trial (rep=0, index=17): {'exp_num': 2, 'sent_code': 'l2_t_es_na_024', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 24.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/024.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+385.9148 	EXP 	exp2_image_l: autoDraw = False
+385.9148 	EXP 	exp2_image_r: autoDraw = False
+385.9148 	EXP 	exp2_image_l: autoDraw = False
+385.9148 	EXP 	exp2_image_r: autoDraw = False
+385.9148 	EXP 	exp2_cross: autoDraw = False
+385.9148 	EXP 	exp2_image_l: image = '../image/america.png'
+385.9148 	EXP 	exp2_image_r: image = '../image/spain.png'
+385.9148 	EXP 	exp2_cross: autoDraw = True
+386.1598 	EXP 	exp2_image_l: autoDraw = True
+386.1598 	EXP 	exp2_image_r: autoDraw = True
+386.1598 	EXP 	exp2_cross: autoDraw = False
+387.6960 	DATA 	Keypress: lshift
+388.3959 	DATA 	Keypress: rshift
+391.1439 	EXP 	New trial (rep=0, index=18): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_130', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 130.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/130.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+391.1716 	EXP 	exp2_image_l: autoDraw = False
+391.1716 	EXP 	exp2_image_r: autoDraw = False
+391.1716 	EXP 	exp2_image_l: autoDraw = False
+391.1716 	EXP 	exp2_image_r: autoDraw = False
+391.1716 	EXP 	exp2_cross: autoDraw = False
+391.1716 	EXP 	exp2_image_l: image = '../image/america.png'
+391.1716 	EXP 	exp2_image_r: image = '../image/spain.png'
+391.1716 	EXP 	exp2_cross: autoDraw = True
+391.4012 	EXP 	exp2_image_l: autoDraw = True
+391.4012 	EXP 	exp2_image_r: autoDraw = True
+391.4190 	EXP 	exp2_cross: autoDraw = False
+392.7122 	DATA 	Keypress: rshift
+396.3874 	EXP 	New trial (rep=0, index=19): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_121', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 121.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/121.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+396.4134 	EXP 	exp2_image_l: autoDraw = False
+396.4134 	EXP 	exp2_image_r: autoDraw = False
+396.4134 	EXP 	exp2_image_l: autoDraw = False
+396.4134 	EXP 	exp2_image_r: autoDraw = False
+396.4134 	EXP 	exp2_cross: autoDraw = False
+396.4134 	EXP 	exp2_image_l: image = '../image/america.png'
+396.4134 	EXP 	exp2_image_r: image = '../image/spain.png'
+396.4134 	EXP 	exp2_cross: autoDraw = True
+396.6589 	EXP 	exp2_image_l: autoDraw = True
+396.6589 	EXP 	exp2_image_r: autoDraw = True
+396.6589 	EXP 	exp2_cross: autoDraw = False
+398.0391 	DATA 	Keypress: rshift
+401.6540 	EXP 	New trial (rep=0, index=20): {'exp_num': 2, 'sent_code': 'l2_f_en_na_099', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 99.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/099.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+401.6795 	EXP 	exp2_image_l: autoDraw = False
+401.6795 	EXP 	exp2_image_r: autoDraw = False
+401.6795 	EXP 	exp2_image_l: autoDraw = False
+401.6795 	EXP 	exp2_image_r: autoDraw = False
+401.6795 	EXP 	exp2_cross: autoDraw = False
+401.6795 	EXP 	exp2_image_l: image = '../image/america.png'
+401.6795 	EXP 	exp2_image_r: image = '../image/spain.png'
+401.6795 	EXP 	exp2_cross: autoDraw = True
+401.9096 	EXP 	exp2_image_l: autoDraw = True
+401.9096 	EXP 	exp2_image_r: autoDraw = True
+401.9236 	EXP 	exp2_cross: autoDraw = False
+403.6955 	DATA 	Keypress: lshift
+406.8939 	EXP 	New trial (rep=0, index=21): {'exp_num': 2, 'sent_code': 'l2_f_se_na_115', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 115.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/115.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+406.9201 	EXP 	exp2_image_l: autoDraw = False
+406.9201 	EXP 	exp2_image_r: autoDraw = False
+406.9201 	EXP 	exp2_image_l: autoDraw = False
+406.9201 	EXP 	exp2_image_r: autoDraw = False
+406.9201 	EXP 	exp2_cross: autoDraw = False
+406.9201 	EXP 	exp2_image_l: image = '../image/america.png'
+406.9201 	EXP 	exp2_image_r: image = '../image/spain.png'
+406.9201 	EXP 	exp2_cross: autoDraw = True
+407.1591 	EXP 	exp2_image_l: autoDraw = True
+407.1591 	EXP 	exp2_image_r: autoDraw = True
+407.1591 	EXP 	exp2_cross: autoDraw = False
+408.4861 	DATA 	Keypress: rshift
+409.6222 	DATA 	Keypress: lshift
+412.1447 	EXP 	New trial (rep=0, index=22): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_169', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 169.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/169.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+412.1719 	EXP 	exp2_image_l: autoDraw = False
+412.1719 	EXP 	exp2_image_r: autoDraw = False
+412.1719 	EXP 	exp2_image_l: autoDraw = False
+412.1719 	EXP 	exp2_image_r: autoDraw = False
+412.1719 	EXP 	exp2_cross: autoDraw = False
+412.1719 	EXP 	exp2_image_l: image = '../image/america.png'
+412.1719 	EXP 	exp2_image_r: image = '../image/spain.png'
+412.1719 	EXP 	exp2_cross: autoDraw = True
+412.4095 	EXP 	exp2_image_l: autoDraw = True
+412.4095 	EXP 	exp2_image_r: autoDraw = True
+412.4188 	EXP 	exp2_cross: autoDraw = False
+414.2726 	DATA 	Keypress: lshift
+415.1123 	DATA 	Keypress: rshift
+417.3939 	EXP 	New trial (rep=0, index=23): {'exp_num': 2, 'sent_code': 'l2_t_es_na_022', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 22.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/022.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+417.4194 	EXP 	exp2_image_l: autoDraw = False
+417.4194 	EXP 	exp2_image_r: autoDraw = False
+417.4194 	EXP 	exp2_image_l: autoDraw = False
+417.4194 	EXP 	exp2_image_r: autoDraw = False
+417.4194 	EXP 	exp2_cross: autoDraw = False
+417.4194 	EXP 	exp2_image_l: image = '../image/america.png'
+417.4194 	EXP 	exp2_image_r: image = '../image/spain.png'
+417.4194 	EXP 	exp2_cross: autoDraw = True
+417.6590 	EXP 	exp2_image_l: autoDraw = True
+417.6590 	EXP 	exp2_image_r: autoDraw = True
+417.6590 	EXP 	exp2_cross: autoDraw = False
+419.0875 	DATA 	Keypress: lshift
+419.8942 	DATA 	Keypress: rshift
+422.6433 	EXP 	New trial (rep=0, index=24): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_162', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 162.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/162.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+422.6698 	EXP 	exp2_image_l: autoDraw = False
+422.6698 	EXP 	exp2_image_r: autoDraw = False
+422.6698 	EXP 	exp2_image_l: autoDraw = False
+422.6698 	EXP 	exp2_image_r: autoDraw = False
+422.6698 	EXP 	exp2_cross: autoDraw = False
+422.6698 	EXP 	exp2_image_l: image = '../image/america.png'
+422.6698 	EXP 	exp2_image_r: image = '../image/spain.png'
+422.6698 	EXP 	exp2_cross: autoDraw = True
+422.9087 	EXP 	exp2_image_l: autoDraw = True
+422.9087 	EXP 	exp2_image_r: autoDraw = True
+422.9087 	EXP 	exp2_cross: autoDraw = False
+424.3549 	DATA 	Keypress: lshift
+425.0888 	DATA 	Keypress: rshift
+427.9025 	EXP 	New trial (rep=0, index=25): {'exp_num': 2, 'sent_code': 'l2_f_en_na_109', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 109.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/109.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+427.9274 	EXP 	exp2_image_l: autoDraw = False
+427.9274 	EXP 	exp2_image_r: autoDraw = False
+427.9274 	EXP 	exp2_image_l: autoDraw = False
+427.9274 	EXP 	exp2_image_r: autoDraw = False
+427.9274 	EXP 	exp2_cross: autoDraw = False
+427.9274 	EXP 	exp2_image_l: image = '../image/america.png'
+427.9274 	EXP 	exp2_image_r: image = '../image/spain.png'
+427.9274 	EXP 	exp2_cross: autoDraw = True
+428.1593 	EXP 	exp2_image_l: autoDraw = True
+428.1593 	EXP 	exp2_image_r: autoDraw = True
+428.1738 	EXP 	exp2_cross: autoDraw = False
+429.4896 	DATA 	Keypress: lshift
+433.1433 	EXP 	New trial (rep=0, index=26): {'exp_num': 2, 'sent_code': 'l2_f_se_na_118', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 118.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/118.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+433.1698 	EXP 	exp2_image_l: autoDraw = False
+433.1698 	EXP 	exp2_image_r: autoDraw = False
+433.1698 	EXP 	exp2_image_l: autoDraw = False
+433.1698 	EXP 	exp2_image_r: autoDraw = False
+433.1698 	EXP 	exp2_cross: autoDraw = False
+433.1698 	EXP 	exp2_image_l: image = '../image/america.png'
+433.1698 	EXP 	exp2_image_r: image = '../image/spain.png'
+433.1698 	EXP 	exp2_cross: autoDraw = True
+433.4092 	EXP 	exp2_image_l: autoDraw = True
+433.4092 	EXP 	exp2_image_r: autoDraw = True
+433.4092 	EXP 	exp2_cross: autoDraw = False
+434.7538 	DATA 	Keypress: rshift
+438.3932 	EXP 	New trial (rep=0, index=27): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_167', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 167.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/167.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+438.4148 	EXP 	exp2_image_l: autoDraw = False
+438.4148 	EXP 	exp2_image_r: autoDraw = False
+438.4148 	EXP 	exp2_image_l: autoDraw = False
+438.4148 	EXP 	exp2_image_r: autoDraw = False
+438.4148 	EXP 	exp2_cross: autoDraw = False
+438.4148 	EXP 	exp2_image_l: image = '../image/america.png'
+438.4148 	EXP 	exp2_image_r: image = '../image/spain.png'
+438.4148 	EXP 	exp2_cross: autoDraw = True
+438.6589 	EXP 	exp2_image_l: autoDraw = True
+438.6589 	EXP 	exp2_image_r: autoDraw = True
+438.6589 	EXP 	exp2_cross: autoDraw = False
+440.1622 	DATA 	Keypress: lshift
+441.1213 	DATA 	Keypress: rshift
+443.6446 	EXP 	New trial (rep=0, index=28): {'exp_num': 2, 'sent_code': 'l2_f_en_na_096', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 96.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/096.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+443.6703 	EXP 	exp2_image_l: autoDraw = False
+443.6703 	EXP 	exp2_image_r: autoDraw = False
+443.6703 	EXP 	exp2_image_l: autoDraw = False
+443.6703 	EXP 	exp2_image_r: autoDraw = False
+443.6703 	EXP 	exp2_cross: autoDraw = False
+443.6703 	EXP 	exp2_image_l: image = '../image/america.png'
+443.6703 	EXP 	exp2_image_r: image = '../image/spain.png'
+443.6703 	EXP 	exp2_cross: autoDraw = True
+443.9091 	EXP 	exp2_image_l: autoDraw = True
+443.9091 	EXP 	exp2_image_r: autoDraw = True
+443.9180 	EXP 	exp2_cross: autoDraw = False
+445.2722 	DATA 	Keypress: lshift
+448.9036 	EXP 	New trial (rep=0, index=29): {'exp_num': 2, 'sent_code': 'l2_f_se_na_119', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 119.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/119.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+448.9305 	EXP 	exp2_image_l: autoDraw = False
+448.9305 	EXP 	exp2_image_r: autoDraw = False
+448.9305 	EXP 	exp2_image_l: autoDraw = False
+448.9305 	EXP 	exp2_image_r: autoDraw = False
+448.9305 	EXP 	exp2_cross: autoDraw = False
+448.9305 	EXP 	exp2_image_l: image = '../image/america.png'
+448.9305 	EXP 	exp2_image_r: image = '../image/spain.png'
+448.9305 	EXP 	exp2_cross: autoDraw = True
+449.1589 	EXP 	exp2_image_l: autoDraw = True
+449.1589 	EXP 	exp2_image_r: autoDraw = True
+449.1742 	EXP 	exp2_cross: autoDraw = False
+450.6445 	DATA 	Keypress: rshift
+452.0207 	DATA 	Keypress: lshift
+454.1436 	EXP 	New trial (rep=0, index=30): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_164', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 164.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/164.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+454.1695 	EXP 	exp2_image_l: autoDraw = False
+454.1695 	EXP 	exp2_image_r: autoDraw = False
+454.1695 	EXP 	exp2_image_l: autoDraw = False
+454.1695 	EXP 	exp2_image_r: autoDraw = False
+454.1695 	EXP 	exp2_cross: autoDraw = False
+454.1695 	EXP 	exp2_image_l: image = '../image/america.png'
+454.1695 	EXP 	exp2_image_r: image = '../image/spain.png'
+454.1695 	EXP 	exp2_cross: autoDraw = True
+454.4083 	EXP 	exp2_image_l: autoDraw = True
+454.4083 	EXP 	exp2_image_r: autoDraw = True
+454.4083 	EXP 	exp2_cross: autoDraw = False
+456.3891 	DATA 	Keypress: lshift
+457.0555 	DATA 	Keypress: rshift
+459.4033 	EXP 	New trial (rep=0, index=31): {'exp_num': 2, 'sent_code': 'l2_f_en_na_105', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 105.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/105.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+459.4243 	EXP 	exp2_image_l: autoDraw = False
+459.4243 	EXP 	exp2_image_r: autoDraw = False
+459.4243 	EXP 	exp2_image_l: autoDraw = False
+459.4243 	EXP 	exp2_image_r: autoDraw = False
+459.4243 	EXP 	exp2_cross: autoDraw = False
+459.4243 	EXP 	exp2_image_l: image = '../image/america.png'
+459.4243 	EXP 	exp2_image_r: image = '../image/spain.png'
+459.4243 	EXP 	exp2_cross: autoDraw = True
+459.6589 	EXP 	exp2_image_l: autoDraw = True
+459.6589 	EXP 	exp2_image_r: autoDraw = True
+459.6681 	EXP 	exp2_cross: autoDraw = False
+461.0602 	DATA 	Keypress: lshift
+464.6436 	EXP 	New trial (rep=0, index=32): {'exp_num': 2, 'sent_code': 'l2_t_es_na_028', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 28.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/028.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+464.6697 	EXP 	exp2_image_l: autoDraw = False
+464.6697 	EXP 	exp2_image_r: autoDraw = False
+464.6697 	EXP 	exp2_image_l: autoDraw = False
+464.6697 	EXP 	exp2_image_r: autoDraw = False
+464.6697 	EXP 	exp2_cross: autoDraw = False
+464.6697 	EXP 	exp2_image_l: image = '../image/america.png'
+464.6697 	EXP 	exp2_image_r: image = '../image/spain.png'
+464.6697 	EXP 	exp2_cross: autoDraw = True
+464.9088 	EXP 	exp2_image_l: autoDraw = True
+464.9088 	EXP 	exp2_image_r: autoDraw = True
+464.9088 	EXP 	exp2_cross: autoDraw = False
+466.5556 	DATA 	Keypress: lshift
+467.3394 	DATA 	Keypress: rshift
+469.8932 	EXP 	New trial (rep=0, index=33): {'exp_num': 2, 'sent_code': 'l2_f_en_na_107', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 107.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/107.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+469.9191 	EXP 	exp2_image_l: autoDraw = False
+469.9191 	EXP 	exp2_image_r: autoDraw = False
+469.9191 	EXP 	exp2_image_l: autoDraw = False
+469.9191 	EXP 	exp2_image_r: autoDraw = False
+469.9191 	EXP 	exp2_cross: autoDraw = False
+469.9191 	EXP 	exp2_image_l: image = '../image/america.png'
+469.9191 	EXP 	exp2_image_r: image = '../image/spain.png'
+469.9191 	EXP 	exp2_cross: autoDraw = True
+470.1578 	EXP 	exp2_image_l: autoDraw = True
+470.1578 	EXP 	exp2_image_r: autoDraw = True
+470.1578 	EXP 	exp2_cross: autoDraw = False
+471.6270 	DATA 	Keypress: lshift
+475.1445 	EXP 	New trial (rep=0, index=34): {'exp_num': 2, 'sent_code': 'l2_t_es_na_025', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 25.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/025.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+475.1700 	EXP 	exp2_image_l: autoDraw = False
+475.1700 	EXP 	exp2_image_r: autoDraw = False
+475.1700 	EXP 	exp2_image_l: autoDraw = False
+475.1700 	EXP 	exp2_image_r: autoDraw = False
+475.1700 	EXP 	exp2_cross: autoDraw = False
+475.1700 	EXP 	exp2_image_l: image = '../image/america.png'
+475.1700 	EXP 	exp2_image_r: image = '../image/spain.png'
+475.1700 	EXP 	exp2_cross: autoDraw = True
+475.4089 	EXP 	exp2_image_l: autoDraw = True
+475.4089 	EXP 	exp2_image_r: autoDraw = True
+475.4175 	EXP 	exp2_cross: autoDraw = False
+476.6371 	DATA 	Keypress: lshift
+477.5956 	DATA 	Keypress: rshift
+480.4035 	EXP 	New trial (rep=0, index=35): {'exp_num': 2, 'sent_code': 'l2_t_es_na_030', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 30.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/030.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+480.4304 	EXP 	exp2_image_l: autoDraw = False
+480.4304 	EXP 	exp2_image_r: autoDraw = False
+480.4304 	EXP 	exp2_image_l: autoDraw = False
+480.4304 	EXP 	exp2_image_r: autoDraw = False
+480.4304 	EXP 	exp2_cross: autoDraw = False
+480.4304 	EXP 	exp2_image_l: image = '../image/america.png'
+480.4304 	EXP 	exp2_image_r: image = '../image/spain.png'
+480.4304 	EXP 	exp2_cross: autoDraw = True
+480.6587 	EXP 	exp2_image_l: autoDraw = True
+480.6587 	EXP 	exp2_image_r: autoDraw = True
+480.6729 	EXP 	exp2_cross: autoDraw = False
+481.9185 	DATA 	Keypress: lshift
+483.1719 	DATA 	Keypress: rshift
+485.6427 	EXP 	New trial (rep=0, index=36): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_128', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 128.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/128.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+485.6619 	EXP 	exp2_image_l: autoDraw = False
+485.6619 	EXP 	exp2_image_r: autoDraw = False
+485.6619 	EXP 	exp2_image_l: autoDraw = False
+485.6619 	EXP 	exp2_image_r: autoDraw = False
+485.6619 	EXP 	exp2_cross: autoDraw = False
+485.6619 	EXP 	exp2_image_l: image = '../image/america.png'
+485.6619 	EXP 	exp2_image_r: image = '../image/spain.png'
+485.6668 	EXP 	exp2_cross: autoDraw = True
+485.9085 	EXP 	exp2_image_l: autoDraw = True
+485.9085 	EXP 	exp2_image_r: autoDraw = True
+485.9085 	EXP 	exp2_cross: autoDraw = False
+487.6876 	DATA 	Keypress: rshift
+490.8934 	EXP 	New trial (rep=0, index=37): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_125', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 125, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/125.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+490.9192 	EXP 	exp2_image_l: autoDraw = False
+490.9192 	EXP 	exp2_image_r: autoDraw = False
+490.9192 	EXP 	exp2_image_l: autoDraw = False
+490.9192 	EXP 	exp2_image_r: autoDraw = False
+490.9192 	EXP 	exp2_cross: autoDraw = False
+490.9192 	EXP 	exp2_image_l: image = '../image/america.png'
+490.9192 	EXP 	exp2_image_r: image = '../image/spain.png'
+490.9192 	EXP 	exp2_cross: autoDraw = True
+491.1583 	EXP 	exp2_image_l: autoDraw = True
+491.1583 	EXP 	exp2_image_r: autoDraw = True
+491.1583 	EXP 	exp2_cross: autoDraw = False
+492.8414 	DATA 	Keypress: rshift
+496.1431 	EXP 	New trial (rep=0, index=38): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_168', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 168.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/168.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+496.1697 	EXP 	exp2_image_l: autoDraw = False
+496.1697 	EXP 	exp2_image_r: autoDraw = False
+496.1697 	EXP 	exp2_image_l: autoDraw = False
+496.1697 	EXP 	exp2_image_r: autoDraw = False
+496.1697 	EXP 	exp2_cross: autoDraw = False
+496.1697 	EXP 	exp2_image_l: image = '../image/america.png'
+496.1697 	EXP 	exp2_image_r: image = '../image/spain.png'
+496.1697 	EXP 	exp2_cross: autoDraw = True
+496.4085 	EXP 	exp2_image_l: autoDraw = True
+496.4085 	EXP 	exp2_image_r: autoDraw = True
+496.4178 	EXP 	exp2_cross: autoDraw = False
+498.2942 	DATA 	Keypress: lshift
+498.6054 	DATA 	Keypress: rshift
+501.3934 	EXP 	New trial (rep=0, index=39): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_170', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 170.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/170.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+501.4198 	EXP 	exp2_image_l: autoDraw = False
+501.4198 	EXP 	exp2_image_r: autoDraw = False
+501.4198 	EXP 	exp2_image_l: autoDraw = False
+501.4198 	EXP 	exp2_image_r: autoDraw = False
+501.4198 	EXP 	exp2_cross: autoDraw = False
+501.4198 	EXP 	exp2_image_l: image = '../image/america.png'
+501.4198 	EXP 	exp2_image_r: image = '../image/spain.png'
+501.4198 	EXP 	exp2_cross: autoDraw = True
+501.6594 	EXP 	exp2_image_l: autoDraw = True
+501.6594 	EXP 	exp2_image_r: autoDraw = True
+501.6669 	EXP 	exp2_cross: autoDraw = False
+503.0383 	DATA 	Keypress: lshift
+503.8116 	DATA 	Keypress: rshift
+506.6535 	EXP 	New trial (rep=0, index=40): {'exp_num': 2, 'sent_code': 'l2_f_se_na_113', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 113.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/113.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+506.6798 	EXP 	exp2_image_l: autoDraw = False
+506.6798 	EXP 	exp2_image_r: autoDraw = False
+506.6798 	EXP 	exp2_image_l: autoDraw = False
+506.6798 	EXP 	exp2_image_r: autoDraw = False
+506.6798 	EXP 	exp2_cross: autoDraw = False
+506.6798 	EXP 	exp2_image_l: image = '../image/america.png'
+506.6798 	EXP 	exp2_image_r: image = '../image/spain.png'
+506.6798 	EXP 	exp2_cross: autoDraw = True
+506.9099 	EXP 	exp2_image_l: autoDraw = True
+506.9099 	EXP 	exp2_image_r: autoDraw = True
+506.9236 	EXP 	exp2_cross: autoDraw = False
+508.2297 	DATA 	Keypress: rshift
+509.1098 	DATA 	Keypress: lshift
+511.9031 	EXP 	New trial (rep=0, index=41): {'exp_num': 2, 'sent_code': 'l2_f_en_na_106', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 106.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/106.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+511.9290 	EXP 	exp2_image_l: autoDraw = False
+511.9290 	EXP 	exp2_image_r: autoDraw = False
+511.9290 	EXP 	exp2_image_l: autoDraw = False
+511.9290 	EXP 	exp2_image_r: autoDraw = False
+511.9290 	EXP 	exp2_cross: autoDraw = False
+511.9290 	EXP 	exp2_image_l: image = '../image/america.png'
+511.9290 	EXP 	exp2_image_r: image = '../image/spain.png'
+511.9290 	EXP 	exp2_cross: autoDraw = True
+512.1591 	EXP 	exp2_image_l: autoDraw = True
+512.1591 	EXP 	exp2_image_r: autoDraw = True
+512.1732 	EXP 	exp2_cross: autoDraw = False
+513.4781 	DATA 	Keypress: lshift
+517.1432 	EXP 	New trial (rep=0, index=42): {'exp_num': 2, 'sent_code': 'l2_f_se_na_111', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 111.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/111.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+517.1685 	EXP 	exp2_image_l: autoDraw = False
+517.1685 	EXP 	exp2_image_r: autoDraw = False
+517.1685 	EXP 	exp2_image_l: autoDraw = False
+517.1685 	EXP 	exp2_image_r: autoDraw = False
+517.1685 	EXP 	exp2_cross: autoDraw = False
+517.1685 	EXP 	exp2_image_l: image = '../image/america.png'
+517.1685 	EXP 	exp2_image_r: image = '../image/spain.png'
+517.1685 	EXP 	exp2_cross: autoDraw = True
+517.4074 	EXP 	exp2_image_l: autoDraw = True
+517.4074 	EXP 	exp2_image_r: autoDraw = True
+517.4074 	EXP 	exp2_cross: autoDraw = False
+518.7774 	DATA 	Keypress: rshift
+519.7264 	DATA 	Keypress: lshift
+522.3930 	EXP 	New trial (rep=0, index=43): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_161', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 161.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/161.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+522.4201 	EXP 	exp2_image_l: autoDraw = False
+522.4201 	EXP 	exp2_image_r: autoDraw = False
+522.4201 	EXP 	exp2_image_l: autoDraw = False
+522.4201 	EXP 	exp2_image_r: autoDraw = False
+522.4201 	EXP 	exp2_cross: autoDraw = False
+522.4201 	EXP 	exp2_image_l: image = '../image/america.png'
+522.4201 	EXP 	exp2_image_r: image = '../image/spain.png'
+522.4201 	EXP 	exp2_cross: autoDraw = True
+522.6593 	EXP 	exp2_image_l: autoDraw = True
+522.6593 	EXP 	exp2_image_r: autoDraw = True
+522.6668 	EXP 	exp2_cross: autoDraw = False
+524.1385 	DATA 	Keypress: lshift
+524.8382 	DATA 	Keypress: rshift
+527.6531 	EXP 	New trial (rep=0, index=44): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_123', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 123.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/123.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+527.6768 	EXP 	exp2_image_l: autoDraw = False
+527.6768 	EXP 	exp2_image_r: autoDraw = False
+527.6768 	EXP 	exp2_image_l: autoDraw = False
+527.6768 	EXP 	exp2_image_r: autoDraw = False
+527.6768 	EXP 	exp2_cross: autoDraw = False
+527.6768 	EXP 	exp2_image_l: image = '../image/america.png'
+527.6768 	EXP 	exp2_image_r: image = '../image/spain.png'
+527.6768 	EXP 	exp2_cross: autoDraw = True
+527.9088 	EXP 	exp2_image_l: autoDraw = True
+527.9088 	EXP 	exp2_image_r: autoDraw = True
+527.9227 	EXP 	exp2_cross: autoDraw = False
+529.4623 	DATA 	Keypress: rshift
+532.8941 	EXP 	New trial (rep=0, index=45): {'exp_num': 2, 'sent_code': 'l2_f_sp_na_129', 'list': 'l2', 'cond': 'f', 'lang': 'sp', 'type': 'na', 'num': 129.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/129.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+532.9237 	EXP 	exp2_image_l: autoDraw = False
+532.9237 	EXP 	exp2_image_r: autoDraw = False
+532.9237 	EXP 	exp2_image_l: autoDraw = False
+532.9237 	EXP 	exp2_image_r: autoDraw = False
+532.9237 	EXP 	exp2_cross: autoDraw = False
+532.9237 	EXP 	exp2_image_l: image = '../image/america.png'
+532.9237 	EXP 	exp2_image_r: image = '../image/spain.png'
+532.9237 	EXP 	exp2_cross: autoDraw = True
+533.1584 	EXP 	exp2_image_l: autoDraw = True
+533.1584 	EXP 	exp2_image_r: autoDraw = True
+533.1674 	EXP 	exp2_cross: autoDraw = False
+535.1291 	DATA 	Keypress: rshift
+538.1430 	EXP 	New trial (rep=0, index=46): {'exp_num': 2, 'sent_code': 'l2_f_en_na_103', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 103.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/103.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+538.1689 	EXP 	exp2_image_l: autoDraw = False
+538.1689 	EXP 	exp2_image_r: autoDraw = False
+538.1689 	EXP 	exp2_image_l: autoDraw = False
+538.1689 	EXP 	exp2_image_r: autoDraw = False
+538.1689 	EXP 	exp2_cross: autoDraw = False
+538.1689 	EXP 	exp2_image_l: image = '../image/america.png'
+538.1689 	EXP 	exp2_image_r: image = '../image/spain.png'
+538.1689 	EXP 	exp2_cross: autoDraw = True
+538.4084 	EXP 	exp2_image_l: autoDraw = True
+538.4084 	EXP 	exp2_image_r: autoDraw = True
+538.4084 	EXP 	exp2_cross: autoDraw = False
+539.8947 	DATA 	Keypress: lshift
+543.3939 	EXP 	New trial (rep=0, index=47): {'exp_num': 2, 'sent_code': 'l2_f_se_na_112', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 112.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/112.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+543.4201 	EXP 	exp2_image_l: autoDraw = False
+543.4201 	EXP 	exp2_image_r: autoDraw = False
+543.4201 	EXP 	exp2_image_l: autoDraw = False
+543.4201 	EXP 	exp2_image_r: autoDraw = False
+543.4201 	EXP 	exp2_cross: autoDraw = False
+543.4201 	EXP 	exp2_image_l: image = '../image/america.png'
+543.4201 	EXP 	exp2_image_r: image = '../image/spain.png'
+543.4201 	EXP 	exp2_cross: autoDraw = True
+543.6588 	EXP 	exp2_image_l: autoDraw = True
+543.6588 	EXP 	exp2_image_r: autoDraw = True
+543.6667 	EXP 	exp2_cross: autoDraw = False
+545.0714 	DATA 	Keypress: rshift
+546.0732 	DATA 	Keypress: lshift
+548.6528 	EXP 	New trial (rep=0, index=48): {'exp_num': 2, 'sent_code': 'l2_t_es_na_021', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 21.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/021.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+548.6752 	EXP 	exp2_image_l: autoDraw = False
+548.6752 	EXP 	exp2_image_r: autoDraw = False
+548.6752 	EXP 	exp2_image_l: autoDraw = False
+548.6752 	EXP 	exp2_image_r: autoDraw = False
+548.6752 	EXP 	exp2_cross: autoDraw = False
+548.6752 	EXP 	exp2_image_l: image = '../image/america.png'
+548.6752 	EXP 	exp2_image_r: image = '../image/spain.png'
+548.6752 	EXP 	exp2_cross: autoDraw = True
+548.9080 	EXP 	exp2_image_l: autoDraw = True
+548.9080 	EXP 	exp2_image_r: autoDraw = True
+548.9167 	EXP 	exp2_cross: autoDraw = False
+550.3216 	DATA 	Keypress: lshift
+551.2128 	DATA 	Keypress: rshift
+553.8923 	EXP 	New trial (rep=0, index=49): {'exp_num': 2, 'sent_code': 'l2_t_es_f0c_163', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'f0c', 'num': 163.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/163.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+553.9145 	EXP 	exp2_image_l: autoDraw = False
+553.9145 	EXP 	exp2_image_r: autoDraw = False
+553.9145 	EXP 	exp2_image_l: autoDraw = False
+553.9145 	EXP 	exp2_image_r: autoDraw = False
+553.9145 	EXP 	exp2_cross: autoDraw = False
+553.9145 	EXP 	exp2_image_l: image = '../image/america.png'
+553.9145 	EXP 	exp2_image_r: image = '../image/spain.png'
+553.9145 	EXP 	exp2_cross: autoDraw = True
+554.1575 	EXP 	exp2_image_l: autoDraw = True
+554.1575 	EXP 	exp2_image_r: autoDraw = True
+554.1575 	EXP 	exp2_cross: autoDraw = False
+556.1934 	DATA 	Keypress: lshift
+557.2605 	DATA 	Keypress: rshift
+559.1424 	EXP 	New trial (rep=0, index=50): {'exp_num': 2, 'sent_code': 'l2_t_es_na_023', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 23.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/023.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+559.1682 	EXP 	exp2_image_l: autoDraw = False
+559.1682 	EXP 	exp2_image_r: autoDraw = False
+559.1682 	EXP 	exp2_image_l: autoDraw = False
+559.1682 	EXP 	exp2_image_r: autoDraw = False
+559.1682 	EXP 	exp2_cross: autoDraw = False
+559.1682 	EXP 	exp2_image_l: image = '../image/america.png'
+559.1682 	EXP 	exp2_image_r: image = '../image/spain.png'
+559.1682 	EXP 	exp2_cross: autoDraw = True
+559.4071 	EXP 	exp2_image_l: autoDraw = True
+559.4071 	EXP 	exp2_image_r: autoDraw = True
+559.4071 	EXP 	exp2_cross: autoDraw = False
+560.8442 	DATA 	Keypress: lshift
+561.9105 	DATA 	Keypress: rshift
+564.3924 	EXP 	New trial (rep=0, index=51): {'exp_num': 2, 'sent_code': 'l2_t_es_na_026', 'list': 'l2', 'cond': 't', 'lang': 'es', 'type': 'na', 'num': 26.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/026.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+564.4177 	EXP 	exp2_image_l: autoDraw = False
+564.4177 	EXP 	exp2_image_r: autoDraw = False
+564.4177 	EXP 	exp2_image_l: autoDraw = False
+564.4177 	EXP 	exp2_image_r: autoDraw = False
+564.4177 	EXP 	exp2_cross: autoDraw = False
+564.4177 	EXP 	exp2_image_l: image = '../image/america.png'
+564.4177 	EXP 	exp2_image_r: image = '../image/spain.png'
+564.4177 	EXP 	exp2_cross: autoDraw = True
+564.6562 	EXP 	exp2_image_l: autoDraw = True
+564.6562 	EXP 	exp2_image_r: autoDraw = True
+564.6666 	EXP 	exp2_cross: autoDraw = False
+565.9703 	DATA 	Keypress: lshift
+567.1767 	DATA 	Keypress: rshift
+569.6418 	EXP 	New trial (rep=0, index=52): {'exp_num': 2, 'sent_code': 'l2_f_en_na_100', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 100.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/100.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+569.6677 	EXP 	exp2_image_l: autoDraw = False
+569.6677 	EXP 	exp2_image_r: autoDraw = False
+569.6677 	EXP 	exp2_image_l: autoDraw = False
+569.6677 	EXP 	exp2_image_r: autoDraw = False
+569.6677 	EXP 	exp2_cross: autoDraw = False
+569.6677 	EXP 	exp2_image_l: image = '../image/america.png'
+569.6677 	EXP 	exp2_image_r: image = '../image/spain.png'
+569.6677 	EXP 	exp2_cross: autoDraw = True
+569.9084 	EXP 	exp2_image_l: autoDraw = True
+569.9084 	EXP 	exp2_image_r: autoDraw = True
+569.9084 	EXP 	exp2_cross: autoDraw = False
+571.2768 	DATA 	Keypress: lshift
+574.8928 	EXP 	New trial (rep=0, index=53): {'exp_num': 2, 'sent_code': 'l2_f_se_na_114', 'list': 'l2', 'cond': 'f', 'lang': 'se', 'type': 'na', 'num': 114.0, 'image': 'america', 'image_alt': 'spain', 'cs': 1, 'sound_dir': '../audio/114.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+574.9182 	EXP 	exp2_image_l: autoDraw = False
+574.9182 	EXP 	exp2_image_r: autoDraw = False
+574.9182 	EXP 	exp2_image_l: autoDraw = False
+574.9182 	EXP 	exp2_image_r: autoDraw = False
+574.9182 	EXP 	exp2_cross: autoDraw = False
+574.9182 	EXP 	exp2_image_l: image = '../image/america.png'
+574.9182 	EXP 	exp2_image_r: image = '../image/spain.png'
+574.9182 	EXP 	exp2_cross: autoDraw = True
+575.1574 	EXP 	exp2_image_l: autoDraw = True
+575.1574 	EXP 	exp2_image_r: autoDraw = True
+575.1574 	EXP 	exp2_cross: autoDraw = False
+576.6276 	DATA 	Keypress: rshift
+580.1425 	EXP 	New trial (rep=0, index=54): {'exp_num': 2, 'sent_code': 'l2_f_en_na_102', 'list': 'l2', 'cond': 'f', 'lang': 'en', 'type': 'na', 'num': 102.0, 'image': 'america', 'image_alt': 'spain', 'cs': None, 'sound_dir': '../audio/102.wav', 'left': '../image/america.png', 'right': '../image/spain.png'}
+580.1706 	EXP 	exp2_image_l: autoDraw = False
+580.1706 	EXP 	exp2_image_r: autoDraw = False
+580.1706 	EXP 	exp2_image_l: autoDraw = False
+580.1706 	EXP 	exp2_image_r: autoDraw = False
+580.1706 	EXP 	exp2_cross: autoDraw = False
+580.1706 	EXP 	exp2_image_l: image = '../image/america.png'
+580.1706 	EXP 	exp2_image_r: image = '../image/spain.png'
+580.1706 	EXP 	exp2_cross: autoDraw = True
+580.4077 	EXP 	exp2_image_l: autoDraw = True
+580.4077 	EXP 	exp2_image_r: autoDraw = True
+580.4180 	EXP 	exp2_cross: autoDraw = False
+582.0718 	DATA 	Keypress: lshift
+585.4013 	EXP 	exp2_image_l: autoDraw = False
+585.4013 	EXP 	exp2_image_r: autoDraw = False
+585.4013 	EXP 	exp2_image_l: autoDraw = False
+585.4013 	EXP 	exp2_image_r: autoDraw = False
+585.4013 	EXP 	exp2_cross: autoDraw = False
+585.4087 	EXP 	full_end_text: autoDraw = True
+588.6064 	DATA 	Keypress: space
+588.6112 	EXP 	full_end_text: autoDraw = False
+588.7585 	EXP 	window1: mouseVisible = True
