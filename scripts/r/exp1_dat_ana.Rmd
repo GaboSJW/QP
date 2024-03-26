@@ -1,0 +1,265 @@
+---
+title             : "exp1 General Linear Model"
+shorttitle        : "exp1 data analysis"
+
+author: 
+  - name          : "Jiawei Shao"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "my@email.com"
+
+affiliation:
+  - id            : "1"
+    institution   : "Rutgers University"
+
+author_note: >
+  Complete departmental affiliations for each author (note the indentation, if you start a new paragraph).
+
+  Enter author note here.
+
+abstract: >
+  Enter abstract here (note the indentation, if you start a new paragraph).
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+figsintext        : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : no
+
+class             : "man"
+output            : papaja::apa6_word
+---
+
+
+# Load libraries
+
+Use this section to load the libraries you will use. 
+
+```{r, 'load_libraries', echo=TRUE}
+library("papaja")
+library("tidyverse")
+library("here")
+library("lme4")
+library("patchwork")
+library("lmerTest")
+```
+
+
+# Load data
+
+Use this section to load the data you will use. 
+
+```{r, 'load_data', echo=TRUE}
+
+# Load csv
+exp1_df <- read_csv(file = 'dat/exp1_all_std.csv')
+
+```
+
+
+# Tidy data
+
+Use this section to tidy your data so that it is in long format. 
+
+```{r, 'tidy_data', echo=T}
+# We need to go from wide to long. 
+# I want a column for group (children/adults) and a column for score
+df_tidy <- exp1_df %>% 
+  unite(., col = "cond", 
+        c("lang", "type"),
+        sep = "_")
+df_tidy$cond <- factor(df_tidy$cond, levels=c('en_na', 'es_na', 'es_f0u', 'es_f0c'))
+levels(df_tidy$cond)
+
+```
+
+
+# Descriptive statistics
+
+Use this section to explore your data (`head()`, `tail()`, `psych::describe()`), 
+and calculate descriptive statistics.
+
+```{r, 'descriptives', echo=TRUE}
+head(df_tidy)
+summary(df_tidy)
+
+df_tidy %>% 
+  group_by(cond) %>% 
+  summarize(rt_avg = mean(rt), rt_sd = sd(rt), 
+            prof_avg = mean(prof), prof_sd = sd(prof)) %>% 
+  mutate_if(is.numeric, round, digits = 2) %>% 
+  knitr::kable(format = "pandoc")
+
+df_tidy %>% 
+  ggplot(., aes(x = prof, y = rt, color = cond)) + 
+    geom_point() + 
+    geom_smooth(method = "lm", formula = "y ~ x") + 
+    labs(y = "Reaction Time", x = "Proficiency", 
+         title = "Reaction Time as a function of Proficiency")  
+    #ds4ling::ds4ling_bw_theme(base_family = "Times", base_size = 12)
+
+```
+
+
+
+```{=openxml}
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+```
+
+# Fit lm models
+
+## Fit a null model
+
+```{r, 'mod_null'}
+mod_null <- lm(rt ~ 1, data = df_tidy)
+mod_null %>% 
+  broom::tidy() %>% 
+  mutate_if(is.numeric, round, digits = 2) %>% 
+  knitr::kable(format = "pandoc")
+summary(mod_null)
+
+```
+
+```{=openxml}
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+```
+
+## Add a categorical predictor
+
+```{r, 'mod_cond'}
+mod_cond <- lm(rt ~ 1 + cond, data = df_tidy)
+mod_cond %>% 
+  broom::tidy() %>% 
+  mutate_if(is.numeric, round, digits = 2) %>% 
+  knitr::kable(format = "pandoc")
+summary(mod_cond)
+
+```
+
+```{=openxml}
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+```
+
+## Add a continuous covariate
+
+```{r, 'mod_cond_prof'}
+mod_cond_prof <- lm(rt ~ 1 + cond + prof, data = df_tidy)
+mod_cond_prof %>% 
+  broom::tidy() %>% 
+  mutate_if(is.numeric, round, digits = 2) %>% 
+  knitr::kable(format = "pandoc")
+summary(mod_cond_prof)
+
+```
+
+```{=openxml}
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+```
+
+## Include an interaction term
+
+```{r, 'mod_full'}
+mod_full <- lm(rt ~ 1 + cond * prof, data = df_tidy)
+mod_full %>% 
+  broom::tidy() %>% 
+  mutate_if(is.numeric, round, digits = 2) %>% 
+  knitr::kable(format = "pandoc")
+summary(mod_full)
+
+```
+
+## Test main effects and interaction term
+
+```{r, nmc}
+anova(mod_null, mod_cond, mod_cond_prof, mod_full) 
+```
+
+
+# lmer model & simple plot
+
+```{r, 'descriptives' lmer, echo=TRUE}
+head(df_tidy)
+summary(df_tidy)
+
+pp_mod_cond <- lmer(rt ~ 1 + cond + (1 | participant), data = df_tidy)
+summary(pp_mod_cond)
+
+df_tidy %>%
+  ggplot() +
+  aes(x = cond, y = rt) +
+  geom_point() +
+  geom_boxplot()
+
+
+```
+
+
+# Results
+The score data were analyzed using a general linear model. Estimated reaction time(rt) was the criterion with condition group(cond) and proficiency score(prof) as predictors. The condition group factor was dummy coded with naturally produced condition group set as the reference group. Main effects and the condition group by proficiency interaction were assessed using nested model comparisons. Experiment-wise alpha was set at 0.05.
+
+There was a main effect of condition group (F(1) = 83.274, p < 0.001), experience (F(1) = 114.139; p < 0.001), as well as an condition group by experience interaction (F(1) = 14.566; p < 0.001). The model containing the interaction provided the best fit of the data (R2 = 0.7361). Overall, proficiency score increased as a function of experience. However, the size of the effect was modulated by condition group. Specifically, adults showed an increase of score of approximately 0.6476  +/- 0.1334 se (t = 4.856, p < 0.001) per year of experience. Children showed an additional increase of 0.7198  +/- 0.1886 se per year of experience (1.3674 in total , t = 3.817, p < 0.001).
+
+
+
+
+## Model description
+
+
+
+## Interpretation
+
+
+<!--
+you can check out `easystats::report()` if you want, but don't rely on it. 
+https://github.com/easystats/report
+-->
+
+
+
+
+
+```{=openxml}
+<w:p>
+  <w:r>
+    <w:br w:type="page"/>
+  </w:r>
+</w:p>
+```
+
+## About this document
+
+We used the `tidyverse` [@R-tidyverse] for data manipulation and R [@R-base] for all our analyses. 
+This document was prepared in RMarkdown using `papaja` [@R-papaja]. 
+
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}

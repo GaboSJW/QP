@@ -3,7 +3,7 @@ title: "tidy_data"
 output: html_document
 date: "2023-04-18"
 ---
-
+#libs
 ```{r setup, include=FALSE}
 library("papaja")
 library("dplyr")
@@ -15,80 +15,231 @@ knitr::opts_chunk$set(echo = TRUE)
 r_refs("r-references.bib")
 ```
 
+#step 1
 ```{r data per each participant, echo=FALSE}
+#not ready to loop
+#I need to trim data for all the participants, I can do it one csv at a time now.
+
+#open csv
+dat_raw <- read.csv(file = 'dat/raw_all/000_exp_g2_2023-10-19_23h36.34.636 copy.csv') %>% 
+
+#file_names <- dir('dat/raw_all', full.names = TRUE)
+#file_names #where you have your files
+#df_all <- do.call(rbind,lapply(file_names,read.csv))
+  
+#filter cond == 'f', 't', lang == 'en','es'
+#check correction rate 80% (?) (I'll just do it by hand no big deal)
+  select (., num, list, cond, lang, type, correct_key, exp_num, cs, exp1_key.keys, exp1_key.rt, exp1_key.corr, exp2_key.keys, exp2_key.rt, participant, group = expName) %>% 
+  
+  filter(., cond == 'f' | cond =='t' ) %>%
+  
+  filter(., lang == 'en' | lang =='es') %>% 
+
+#select columns: num, list, cond, lang, type, correct_key, exp_num, cs, exp1_key.keys, exp1_key.rt, exp1_key.corr, exp2_key.keys, exp2_key.rt participant, expName(rename to "group"), 
+  
+  
+#mutate 
+  
+  #I need to give each participant a proficiency score 
+#import proficiency score (manually do it) exp2_key.keys, exp2_key.rt,
+  
+  mutate(., prof = 99) %>% 
+  write.csv(., 'dat/clean/000.csv')
+ #save csv file to folder "dat/clean"
+
+#dat_raw <- read.csv(file = 'dat/clean/067.csv') %>%
+ # mutate(., prof = -1) %>%
+  #write.csv(., 'dat/clean/067.csv')
+
+
+```
+
+#step 2
+manual put in matrix sentence length
+
+#step 3
+
+exp1 data transformation
+```{r data per each participant exp1, echo=FALSE}
 #loop
-#data_files <- list.files('dat/raw')  # Identify file names
+#data_files <- fs::dir_ls(path = "dat/clean1/", glob = "*.csv")  # Identify file names
 #data_files                                                    # Print file names
 # "data1.csv" "data2.csv" "data3.csv"
-
 #not ready 
 #I need to trim data for all the participants, I can do it one csv at a time now.
 
 #open csv
-dat_raw <- read.csv(file = 'dat/raw/028_exp_g2_2023-05-05_15h19.23.523.csv') %>% 
+dat_raw <- read.csv(file = 'dat/clean/091.csv') %>% 
 
-#filter exp_num=1, cond=t
+filter(., exp_num == 1) %>% 
+filter(., mat_dur != "-") %>%  
+mutate (cor_rate = mean(exp1_key.corr)) %>% 
+transform(.,exp1_key.rt = as.numeric(exp1_key.rt)) %>% 
+transform(.,mat_dur = as.numeric(mat_dur)) %>% 
 #check correction rate 80% (?) (I'll just do it by hand no big deal)
-  filter(., exp_num == 1, 2 & cond == "t") %>%
-
 #select columns: num, list, type, exp1_key.keys, exp1_key.rt, exp1_key.corr, participant, expName(rename to "group"), 
-#mutate cor_rate = mean(exp1_key.corr)
-  #I need to give each participant a proficiency score 
-#import proficiency score (manually do it)
-  select (., num, list, type, exp1_key.keys, exp1_key.rt, exp1_key.corr,exp2_key.keys, exp2_key.rt, participant, group = expName)      %>% 
-  mutate(., cor_rate = mean(exp1_key.corr), prof = 3) %>% 
-  write.csv(., 'dat/clean/28.csv')
+#
+#import proficiency score (manually do it) exp2_key.keys, exp2_key.rt,
+  select (., num, list, cond, lang, type, mat_dur, exp1_key.keys, exp1_key.rt, exp1_key.corr, cor_rate, participant, group, prof)      %>% 
+  mutate(., rt = exp1_key.rt - mat_dur) %>% 
+  filter(., rt> 0) %>% 
+  filter(., exp1_key.corr == 1) %>% 
+  write.csv(., 'dat/clean1/091.csv')
 #save csv file to folder "dat/clean"
 
 
 ```
+exp2 data transformation
+```{r data per each participant exp2, echo=FALSE}
+#loop
 
-```{r data all participants, echo=FALSE}
-#compile all individual csv files into one large csv of all participants
+#open csv
+dat_raw <-read.csv(file = 'dat/clean/091.csv') %>% 
+#filter 1
+filter(., exp_num == 2) %>% 
+filter(., mat_dur != "-") %>% 
+mutate(., count1 = sum(exp_num)) %>% 
+#filter 2
+filter(case_when(exp2_key.keys == '["lshift","rshift"]' |
+                 exp2_key.keys == "['lshift', 'rshift']"
+                 ~ cs=='1',
+                 exp2_key.keys == '["lshift"]' |
+                 exp2_key.keys == "['lshift']"
+                 ~ cs!='1' )) %>% 
 
-dat_participants1 <- read.csv(file = 'data/dat_participants.csv') %>% 
-  group_by(sub_partcipants_condition) %>%
-  summarize(
-    n = n(),
-    Mean = mean(score_participants)
-    , SD = sd(score_participants)
-    , Min = min(score_participants)
-    , Max = max(score_participants)
-  )
-dat_participants1[, -1] <- printnum(dat_participants1[, -1])
+mutate(., count2 = sum(exp_num)) %>% 
+mutate(., cor_rate = count2/count1) %>%
+#get rt
+  filter(., cs == 1) %>% 
+  separate(col = exp2_key.rt, into = c('rt1', 'rt2'), sep = ',', fill = "right") %>% 
+  mutate(rt1 = stringr::str_remove_all(rt1, "\\["), 
+         rt2 = stringr::str_remove_all(rt2, "\\]")) %>% 
+  mutate(across(c("rt1", "rt2", "mat_dur"), as.numeric)) %>% 
+  mutate(., rt_cs = rt2 - rt1) %>%  
+  mutate(., rt_mat = rt2 - mat_dur) %>% 
+  select (., num, list, cond, lang, type, mat_dur, exp_num, participant, group, prof, cor_rate, rt_cs, rt_mat)      %>% 
+  write.csv(., 'dat/clean2/091.csv')
 
-apa_table(
-  dat_participants1
-  , caption = "Language information of the participants"
-  , note = 'age:age of the participant; age_acq: age of acquisition of English; CSF: code-switching frequency, EN_ES: use of either languages with family and friends, 0 means always in English, 7 means always in Spanish; LP:language proficiency in Spanish.'
-         )
+
+
+
+
 ```
 
-```{r table3, echo = F, message=FALSE, warning=FALSE}
-dat_aj <- read.csv(file = '/dat/AJ.csv')
-dat_aj_clean <- select(num, list, cond, lang, type, sent_code, correct_key, exp1_trial_key.rt, exp1_key.corr, exp1_key.rt ) 
-dat1 <- dat_clean %>% 
-  group_by(stim_version) %>%
-  summarize(
-    Mean = mean(RT)
-    , SD = sd(RT)
-    , Min = min(RT)
-    , Max = max(RT)
-  )
-dat1[, -1] <- printnum(dat1[, -1])
+```{r calculate lt_std and bind all csv together, echo = F, fig.cap="exp1 plot",}
+#exp1
+#calculate lt_std
+lang_bg <- read_csv(file = 'dat/lang_bg/lang_bg.csv') %>% 
+  mutate(., lt_std = ((lextale - mean(lextale)) / sd(lextale))) %>% 
+  select(., participant, lt_std)
+  
+#Bind all .csv together
+library(vroom)
+files <- fs::dir_ls(path = "dat/clean1/", glob = "*.csv")
+  exp1_all <- vroom(files)
+#put lt_std in files
+  exp1_all_std<- left_join(lang_bg, exp1_all, "participant")
 
-apa_table(
-  dat1
-  , caption = "Summerized results of experiment 1"
-  , note = 'RT unit = ms'
-         )
+#write_csv(files)
+write_csv(exp1_all_std, 'dat/exp1_all_std.csv')
+
+#exp2
+#calculate lt_std
+lang_bg <- read_csv(file = 'dat/lang_bg/lang_bg.csv') %>% 
+  mutate(., lt_std = ((lextale - mean(lextale)) / sd(lextale))) %>% 
+  select(., participant, lt_std)
+  
+#Bind all .csv together
+library(vroom)
+files <- fs::dir_ls(path = "dat/clean2/", glob = "*.csv")
+  exp2_all <- vroom(files)
+#put lt_std in files
+  exp2_all_std<- left_join(lang_bg, exp2_all, "participant")
+
+#write_csv(files)
+write_csv(exp2_all_std, 'dat/exp2_all_std.csv')
 ```
 
-```{r plot1, echo = F, fig.cap="Median search time",}
 
-  plot1<-ggplot(dat, aes(sub_cond, RT, color = stim_version)) +
-      geom_violin(alpha = 0.5) +
-      geom_boxplot(width = 0.2, position = position_dodge(width = 0.9))
+#plot exp1
+```{r plot1, echo = F, fig.cap="exp1 plot",}
+#Bind all .csv together
+library(vroom)
+files <- fs::dir_ls(path = "dat/clean1/", glob = "*.csv")
+#read_csv(files)
+exp1_all <- vroom(files) %>% 
+  write_csv(., 'dat/exp1_all.csv')
 
-plot1 + theme_apa()
+#plot starts here
+  
+exp1_all %>% ggplot() +
+  aes(x = prof, y = rt) +
+  facet_grid(type~lang)+
+  geom_point(alpha = 0.3) +
+  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white')
+
+exp1_all %>% ggplot() +
+  aes(x = interaction(type, lang), y = rt) +
+  geom_point(color = "magenta", alpha = 0.3) +
+  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white') +
+  stat_summary(fun.data = mean_se, size = 4,
+                 geom = "text", aes(label = sprintf("%0.2f", round(after_stat(y), digits = 2))),
+                 position = position_nudge(x = 0.25)) +
+  labs(x = "Conditions", y = "Reaction Time", tittle = "EXP1 RT as a function of Cond",
+         caption = "RT as a function of Cond") 
+
+```
+
+#plot exp2
+```{r plot2, echo = F, fig.cap="exp2 plot",}
+#Bind all .csv together
+library(vroom)
+files <- fs::dir_ls(path = "dat/clean2/", glob = "*.csv")
+#read_csv(files)
+exp2_all <- vroom(files) %>% 
+  write_csv(., 'dat/exp2_all.csv')
+
+#plot starts here
+  
+exp2_all %>% ggplot() +
+  aes(x = prof, y = rt_mat) +
+  facet_grid(type~lang)+
+  geom_point(alpha = 0.3) +
+  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 10, fill = 'white')
+
+exp2_all %>% ggplot() +
+  aes(x = interaction(type, lang), y = rt_mat) +
+  geom_point(color = "blue", alpha = 0.2) +
+  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white') +
+  stat_summary(fun.data = mean_se, size = 4,
+                 geom = "text", aes(label = sprintf("%0.2f", round(after_stat(y), digits = 2))),
+                 position = position_nudge(x = 0.25)) +
+  labs(x = "Conditions", y = "Matrix Reaction Time", tittle = "Matrix RT as a function of Cond",
+         caption = "Matrix RT as a function of Cond") 
+
+exp2_all %>% ggplot() +
+  aes(x = interaction(type, lang), y = rt_cs) +
+  geom_point(color = "blue", alpha = 0.2, shape = 24, fill = "blue") +
+  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white') +
+  stat_summary(fun.data = mean_se, size = 4,
+                 geom = "text", aes(label = sprintf("%0.2f", round(after_stat(y), digits = 2))),
+                 position = position_nudge(x = 0.25)) +
+    labs(x = "Conditions", y = "CS Reaction Time", tittle = "CS RT as a function of Cond",
+         caption = "CS RT as a function of Cond") 
+
+```
+
+
+#lang_bg
+```{lang_bg caculator, echo=FALSE}
+lang_bg <- read.csv(file = 'dat/lang_bg/lang_bg.csv')
+print(mean(lang_bg$lextale))
+print(sd(lang_bg$lextale))
+str(lang_bg$lextale)
+lang_bg %>% ggplot() +
+  aes(x = participant, y = lextale) +
+  geom_point(alpha = 0.3) +
+  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white')
+
+summary(lang_bg)
 ```
