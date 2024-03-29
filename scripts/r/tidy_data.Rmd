@@ -83,7 +83,7 @@ transform(.,mat_dur = as.numeric(mat_dur)) %>%
   select (., num, list, cond, lang, type, mat_dur, exp1_key.keys, exp1_key.rt, exp1_key.corr, cor_rate, participant, group, prof)      %>% 
   mutate(., rt = exp1_key.rt - mat_dur) %>% 
   filter(., rt> 0) %>% 
-  filter(., exp1_key.corr == 1) %>% 
+  #filter(., exp1_key.corr == 1) %>% 
   write.csv(., 'dat/clean1/091.csv')
 #save csv file to folder "dat/clean"
 
@@ -172,21 +172,33 @@ exp1_all <- vroom(files) %>%
 
 #plot starts here
   
-exp1_all %>% ggplot() +
-  aes(x = prof, y = rt) +
+exp1_all_std %>% ggplot() +
+  aes(x = lt_std, y = rt) +
   facet_grid(type~lang)+
   geom_point(alpha = 0.3) +
   stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white')
 
-exp1_all %>% ggplot() +
+df_limit<-exp1_all_std %>% 
+  group_by(participant) %>% 
+  summarize(ave = mean(rt), limit = ave + sd(rt)*2)
+
+
+
+exp1_all_std %>% 
+  left_join(., df_limit, by = 'participant') %>%
+  group_by(participant) %>% 
+  filter(.,rt <= limit) %>% 
+  ggplot() +
   aes(x = interaction(type, lang), y = rt) +
   geom_point(color = "magenta", alpha = 0.3) +
-  stat_summary(fun.data = mean_se, geom = "pointrange", pch = 21, fill = 'white') +
+  stat_summary(fun.data = mean_sdl, geom = "pointrange", pch = 21, fill = 'white') +
   stat_summary(fun.data = mean_se, size = 4,
                  geom = "text", aes(label = sprintf("%0.2f", round(after_stat(y), digits = 2))),
                  position = position_nudge(x = 0.25)) +
   labs(x = "Conditions", y = "Reaction Time", tittle = "EXP1 RT as a function of Cond",
          caption = "RT as a function of Cond") 
+
+exp1_all_std %>% 
 
 ```
 

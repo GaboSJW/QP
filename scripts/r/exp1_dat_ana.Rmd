@@ -73,8 +73,9 @@ Use this section to tidy your data so that it is in long format.
 df_tidy <- exp1_df %>% 
   unite(., col = "cond", 
         c("lang", "type"),
-        sep = "_")
-df_tidy$cond <- factor(df_tidy$cond, levels=c('en_na', 'es_na', 'es_f0u', 'es_f0c'))
+        sep = "_") #%>% 
+  #filter(.,prof <= 0)
+df_tidy$cond <- factor(df_tidy$cond, levels=c('es_na', 'en_na', 'es_f0u', 'es_f0c'))
 levels(df_tidy$cond)
 
 ```
@@ -97,9 +98,9 @@ df_tidy %>%
   knitr::kable(format = "pandoc")
 
 df_tidy %>% 
-  ggplot(., aes(x = prof, y = rt, color = cond)) + 
+  ggplot(., aes(x = lt_std, y = rt, color = cond)) + 
     geom_point() + 
-    geom_smooth(method = "lm", formula = "y ~ x") + 
+    geom_smooth(method = "lm", formula = "y ~  x ") + 
     labs(y = "Reaction Time", x = "Proficiency", 
          title = "Reaction Time as a function of Proficiency")  
     #ds4ling::ds4ling_bw_theme(base_family = "Times", base_size = 12)
@@ -212,6 +213,18 @@ df_tidy %>%
   geom_point() +
   geom_boxplot()
 
+df_tidy %>% 
+  ggplot(., aes(x = lt_std, y = rt)) + 
+    geom_point() + 
+    geom_abline(
+      data = coef(pp_mod_cond)$participant %>% 
+        as_tibble() %>% 
+        rename(rt = `(Intercept)`), 
+      aes(slope = lt_std, intercept = rt)) + 
+    geom_abline(
+      slope = fixef(pp_mod_cond)[2], 
+      intercept = fixef(pp_mod_cond)[1], 
+      color = "darkred", linewidth = 2)
 
 ```
 

@@ -71,7 +71,7 @@ df_tidy <- exp2_df_std %>%
   unite(., col = "cond", 
         c("lang", "type"),
         sep = "_")
-df_tidy$cond <- factor(df_tidy$cond, levels=c('en_na', 'es_na', 'es_f0u', 'es_f0c'))
+df_tidy$cond <- factor(df_tidy$cond, levels=c('es_na', 'en_na', 'es_f0u', 'es_f0c'))
 levels(df_tidy$cond)
 
 ```
