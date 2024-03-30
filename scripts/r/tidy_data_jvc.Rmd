@@ -20,6 +20,8 @@ library("stringr")
 library("purrr")
 library("readxl")
 library("ggplot2")
+library("lme4")
+library("marginaleffects")
 ```
 
 # Load and tidy data
@@ -175,8 +177,9 @@ df_complete <- bind_rows(df_local, df_online) |>
     select(num, mat_dur), 
     by = "num"
   ) |> 
-  filter(!is.na(mat_dur), rt >= 0) |> 
+  filter(!is.na(mat_dur)) |> 
   mutate(rt = rt - as.numeric(mat_dur)) |> 
+  filter(rt >= 0) |> 
   write_csv(here("dat", "exp1_clean_jvc.csv"))
 
 ```
@@ -186,10 +189,13 @@ df_complete <- bind_rows(df_local, df_online) |>
 
 
 
-# plot exp1
+# plot
 
 ```{r}
-#| label: plot1
+#| label: plot-rts
+#| dpi: 300
+#| fig-asp: 0.56
+#| out-width: "100%"
 
 df_complete |> 
   filter(is_correct == 1) |> 
@@ -210,14 +216,59 @@ df_complete |>
     caption = "RT as a function of Cond"
   ) 
 
+df_complete |> 
+  filter(is_correct == 1) |> 
+  ggplot() + 
+  aes(x = lextale_z, y = rt, color = interaction(lang, type)) + 
+  geom_point(alpha = 0.4) + 
+  geom_smooth(method = lm, se = F, fullrange = T, formula = "y ~ x") + 
+  scale_color_viridis_d(name = NULL, end = 0.8)
+
 ```
 
 ```{r}
+#| label: plot-accuracy
+#| dpi: 300
+#| fig-asp: 0.56
+#| out-width: "100%"
 df_complete |> 
   ggplot() + 
   aes(x = type, y = is_correct, fill = lang) + 
+  geom_jitter(
+    data = df_complete |> 
+      group_by(participant, type, lang) |> 
+      summarize(avg = mean(is_correct, na.rm = T), .groups = "drop"), 
+    aes(x = type, y = avg, color = lang), 
+    height = 0, width = 0.2
+  ) + 
   stat_summary(
     fun.data = mean_se, geom = "pointrange", pch = 21, 
-    position = position_dodge(0.5))
+    position = position_dodge(0.5)
+  ) + 
+  scale_fill_viridis_d(name = NULL, end = 0.8) + 
+  scale_color_viridis_d(name = NULL, end = 0.8)
+```
+
+
+
+# Models
+
+```{r}
+#| label: model
+
+df_mod <- df_complete |> 
+  filter(is_correct == 1) |> 
+  unite(col = condition, c("lang", "type"), sep = "-") |> 
+  mutate(
+    log_rt = log(rt), 
+    condition = fct_relevel(condition, "en-na")
+  ) 
+
+mod <- lmer(
+  log_rt ~ lextale_z * condition + (1 | participant), 
+  data = df_mod
+)
+
+summary(mod)
 ```
 
