@@ -261,7 +261,7 @@ df_mod <- df_complete |>
   unite(col = condition, c("lang", "type"), sep = "-") |> 
   mutate(
     log_rt = log(rt), 
-    condition = fct_relevel(condition, "en-na")
+    condition = fct_relevel(condition, "es-na")
   ) 
 
 mod <- lmer(
