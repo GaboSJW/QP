@@ -220,7 +220,7 @@ df_ltd<-df_complete%>%
   left_join(., df_limit, by = 'participant')
   
 #combine limit and make plots
-#mat_dur plot
+#mat_rt plot
  df_ltd %>% 
    filter(., rt1 <= limit1 & rt2 <= limit2) %>% 
    filter(., response == '["lshift","rshift"]' |
@@ -267,22 +267,26 @@ df_ltd<-df_complete%>%
   ) 
 
 df_ltd |> 
-  filter(is_correct == 1) |> 
+  filter(rt1 <= limit1 & rt2 <= limit2) %>% 
+   filter(., response == '["lshift","rshift"]' |
+         response == "['lshift', 'rshift']") |> 
   ggplot() + 
-  aes(x = lextale_z, y = rt, color = interaction(lang, type)) + 
+  aes(x = lextale_z, y = rt_mat, color = interaction(lang, type)) + 
   geom_point(alpha = 0.4) + 
   geom_smooth(method = lm, se = F, fullrange = T, formula = "y ~ x") + 
   scale_color_viridis_d(name = NULL, end = 0.8)
 
 ```
 
-```{r}
+```{r, this part is much more complicated for exp2}
 #| label: plot-accuracy
 #| dpi: 300
 #| fig-asp: 0.56
 #| out-width: "100%"
-df_ltd |> 
-  ggplot() + 
+df_ltd %>% 
+   mutate(., is_correct = ifelse(response == '["lshift","rshift"]' |
+         response == "['lshift', 'rshift']", 1, 0)) %>% 
+  ggplot(.,) + 
   aes(x = type, y = is_correct, fill = lang) + 
   geom_jitter(
     data = df_complete |> 

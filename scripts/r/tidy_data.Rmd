@@ -187,7 +187,7 @@ df_limit<-exp1_all_std %>%
 exp1_all_std %>% 
   left_join(., df_limit, by = 'participant') %>%
   group_by(participant) %>% 
-  filter(.,rt <= limit) %>% 
+  filter(., rt <= limit) %>% 
   ggplot() +
   aes(x = interaction(type, lang), y = rt) +
   geom_point(color = "magenta", alpha = 0.3) +
