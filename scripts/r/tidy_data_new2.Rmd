@@ -46,40 +46,49 @@ local_temp1 <- dir_ls(here("dat", "raw_local"), regexp = ".csv") |>
     id = "source", 
     col_types = cols(.default = "c")
   ) |> 
-  filter(exp_num == 1, lang %in% c("en", "es")) |> 
+  filter(exp_num == 2, lang %in% c("en", "es")) |> 
+  filter(case_when(exp2_key.keys == '["lshift","rshift"]' |
+                 exp2_key.keys == "['lshift', 'rshift']"
+                 ~ cs=='1',
+                 exp2_key.keys == '["lshift"]' |
+                 exp2_key.keys == "['lshift']"
+                 ~ cs!='1' )) %>% 
   transmute(
+    
     participant, 
     group = expName, 
     list, cond, lang, type, num, 
     exp_num, 
     cs, 
-    correct_key, 
-    response = exp1_key.keys, 
-    rt = as.numeric(exp1_key.rt), 
-    is_correct = as.numeric(exp1_key.corr)
-  )
+    response = exp2_key.keys, 
+    rt = exp2_key.rt 
+    )
 
 # load 
 #  - 028_exp_g2_2023-05-05_15h19.23.523.csv (because it has more columns)
 local_temp28 <- read_csv(
   here("dat", "raw_local", "028_exp_g2_2023-05-05_15h19.23.523.csv")
   ) |>
-  filter(exp_num == 1, lang %in% c("en", "es")) |> 
+  filter(exp_num == 2, lang %in% c("en", "es")) |> 
   transmute(
     participant = as.character(participant), 
     group = expName, 
     list, cond, lang, type, num, 
     exp_num = as.character(exp_num), 
     cs = as.character(cs), 
-    correct_key, 
-    response = exp1_key.keys, 
-    rt = as.numeric(str_remove_all(exp1_key.rt, "\\[|\\]")), 
-    is_correct = as.numeric(exp1_key.corr)
+    response = exp2_key.keys, 
+    #rt = as.numeric(str_remove_all(exp2_key.rt, "\\[|\\]")), 
+        rt = exp2_key.rt, 
   )
 
 # Combine local in single df
 df_local <- bind_rows(local_temp1, local_temp28) |> 
-  mutate(source = "local")
+  mutate(source = "local") %>% 
+  filter(., cs == 1) %>% 
+  separate(col = rt, into = c('rt1', 'rt2'), sep = ',', fill = "right") %>% 
+  mutate(rt1 = as.numeric(stringr::str_remove_all(rt1, "\\[")), 
+         rt2 = as.numeric(stringr::str_remove_all(rt2, "\\]"))) %>% 
+  select (., participant, group, list, cond, lang, type, num, exp_num, cs, response, rt1, rt2)
 ```
 
 
@@ -114,7 +123,7 @@ temp_list <- dir_ls(here("dat", "raw_online"), regexp = ".csv") |>
 # Make vector of only the columns we want
 my_cols <- c(
   "participant", "expName", "list", "cond", "lang", "type", "num", "exp_num",
-  "cs", "correct_key", "exp1_key.keys", "exp1_key.rt", "exp1_key.corr"
+  "cs", "exp2_key.keys", "exp2_key.rt" 
 )
 
 # Select only the columns in my_cols in each df in the list
@@ -122,19 +131,22 @@ temp_list <- Map(function(x){x[,names(x) %in% my_cols]}, temp_list)
 
 # Bind them all into one df
 df_online <- do.call("rbind", temp_list) |> 
-  filter(exp_num == 1, lang %in% c("en", "es"), !is.na(list)) |> 
+  filter(exp_num == 2, lang %in% c("en", "es"), !is.na(list)) |> 
   transmute(
-    participant, 
+    participant = as.character(participant), 
     group = expName, 
     list, cond, lang, type, num, 
     exp_num = as.character(exp_num), 
     cs = as.character(cs), 
-    correct_key, 
-    response = exp1_key.keys, 
-    rt = exp1_key.rt,
-    is_correct = exp1_key.corr
+    response = exp2_key.keys, 
+        rt = exp2_key.rt,
   ) |> 
-  mutate(source = "local")
+  mutate(source = "online") %>% 
+  filter(., cs == 1) %>% 
+  separate(col = rt, into = c('rt1', 'rt2'), sep = ',', fill = "right") %>% 
+  mutate(rt1 = as.numeric(stringr::str_remove_all(rt1, "\\[")), 
+         rt2 = as.numeric(stringr::str_remove_all(rt2, "\\]"))) %>% 
+  select (., participant, group, list, cond, lang, type, num, exp_num, cs, response, rt1, rt2)
 ```
 
 ## Combine everything
@@ -178,9 +190,10 @@ df_complete <- bind_rows(df_local, df_online) |>
     by = "num"
   ) |> 
   filter(!is.na(mat_dur)) |> 
-  mutate(rt = rt - as.numeric(mat_dur)) |> 
-  filter(rt >= 0) |> 
-  write_csv(here("dat", "exp1_clean_jvc.csv"))
+  mutate(rt_mat = as.numeric(rt2) - as.numeric(mat_dur)) |> 
+  mutate(rt_cs = as.numeric(rt2) - as.numeric(rt1)) %>% 
+  filter(rt_mat > 0 & rt_cs > 0) |> 
+  write_csv(here("dat", "exp2_clean_jvc.csv"))
 
 ```
 
@@ -200,18 +213,21 @@ df_complete <- bind_rows(df_local, df_online) |>
 #calculate limit
 df_limit<-df_complete %>% 
   group_by(participant) %>% 
-  summarize(ave = mean(rt), limit = ave + sd(rt)*2)
+  summarize(ave1 = mean(rt1), limit1 = ave1 + sd(rt1)*2,
+            ave2 = mean(rt2), limit2 = ave2 + sd(rt2)*2)
 
 df_ltd<-df_complete%>% 
   left_join(., df_limit, by = 'participant')
   
 #combine limit and make plots
- df_ltd%>% 
-  group_by(participant) %>% 
-  filter(., rt <= limit) %>%
-  filter(is_correct == 1) |> 
+#mat_dur plot
+ df_ltd %>% 
+   filter(., rt1 <= limit1 & rt2 <= limit2) %>% 
+   filter(., response == '["lshift","rshift"]' |
+         response == "['lshift', 'rshift']") %>% 
+   group_by(participant) %>% 
   ggplot() +
-  aes(x = interaction(type, lang), y = rt) +
+  aes(x = interaction(type, lang), y = rt_mat) +
   geom_point(color = "magenta", alpha = 0.3) +
   stat_summary(fun.data = mean_sdl, geom = "pointrange", pch = 21, fill = 'white') +
   stat_summary(
@@ -222,9 +238,32 @@ df_ltd<-df_complete%>%
   ) +
   labs(
     x = "Conditions", 
-    y = "Reaction Time", 
-    title = "EXP1 RT as a function of Cond",
-    caption = "RT as a function of Cond"
+    y = "MatrixReaction Time", 
+    title = "EXP2 Matrix RT as a function of Cond",
+    caption = "Matrix RT as a function of Cond"
+  ) 
+ 
+#cs_dur plot
+ df_ltd %>% 
+   filter(., rt1 <= limit1 & rt2 <= limit2) %>% 
+   filter(., response == '["lshift","rshift"]' |
+         response == "['lshift', 'rshift']") %>% 
+   group_by(participant) %>% 
+  ggplot() +
+  aes(x = interaction(type, lang), y = rt_cs) +
+  geom_point(color = "magenta", alpha = 0.3) +
+  stat_summary(fun.data = mean_sdl, geom = "pointrange", pch = 21, fill = 'white') +
+  stat_summary(
+    fun.data = mean_se, size = 4,
+    geom = "text", 
+    aes(label = sprintf("%0.2f", round(after_stat(y), digits = 2))),
+    position = position_nudge(x = 0.25)
+  ) +
+  labs(
+    x = "Conditions", 
+    y = "CSReaction Time", 
+    title = "EXP2 CS RT as a function of Cond",
+    caption = "CS RT as a function of Cond"
   ) 
 
 df_ltd |> 
