@@ -1,0 +1,274 @@
+---
+title: "tidy_data"
+output: html_document
+date: "Last update: `r Sys.Date()`"
+---
+
+# libs
+
+```{r}
+#| label: setup
+#| warning: false
+#| message: false
+library("dplyr")
+library("tidyr")
+library("readr")
+library("here")
+library("fs")
+library("forcats")
+library("stringr")
+library("purrr")
+library("readxl")
+library("ggplot2")
+library("lme4")
+library("marginaleffects")
+```
+
+# Load and tidy data
+
+## Local data
+
+```{r}
+#| label: load-local-data
+#| message: false
+# Load local csvs 
+# except 
+#  - 028_exp_g2_2023-05-05_15h19.23.523.csv (because it has more columns)
+
+local_temp1 <- dir_ls(here("dat", "raw_local"), regexp = ".csv") |> 
+  as_tibble() |> 
+  filter(
+    value != here("dat", "raw_local", "028_exp_g2_2023-05-05_15h19.23.523.csv")
+  ) |> 
+  pull() |> 
+  map_dfr(
+    read_csv, 
+    id = "source", 
+    col_types = cols(.default = "c")
+  ) |> 
+  filter(exp_num == 1, lang %in% c("en", "es")) |> 
+  transmute(
+    participant, 
+    group = expName, 
+    list, cond, lang, type, num, 
+    exp_num, 
+    cs, 
+    correct_key, 
+    response = exp1_key.keys, 
+    rt = as.numeric(exp1_key.rt), 
+    is_correct = as.numeric(exp1_key.corr)
+  )
+
+# load 
+#  - 028_exp_g2_2023-05-05_15h19.23.523.csv (because it has more columns)
+local_temp28 <- read_csv(
+  here("dat", "raw_local", "028_exp_g2_2023-05-05_15h19.23.523.csv")
+  ) |>
+  filter(exp_num == 1, lang %in% c("en", "es")) |> 
+  transmute(
+    participant = as.character(participant), 
+    group = expName, 
+    list, cond, lang, type, num, 
+    exp_num = as.character(exp_num), 
+    cs = as.character(cs), 
+    correct_key, 
+    response = exp1_key.keys, 
+    rt = as.numeric(str_remove_all(exp1_key.rt, "\\[|\\]")), 
+    is_correct = as.numeric(exp1_key.corr)
+  )
+
+# Combine local in single df
+df_local <- bind_rows(local_temp1, local_temp28) |> 
+  mutate(source = "local")
+```
+
+
+## Online data
+
+```{r}
+#| label: load-online-data
+#| message: false
+# Load online csvs 
+# These files all have different columns names/numbers
+#  - 021_exp_g1_2023-09-05_18h32.55.031
+#  - 027_exp_g2_2023-10-18_14h15.06.123
+#  - 029_exp_g2_2023-10-21_17h02.18.335
+#  - 033_exp_g2_2023-10-12_11h56.31.376
+#  - 042_exp_g1_2023-09-29_14h14.23.677
+#  - 054_exp_g2_2023-10-12_12h40.24.192
+#  - 062_exp_g2_2023-11-16_11h11.01.336
+#  - 064_exp_g2_2023-10-23_17h51.37.190
+#  - 067_exp_g2_2023-10-18_16h58.16.959
+#  - 070_exp_g1_2023-09-22_13h39.35.259
+#  - 073_exp_g2_2023-09-11_17h01.16.888
+#  - 074_exp_g2_2023-10-06_10h15.54.848
+#  - 075_exp_g2_2023-10-12_11h13.11.698
+#  - 086_exp_g1_2023-09-19_11h05.55.100
+#  - 091_exp_g2_2023-09-14_12h03.00.504
+
+# Put them in a list: 
+temp_list <- dir_ls(here("dat", "raw_online"), regexp = ".csv") |> 
+  as.list() |> 
+  map(read_csv)
+
+# Make vector of only the columns we want
+my_cols <- c(
+  "participant", "expName", "list", "cond", "lang", "type", "num", "exp_num",
+  "cs", "correct_key", "exp1_key.keys", "exp1_key.rt", "exp1_key.corr"
+)
+
+# Select only the columns in my_cols in each df in the list
+temp_list <- Map(function(x){x[,names(x) %in% my_cols]}, temp_list)
+
+# Bind them all into one df
+df_online <- do.call("rbind", temp_list) |> 
+  filter(exp_num == 1, lang %in% c("en", "es"), !is.na(list)) |> 
+  transmute(
+    participant, 
+    group = expName, 
+    list, cond, lang, type, num, 
+    exp_num = as.character(exp_num), 
+    cs = as.character(cs), 
+    correct_key, 
+    response = exp1_key.keys, 
+    rt = exp1_key.rt,
+    is_correct = exp1_key.corr
+  ) |> 
+  mutate(source = "local")
+```
+
+## Combine everything
+
+```{r}
+#| label: combine-online-local
+#| message: false
+# Combine df_local and df_online
+df_complete <- bind_rows(df_local, df_online) |> 
+  mutate(
+    participant = str_pad(participant, pad = "0", width = 3), 
+    num = str_remove(num, "\\.0"), 
+    num = str_pad(num, pad = "0", width = 3)
+  ) |> 
+  # Join with lextale data
+  left_join(
+    read_csv(here("dat", "lang_bg", "lang_bg.csv")) |> 
+    select(participant, lextale) |> 
+    mutate(
+      participant = as.character(participant), 
+      participant = str_pad(participant, side = "left", pad = "0", width = 3), 
+      lextale_z = (lextale - mean(lextale)) / sd(lextale)
+      ), 
+    by = "participant"
+  ) |> 
+  # Join with matrix duration data
+  left_join(
+    read_excel(here("exp", "stim_new", "stimuli_all.xlsx")) |> 
+    mutate(
+      num = str_remove(num, "\\.0"), 
+      num = str_pad(num, pad = "0", width = 3)
+    ) |> 
+    filter(
+      mat_dur != "-", 
+      lang %in% c("en", "es"), 
+      list %in% c("l1", "l2"), 
+      cond %in% c("t", "f"), 
+      type %in% c("na", "f0c", "f0u")
+    ) |> 
+    select(num, mat_dur), 
+    by = "num"
+  ) |> 
+  filter(!is.na(mat_dur)) |> 
+  mutate(rt = rt - as.numeric(mat_dur)) |> 
+  filter(rt >= 0) |> 
+  write_csv(here("dat", "exp1_clean_jvc.csv"))
+
+```
+
+
+
+
+
+
+# plot
+
+```{r}
+#| label: plot-rts
+#| dpi: 300
+#| fig-asp: 0.56
+#| out-width: "100%"
+
+df_complete |> 
+  filter(is_correct == 1) |> 
+  ggplot() +
+  aes(x = interaction(type, lang), y = rt) +
+  geom_point(color = "magenta", alpha = 0.3) +
+  stat_summary(fun.data = mean_sdl, geom = "pointrange", pch = 21, fill = 'white') +
+  stat_summary(
+    fun.data = mean_se, size = 4,
+    geom = "text", 
+    aes(label = sprintf("%0.2f", round(after_stat(y), digits = 2))),
+    position = position_nudge(x = 0.25)
+  ) +
+  labs(
+    x = "Conditions", 
+    y = "Reaction Time", 
+    title = "EXP1 RT as a function of Cond",
+    caption = "RT as a function of Cond"
+  ) 
+
+df_complete |> 
+  filter(is_correct == 1) |> 
+  ggplot() + 
+  aes(x = lextale_z, y = rt, color = interaction(lang, type)) + 
+  geom_point(alpha = 0.4) + 
+  geom_smooth(method = lm, se = F, fullrange = T, formula = "y ~ x") + 
+  scale_color_viridis_d(name = NULL, end = 0.8)
+
+```
+
+```{r}
+#| label: plot-accuracy
+#| dpi: 300
+#| fig-asp: 0.56
+#| out-width: "100%"
+df_complete |> 
+  ggplot() + 
+  aes(x = type, y = is_correct, fill = lang) + 
+  geom_jitter(
+    data = df_complete |> 
+      group_by(participant, type, lang) |> 
+      summarize(avg = mean(is_correct, na.rm = T), .groups = "drop"), 
+    aes(x = type, y = avg, color = lang), 
+    height = 0, width = 0.2
+  ) + 
+  stat_summary(
+    fun.data = mean_se, geom = "pointrange", pch = 21, 
+    position = position_dodge(0.5)
+  ) + 
+  scale_fill_viridis_d(name = NULL, end = 0.8) + 
+  scale_color_viridis_d(name = NULL, end = 0.8)
+```
+
+
+
+# Models
+
+```{r}
+#| label: model
+
+df_mod <- df_complete |> 
+  filter(is_correct == 1) |> 
+  unite(col = condition, c("lang", "type"), sep = "-") |> 
+  mutate(
+    log_rt = log(rt), 
+    condition = fct_relevel(condition, "es-na")
+  ) 
+
+mod <- lmer(
+  log_rt ~ lextale_z * condition + (1 | participant), 
+  data = df_mod
+)
+
+summary(mod)
+```
+
