@@ -311,20 +311,22 @@ df_ltd %>%
 #| label: model
 
 df_mod <- df_ltd |> 
-  filter(is_correct == 1) |> 
+  filter(rt1 <= limit1 & rt2 <= limit2) |>
+   filter(response == '["lshift","rshift"]' |
+         response == "['lshift', 'rshift']") |> 
   unite(col = condition, c("lang", "type"), sep = "-") |> 
   mutate(
-    log_rt = log(rt), 
+    log_rt_mat = log(rt_mat), 
     condition = fct_relevel(condition, "es-na")
   ) 
 
 mod_lt <- lmer(
-  log_rt ~ lextale_z * condition + (1 | participant), 
+  log_rt_mat ~ lextale_z * condition + (1 | participant), 
   data = df_mod
 )
 
 mod_1 <- lmer(
-  log_rt ~ 1 +  condition + (1 | participant), 
+  log_rt_mat ~ 1 +  condition + (1 | participant), 
   data = df_mod
 )
 summary(mod_lt)
