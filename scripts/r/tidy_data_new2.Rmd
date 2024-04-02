@@ -271,7 +271,7 @@ df_ltd |>
    filter(., response == '["lshift","rshift"]' |
          response == "['lshift', 'rshift']") |> 
   ggplot() + 
-  aes(x = lextale_z, y = rt_mat, color = interaction(lang, type)) + 
+  aes(x = lextale_z, y = rt_cs, color = interaction(lang, type)) + 
   geom_point(alpha = 0.4) + 
   geom_smooth(method = lm, se = F, fullrange = T, formula = "y ~ x") + 
   scale_color_viridis_d(name = NULL, end = 0.8)
@@ -310,7 +310,7 @@ df_ltd %>%
 ```{r}
 #| label: model
 
-df_mod <- df_ltd |> 
+df_mod_mat <- df_ltd |> 
   filter(rt1 <= limit1 & rt2 <= limit2) |>
    filter(response == '["lshift","rshift"]' |
          response == "['lshift', 'rshift']") |> 
@@ -320,15 +320,28 @@ df_mod <- df_ltd |>
     condition = fct_relevel(condition, "es-na")
   ) 
 
-mod_lt <- lmer(
+mod_lt_mat <- lmer(
   log_rt_mat ~ lextale_z * condition + (1 | participant), 
-  data = df_mod
+  data = df_mod_mat
 )
 
-mod_1 <- lmer(
-  log_rt_mat ~ 1 +  condition + (1 | participant), 
-  data = df_mod
+summary(mod_lt_mat)
+
+df_mod_cs <- df_ltd |> 
+  filter(rt1 <= limit1 & rt2 <= limit2) |>
+   filter(response == '["lshift","rshift"]' |
+         response == "['lshift', 'rshift']") |> 
+  unite(col = condition, c("lang", "type"), sep = "-") |> 
+  mutate(
+    log_rt_cs = log(rt_cs), 
+    condition = fct_relevel(condition, "es-na")
+  ) 
+
+mod_lt_cs <- lmer(
+  log_rt_cs ~ lextale_z * condition + (1 | participant), 
+  data = df_mod_cs
 )
-summary(mod_lt)
+
+summary(mod_lt_cs)
 ```
 
