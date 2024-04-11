@@ -100,9 +100,7 @@ filter(., exp_num == 2) %>%
 filter(., mat_dur != "-") %>% 
 mutate(., count1 = sum(exp_num)) %>% 
 #filter 2
-filter(case_when(exp2_key.keys == '["lshift","rshift"]' |
-                 exp2_key.keys == "['lshift', 'rshift']"
-                 ~ cs=='1',
+,
                  exp2_key.keys == '["lshift"]' |
                  exp2_key.keys == "['lshift']"
                  ~ cs!='1' )) %>% 

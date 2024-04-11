@@ -205,13 +205,16 @@ df_limit<-df_complete %>%
 df_ltd<-df_complete%>% 
   left_join(., df_limit, by = 'participant')
   
+
 #combine limit and make plots
- df_ltd%>% 
+level_order <- c('na.es', 'na.en', 'f0c.es', 'f0u.es') 
+df_ltd%>% 
   group_by(participant) %>% 
   filter(., rt <= limit) %>%
   filter(is_correct == 1) |> 
   ggplot() +
   aes(x = interaction(type, lang), y = rt) +
+  scale_x_discrete(limits = level_order) +
   geom_point(color = "magenta", alpha = 0.3) +
   stat_summary(fun.data = mean_sdl, geom = "pointrange", pch = 21, fill = 'white') +
   stat_summary(
@@ -223,8 +226,8 @@ df_ltd<-df_complete%>%
   labs(
     x = "Conditions", 
     y = "Reaction Time", 
-    title = "EXP1 RT as a function of Cond",
-    caption = "RT as a function of Cond"
+    title = "Experiment 1 RT as a function of Conditions",
+    caption = "reaction time as a function of Conditions"
   ) 
 
 df_ltd |> 
@@ -276,14 +279,41 @@ df_mod <- df_ltd |>
   ) 
 
 mod_lt <- lmer(
-  log_rt ~ lextale_z * condition + (1 | participant), 
+  log_rt ~ lextale_z + condition + (1 | participant), 
   data = df_mod
 )
 
-mod_1 <- lmer(
-  log_rt ~ 1 +  condition + (1 | participant), 
-  data = df_mod
-)
 summary(mod_lt)
+
 ```
 
+# Fit models
+
+```{r, 'mod_null'}
+# Fit a null model
+mod_null <- lmer(log_rt ~ 1+ (1 | participant), data = df_mod)
+summary(mod_null)
+
+# Add a continuous predictor
+library(lmerTest)
+mod_1 <- lmer(log_rt ~ lextale_z + (1 | participant), data = df_mod)
+summary(mod_1)
+anova(mod_1)
+# Add a categorical covariate
+mod_2 <- lmer(log_rt ~ lextale_z + condition + (1 | participant), data = df_mod)
+summary(mod_2)
+anova(mod_2)
+
+# Include an interaction term
+mod_3 <- lmer(log_rt ~ lextale_z * condition+ (1 | participant) , data = df_mod)
+summary(mod_3)
+
+## Test main effects and interaction term
+anova(mod_null, mod_1, mod_2, mod_3)
+```
+
+# Results
+
+The reaction time data were logged and analyzed using a linear mixed-effects model. Estimated reaction time was the criterion with language proficiency and conditions predictors, we also included a by-participant intercept. The condition group factor was dummy coded with condition group na.es set as the reference group. Main effects and the language proficiency by condition group interaction were assessed using nested model comparisons. Experiment-wise alpha was set at 0.05.
+
+There was a main effect of condition group (Χ2  = 83.274,  p < 0.001), no main effect of proficiency (X2 = 1.2328, p = 0.267) nor an condition group by proficiency interaction (X2 = 0.925; p = 0.819). The model containing the interaction provided the best fit of the data (R2 = 0.7361). Overall, proficiency score increased as a function of experience. However, the size of the effect was modulated by age group. Specifically, adults showed an increase of score of approximately 0.6476  +/- 0.1334 se (t = 4.856, p < 0.001) per year of experience. Children showed an additional increase of 0.7198  +/- 0.1886 se per year of experience (1.3674 in total , t = 3.817, p < 0.001).
