@@ -22,6 +22,7 @@ library("readxl")
 library("ggplot2")
 library("lme4")
 library("marginaleffects")
+
 ```
 
 # Load and tidy data
@@ -202,15 +203,17 @@ df_limit<-df_complete %>%
   group_by(participant) %>% 
   summarize(ave = mean(rt), limit = ave + sd(rt)*2)
 
-df_ltd<-df_complete%>% 
+df_lted<-df_complete%>% 
   left_join(., df_limit, by = 'participant')
   
+df_ltd<-df_lted%>%
+  filter (., rt <= limit)
 
 #combine limit and make plots
 level_order <- c('na.es', 'na.en', 'f0c.es', 'f0u.es') 
 df_ltd%>% 
   group_by(participant) %>% 
-  filter(., rt <= limit) %>%
+  #filter(., rt <= limit) %>%
   filter(is_correct == 1) |> 
   ggplot() +
   aes(x = interaction(type, lang), y = rt) +
@@ -231,12 +234,19 @@ df_ltd%>%
   ) 
 
 df_ltd |> 
+  filter(rt <= limit) |>
   filter(is_correct == 1) |> 
   ggplot() + 
   aes(x = lextale_z, y = rt, color = interaction(lang, type)) + 
   geom_point(alpha = 0.4) + 
   geom_smooth(method = lm, se = F, fullrange = T, formula = "y ~ x") + 
-  scale_color_viridis_d(name = NULL, end = 0.8)
+  scale_color_viridis_d(name = NULL, end = 0.8) +
+  labs(
+    x = "Proficiency", 
+    y = "Reaction Time", 
+    title = "Experiment 1 RT as a function of proficiency",
+    caption = "reaction time as a function of proficiency"
+  ) 
 
 ```
 
@@ -295,7 +305,7 @@ mod_null <- lmer(log_rt ~ 1+ (1 | participant), data = df_mod)
 summary(mod_null)
 
 # Add a continuous predictor
-library(lmerTest)
+
 mod_1 <- lmer(log_rt ~ lextale_z + (1 | participant), data = df_mod)
 summary(mod_1)
 anova(mod_1)

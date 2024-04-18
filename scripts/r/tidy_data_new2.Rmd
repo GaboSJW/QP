@@ -217,8 +217,10 @@ df_limit<-df_complete %>%
   summarize(ave1 = mean(rt1), limit1 = ave1 + sd(rt1)*2,
             ave2 = mean(rt2), limit2 = ave2 + sd(rt2)*2)
 
-df_ltd<-df_complete%>% 
+df_lted<-df_complete%>% 
   left_join(., df_limit, by = 'participant')
+df_ltd<-df_lted%>% 
+  filter(., rt1 <= limit1 & rt2 <= limit2) 
   
 #combine limit and make plots
 #mat_rt plot
